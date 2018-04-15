@@ -1,0 +1,25 @@
+.. _start:
+
+
+Getting Started
+============
+
+See ACME's Development Getting Started Guide.
+
+To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.  
+https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+
+You might check if your ssh public key for your machine is associated with github
+https://github.com/settings/keys
+
+Checkout the code
+
+Check out a new master: 
+  $ git clone git@github.com:ACME-Climate/ACME.git
+
+Create a new branch:
+  $ git checkout -b username/component/name
+
+
+
+
