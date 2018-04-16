@@ -85,11 +85,11 @@
 <table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="6%" />
-<col width="17%" />
-<col width="14%" />
+<col width="19%" />
+<col width="16%" />
 <col width="6%" />
-<col width="46%" />
-<col width="11%" />
+<col width="39%" />
+<col width="13%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Index</th>
@@ -517,9 +517,9 @@
 <tr class="row-odd"><td>60</td>
 <td>CLD_MISR</td>
 <td>percent</td>
-<td>2D</td>
+<td>S</td>
 <td>Cloud Fraction from MISR Simulator</td>
-<td>&#160;</td>
+<td>(time, cosp_htmisr, cosp_tau, lat, lon)</td>
 </tr>
 <tr class="row-even"><td>61</td>
 <td>CLHMODIS</td>
@@ -552,9 +552,9 @@
 <tr class="row-even"><td>65</td>
 <td>CLMODIS</td>
 <td>%</td>
-<td>2D</td>
+<td>S</td>
 <td>MODIS Cloud Area Fraction</td>
-<td>&#160;</td>
+<td>(time, cosp_prs, cosp_tau_modis, lat, lon)</td>
 </tr>
 <tr class="row-odd"><td>66</td>
 <td>CLOUD</td>
@@ -713,9 +713,9 @@
 <tr class="row-odd"><td>88</td>
 <td>FISCCP1_COSP</td>
 <td>percent</td>
-<td>2D</td>
+<td>S</td>
 <td>Grid-box fraction covered by each ISCCP D level cloud type</td>
-<td>&#160;</td>
+<td>(time, cosp_prs, cosp_tau, lat, lon)</td>
 </tr>
 <tr class="row-even"><td>89</td>
 <td>FLDS</td>
@@ -3096,7 +3096,7 @@
  33 AWNI                             m-3                3D  Average cloud ice number conc
  34 CCN3                             #/cm3              3D  CCN concentration at S=0.1%
  35 CDNUMC                           1/m2               2D  Vertically-integrated droplet concentration
- 36 CFAD_SR532_CAL                   fraction&#39;           S  Lidar Scattering Ratio CFAD (532 nm)
+ 36 CFAD_SR532_CAL                   fraction            S  Lidar Scattering Ratio CFAD (532 nm)
  37 CLDHGH                           fraction           2D  Vertically-integrated high cloud
  38 CLDHGH_CAL                       percent            2D  Lidar High-level Cloud Fraction
  39 CLDHGH_CAL_ICE                   percent            2D  Lidar High-level Ice Cloud Fraction

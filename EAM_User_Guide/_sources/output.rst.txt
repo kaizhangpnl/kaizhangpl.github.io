@@ -13,7 +13,7 @@ Variables in the default h0 file (Format 1)
 -------------------------------------------
 
 .. csv-table:: 
-   :widths: 5 15 12 5 40 10
+   :widths: 5 15 12 5 30 10
    :header: "Index", "Name", "Unit", "Dimension", "Longname", "Notes" 
    :file: output_h0.csv
 
@@ -59,7 +59,7 @@ Variables in the default h0 file (Format 2)
    33 AWNI                             m-3                3D  Average cloud ice number conc
    34 CCN3                             #/cm3              3D  CCN concentration at S=0.1%
    35 CDNUMC                           1/m2               2D  Vertically-integrated droplet concentration
-   36 CFAD_SR532_CAL                   fraction'           S  Lidar Scattering Ratio CFAD (532 nm)
+   36 CFAD_SR532_CAL                   fraction            S  Lidar Scattering Ratio CFAD (532 nm)
    37 CLDHGH                           fraction           2D  Vertically-integrated high cloud
    38 CLDHGH_CAL                       percent            2D  Lidar High-level Cloud Fraction
    39 CLDHGH_CAL_ICE                   percent            2D  Lidar High-level Ice Cloud Fraction
