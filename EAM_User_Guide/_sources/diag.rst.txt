@@ -1,0 +1,14 @@
+.. _run:
+
+
+Diagnostics 
+===================
+
+E3SM Diagnostics: 
+
+http://e3sm.hyperarts.com/resources/tools/diagnostic-tools/e3sm-diagnostics/
+
+ARM Diagnostics: 
+
+http://e3sm.hyperarts.com/resources/tools/diagnostic-tools/arm-diagnostics/
+

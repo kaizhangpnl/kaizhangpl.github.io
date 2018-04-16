@@ -1,6 +1,7 @@
 .. _run:
 
 
-How to report a bug
+Reporting a bug
 ===================
 
+under construction 

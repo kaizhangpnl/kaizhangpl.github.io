@@ -1,14 +1,20 @@
 .. _run:
 
 
-How to run the model
+Running the model
 ============
+
+Running E3SM:
+
+http://e3sm.hyperarts.com/model/running-e3sm/
 
 A runscript is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 
 See this page for details 
 
 https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/45285715/The+run+acme+script
+
+
 
 
 
