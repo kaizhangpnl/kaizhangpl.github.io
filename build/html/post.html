@@ -42,7 +42,7 @@
 <li><a class="reference internal" href="#nco">NCO</a></li>
 <li><a class="reference internal" href="#processflow">Processflow</a></li>
 <li><a class="reference internal" href="#regridding-from-se-grid-to-lat-lon-grid">Regridding from SE grid to lat-lon grid</a></li>
-<li><a class="reference internal" href="#compressing-and-bit-grooming">Compressing and Bit-Grooming</a></li>
+<li><a class="reference internal" href="#bit-grooming">Bit-Grooming</a></li>
 </ul>
 </li>
 </ul>
@@ -100,8 +100,8 @@
 <p>See details here:
 <a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap">https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap</a></p>
 </div>
-<div class="section" id="compressing-and-bit-grooming">
-<h2>Compressing and Bit-Grooming<a class="headerlink" href="#compressing-and-bit-grooming" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bit-grooming">
+<h2>Bit-Grooming<a class="headerlink" href="#bit-grooming" title="Permalink to this headline">¶</a></h2>
 <p>Bit-Grooming can reduce EAM output file size by a factor of 2 or more.
 Users can specify the Number of Significant Digits (NSD) to retain, for example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">time</span> <span class="n">ncks</span> <span class="o">-</span><span class="mi">7</span> <span class="o">--</span><span class="n">ppc</span> <span class="n">default</span><span class="o">=</span><span class="mi">3</span> <span class="n">TEST_eos_FC5AV1C</span><span class="o">-</span><span class="mi">04</span><span class="n">P_ne120_ne120_20161005_EXP05A</span><span class="o">.</span><span class="n">cam</span><span class="o">.</span><span class="n">h1</span><span class="o">.</span><span class="mi">0001</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mf">00000.</span><span class="n">nc</span>  <span class="n">O1</span><span class="o">.</span><span class="n">nc</span>
