@@ -1,0 +1,144 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Getting Started &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Running the model" href="run.html" />
+    <link rel="prev" title="Important References" href="refer.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="run.html" title="Running the model"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="refer.html" title="Important References"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#quick-start-guide">Quick start guide:</a></li>
+<li><a class="reference internal" href="#flow-chart">Flow Chart</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="refer.html"
+                        title="previous chapter">Important References</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="run.html"
+                        title="next chapter">Running the model</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/start.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="getting-started">
+<span id="start"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="quick-start-guide">
+<h2>Quick start guide:<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/">http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/</a></p>
+<p>To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.
+<a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
+<p>You might check if your ssh public key for your machine is associated with github
+<a class="reference external" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
+<p>Checkout the code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check out a new master:
+  $ git clone git@github.com:ACME-Climate/ACME.git
+
+Create a new branch:
+  $ git checkout -b username/component/name
+</pre></div>
+</div>
+<p>Development guide:</p>
+<p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/">http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/</a></p>
+</div>
+<div class="section" id="flow-chart">
+<h2>Flow Chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/flow_chart.png"><img alt="Flow Chart" src="_images/flow_chart.png" style="width: 401.6px; height: 569.0px;" /></a>
+<p class="caption"><span class="caption-text">Diagrams showing the sequence of calculation (i.e., the time integration loop) in EAM.
+The blue stadium shapes refer to the resolved-scale dynamics and transport, and
+the diamonds refer to the exchange of mass and energy with other model components
+(e.g., land and ocean) through the coupler. The rectangular cells are parts of the
+physics package that describe the subgrid-scale physical and chemical processes.
+The colored boxes indicate parts of EAM that affect the concentrations of water
+species; these include the numerical fixers, deep and shallow convection,
+turbulent transport, and stratiform cloud macro- and microphysics.
+See Zhang et al. (2018) for more details.</span></p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="run.html" title="Running the model"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="refer.html" title="Important References"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, E3SM.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
+    </div>
+  </body>
+</html>
