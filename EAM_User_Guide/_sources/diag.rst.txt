@@ -18,7 +18,7 @@ AMWG Diagnostics
   
   Examples: 
   
-  
+  http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html
 
 - AMWG Multiple Diagnostics View
 
