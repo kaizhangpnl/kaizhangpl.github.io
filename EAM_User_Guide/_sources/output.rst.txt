@@ -18,3 +18,16 @@ Variables in the default h0 file
    :file: output_h0.csv
 
 
+Variables on the master list 
+---------------------------- 
+
+under construction 
+
+Variables lists for Special Diagnostics  
+--------------------------------------
+
+under construction 
+
+
+
+

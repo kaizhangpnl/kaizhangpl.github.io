@@ -36,6 +36,17 @@
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Post-processing</a><ul>
+<li><a class="reference internal" href="#nco">NCO</a></li>
+<li><a class="reference internal" href="#processflow">Processflow</a></li>
+<li><a class="reference internal" href="#regridding-from-se-grid-to-lat-lon-grid">Regridding from SE grid to lat-lon grid</a></li>
+<li><a class="reference internal" href="#compressing-and-bit-grooming">Compressing and Bit-Grooming</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="output.html"
                         title="previous chapter">List of output variables</a></p>
@@ -72,10 +83,42 @@
   <div class="section" id="post-processing">
 <span id="run"></span><h1>Post-processing<a class="headerlink" href="#post-processing" title="Permalink to this headline">¶</a></h1>
 <p>under construction</p>
-<p>NCO:</p>
+<div class="section" id="nco">
+<h2>NCO<a class="headerlink" href="#nco" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://e3sm.hyperarts.com/resources/tools/diagnostic-tools/nco/">http://e3sm.hyperarts.com/resources/tools/diagnostic-tools/nco/</a></p>
-<p>Processflow:</p>
+</div>
+<div class="section" id="processflow">
+<h2>Processflow<a class="headerlink" href="#processflow" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://e3sm.hyperarts.com/resources/tools/end-to-end-processing/e3sm-processflow/">http://e3sm.hyperarts.com/resources/tools/end-to-end-processing/e3sm-processflow/</a></p>
+</div>
+<div class="section" id="regridding-from-se-grid-to-lat-lon-grid">
+<h2>Regridding from SE grid to lat-lon grid<a class="headerlink" href="#regridding-from-se-grid-to-lat-lon-grid" title="Permalink to this headline">¶</a></h2>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ncremap -i input.nc -m map_ne30np4_to_fv129x256_aave.20150901.nc -o output.nc
+</pre></div>
+</div>
+<p>See details here:
+<a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap">https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap</a></p>
+</div>
+<div class="section" id="compressing-and-bit-grooming">
+<h2>Compressing and Bit-Grooming<a class="headerlink" href="#compressing-and-bit-grooming" title="Permalink to this headline">¶</a></h2>
+<p>Bit-Grooming can reduce EAM output file size by a factor of 2 or more.
+Users can specify the Number of Significant Digits (NSD) to retain, for example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">time</span> <span class="n">ncks</span> <span class="o">-</span><span class="mi">7</span> <span class="o">--</span><span class="n">ppc</span> <span class="n">default</span><span class="o">=</span><span class="mi">3</span> <span class="n">TEST_eos_FC5AV1C</span><span class="o">-</span><span class="mi">04</span><span class="n">P_ne120_ne120_20161005_EXP05A</span><span class="o">.</span><span class="n">cam</span><span class="o">.</span><span class="n">h1</span><span class="o">.</span><span class="mi">0001</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mf">00000.</span><span class="n">nc</span>  <span class="n">O1</span><span class="o">.</span><span class="n">nc</span>
+
+<span class="mf">52.26</span><span class="n">s</span>
+
+
+<span class="o">%</span> <span class="n">time</span> <span class="n">ncks</span> <span class="o">-</span><span class="mi">7</span> <span class="o">--</span><span class="n">ppc</span> <span class="n">default</span><span class="o">=</span><span class="mi">4</span> <span class="n">TEST_eos_FC5AV1C</span><span class="o">-</span><span class="mi">04</span><span class="n">P_ne120_ne120_20161005_EXP05A</span><span class="o">.</span><span class="n">cam</span><span class="o">.</span><span class="n">h1</span><span class="o">.</span><span class="mi">0001</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">02</span><span class="o">-</span><span class="mf">00000.</span><span class="n">nc</span>  <span class="n">O2</span><span class="o">.</span><span class="n">nc</span>
+
+<span class="mi">1</span><span class="nb">min</span> <span class="mf">1.04</span><span class="n">s</span>
+</pre></div>
+</div>
+<p>Note that it’s better to do averaging or similar computations before Bit-Grooming. If BG is
+done first, the averaging (or other operations) process could be very slow.</p>
+<p>See details here:
+<a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/107709358/Compress+and+Bit+Groom+ACME+data">https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/107709358/Compress+and+Bit+Groom+ACME+data</a></p>
+</div>
 </div>
 
 

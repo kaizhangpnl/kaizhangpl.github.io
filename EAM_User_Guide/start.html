@@ -16,7 +16,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to run the model" href="run.html" />
+    <link rel="next" title="Running the model" href="run.html" />
     <link rel="prev" title="Important References" href="refer.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -26,7 +26,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="run.html" title="How to run the model"
+          <a href="run.html" title="Running the model"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="refer.html" title="Important References"
@@ -36,12 +36,21 @@
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Getting Started</a><ul>
+<li><a class="reference internal" href="#quick-start-guide">Quick start guide:</a></li>
+<li><a class="reference internal" href="#flow-chart">Flow Chart</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="refer.html"
                         title="previous chapter">Important References</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="run.html"
-                        title="next chapter">How to run the model</a></p>
+                        title="next chapter">Running the model</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -71,7 +80,8 @@
             
   <div class="section" id="getting-started">
 <span id="start"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>Quick start guide:</p>
+<div class="section" id="quick-start-guide">
+<h2>Quick start guide:<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/">http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/</a></p>
 <p>To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.
 <a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
@@ -88,6 +98,22 @@ Create a new branch:
 <p>Development guide:</p>
 <p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/">http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/</a></p>
 </div>
+<div class="section" id="flow-chart">
+<h2>Flow Chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/flow_chart.png"><img alt="Flow Chart" src="_images/flow_chart.png" style="width: 401.6px; height: 569.0px;" /></a>
+<p class="caption"><span class="caption-text">Diagrams showing the sequence of calculation (i.e., the time integration loop) in EAM.
+The blue stadium shapes refer to the resolved-scale dynamics and transport, and
+the diamonds refer to the exchange of mass and energy with other model components
+(e.g., land and ocean) through the coupler. The rectangular cells are parts of the
+physics package that describe the subgrid-scale physical and chemical processes.
+The colored boxes indicate parts of EAM that affect the concentrations of water
+species; these include the numerical fixers, deep and shallow convection,
+turbulent transport, and stratiform cloud macro- and microphysics.
+See Zhang et al. (2018) for more details.</span></p>
+</div>
+</div>
+</div>
 
 
           </div>
@@ -102,7 +128,7 @@ Create a new branch:
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="run.html" title="How to run the model"
+          <a href="run.html" title="Running the model"
              >next</a> |</li>
         <li class="right" >
           <a href="refer.html" title="Important References"
