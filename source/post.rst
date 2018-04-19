@@ -29,8 +29,8 @@ See details here:
 https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap
 
 
-Compressing and Bit-Grooming 
-----------------------------
+Bit-Grooming 
+------------
 
 Bit-Grooming can reduce EAM output file size by a factor of 2 or more. 
 Users can specify the Number of Significant Digits (NSD) to retain, for example: :: 
