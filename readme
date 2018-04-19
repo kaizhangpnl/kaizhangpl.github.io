@@ -1,0 +1,14 @@
+
+Steps: 
+
+$ git clone git@github.com:kaizhangpnl/kaizhangpnl.github.io.git
+$ cd kaizhangpnl.github.io
+
+# now make your own changes (under "source" directory) 
+
+$ make html 
+
+# then see make_publish.csh and push your changes to this repository  
+
+
+
