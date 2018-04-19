@@ -1,5 +1,13 @@
 
-Steps: 
+EAM User Guide
+
+First draft by Kai Zhang (kai.zhang@pnnl.gov) 
+
+Apr. 2018 
+
+
+Steps 
+=====
 
 $ git clone git@github.com:kaizhangpnl/kaizhangpnl.github.io.git
 $ cd kaizhangpnl.github.io
