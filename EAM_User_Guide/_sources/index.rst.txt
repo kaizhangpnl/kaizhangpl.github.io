@@ -46,9 +46,9 @@ Documentation Outline
 
 
 
-Current version: |version|
+Current version: |version| by Kai Zhang 
 
-Documentation last compiled: |today|
+Documentation last edited : |today|
 
 
 
