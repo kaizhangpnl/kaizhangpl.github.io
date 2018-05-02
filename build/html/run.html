@@ -40,14 +40,14 @@
   <ul>
 <li><a class="reference internal" href="#">Compiling and running the model</a><ul>
 <li><a class="reference internal" href="#run-script">Run Script</a></li>
+<li><a class="reference internal" href="#create-a-new-case">Create a new case</a></li>
 <li><a class="reference internal" href="#compsets">Compsets</a></li>
-<li><a class="reference internal" href="#resolution">Resolution</a></li>
+<li><a class="reference internal" href="#changing-spatial-resolutions">Changing Spatial Resolutions</a></li>
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP Simulator</a></li>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
 <li><a class="reference internal" href="#switching-on-satellite-aircraft-sampler">Switching on Satellite/Aircraft Sampler</a></li>
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on Aerosol Forcing Diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing External Forcings</a></li>
-<li><a class="reference internal" href="#changing-spatial-resolutions">Changing Spatial Resolutions</a></li>
 </ul>
 </li>
 </ul>
@@ -94,6 +94,16 @@
 <p>An example is available here:</p>
 <p><a class="reference external" href="https://e3sm.org/wp-content/uploads/2018/04/">https://e3sm.org/wp-content/uploads/2018/04/</a><a href="#id1"><span class="problematic" id="id2">run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_</span></a>.txt</p>
 </div>
+<div class="section" id="create-a-new-case">
+<h2>Create a new case<a class="headerlink" href="#create-a-new-case" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>./create_newcase -case $temp_case_scripts_dir  </dt>
+<dd><blockquote class="first">
+<div>-mach $newcase_machine        -compset $compset        -res $resolution         -project $project        </div></blockquote>
+<p class="last">-pecount $std_proc_configuration</p>
+</dd>
+</dl>
+</div>
 <div class="section" id="compsets">
 <h2>Compsets<a class="headerlink" href="#compsets" title="Permalink to this headline">¶</a></h2>
 <ul>
@@ -105,10 +115,12 @@
 </li>
 </ul>
 </div>
-<div class="section" id="resolution">
-<h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="changing-spatial-resolutions">
+<h2>Changing Spatial Resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
 <p>Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
-(with F1850C5AV1C-04P2 compset).</p>
+(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set</p>
+<p>resolution = ne30 (or ne4, ne11, ne16, ne120)</p>
+<p>before executing “create_newcase”</p>
 <p>The vertical resolution is L30 for V0 and L72 for V1.</p>
 </div>
 <div class="section" id="switching-on-cosp-simulator">
@@ -136,7 +148,35 @@ This default logical is set in cospsimulator_intr.F90.</p>
 </div>
 <div class="section" id="switching-on-nudging">
 <h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
-<p>under construction</p>
+<p>The following variables need to be modified to activate nudging.
+The example shown below allows nudging for horizontal winds:</p>
+<p>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
+!……………………………………………….
+! nudging
+!……………………………………………….</p>
+<blockquote>
+<div>Nudge_Model = .True.
+Nudge_Path  = ‘${INPUT_NUDGING}/ne30/’
+Nudge_File_Template = ‘ACME.cam.h2.%y-%m-%d-00000.nc’
+Nudge_Times_Per_Day = 4  !! nudging input data frequency
+Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s
+Nudge_Uprof = 1
+Nudge_Ucoef = 1.
+Nudge_Vprof = 1
+Nudge_Vcoef = 1.
+Nudge_Tprof = 0
+Nudge_Tcoef = 0.
+Nudge_Qprof = 0
+Nudge_Qcoef = 0.
+Nudge_PSprof = 0
+Nudge_PScoef = 0.
+Nudge_Beg_Year = 0000
+Nudge_Beg_Month = 1
+Nudge_Beg_Day = 1
+Nudge_End_Year = 9999
+Nudge_End_Month = 1
+Nudge_End_Day = 1</div></blockquote>
+<p>EOF</p>
 </div>
 <div class="section" id="switching-on-satellite-aircraft-sampler">
 <h2>Switching on Satellite/Aircraft Sampler<a class="headerlink" href="#switching-on-satellite-aircraft-sampler" title="Permalink to this headline">¶</a></h2>
@@ -151,16 +191,17 @@ This default logical is set in cospsimulator_intr.F90.</p>
 </dl>
 <p>EOF</p>
 <p>Then the radiative flux calculated without aerosols are diagnosed
-(with “_d1” appended to the original radiative flux name, e.g. FSNT_d1).</p>
+(with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
 <p>The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013).</p>
 </div>
 <div class="section" id="changing-external-forcings">
 <h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
-<p>under construction</p>
-</div>
-<div class="section" id="changing-spatial-resolutions">
-<h2>Changing Spatial Resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
-<p>under construction</p>
+<ul>
+<li><p class="first">Changing SST, e.g. :</p>
+<p>./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val ‘$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc’
+./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val ‘$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc’</p>
+</li>
+</ul>
 </div>
 </div>
 

@@ -14,8 +14,19 @@ An example is available here:
 
 https://e3sm.org/wp-content/uploads/2018/04/run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_.txt
 
+
+Create a new case 
+-----------------
+
+./create_newcase -case $temp_case_scripts_dir  \
+		 -mach $newcase_machine        \
+		 -compset $compset        \
+		 -res $resolution         \
+		 -project $project        \
+         -pecount $std_proc_configuration
+
 Compsets
-------------------------
+--------
 
 - Atmosphere-only simulation with present-day external forcing 
 
@@ -25,11 +36,16 @@ Compsets
 
   F1850C5AV1C-04P2 
 
-Resolution
-----------
+
+Changing Spatial Resolutions
+----------------------------
 
 Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
-(with F1850C5AV1C-04P2 compset). 
+(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set 
+
+resolution = ne30 (or ne4, ne11, ne16, ne120) 
+
+before executing "create_newcase" 
 
 The vertical resolution is L30 for V0 and L72 for V1.  
 
@@ -61,8 +77,35 @@ This default logical is set in cospsimulator_intr.F90.
 Switching on Nudging
 --------------------
 
-under construction 
+The following variables need to be modified to activate nudging. 
+The example shown below allows nudging for horizontal winds:
 
+cat <<EOF >> user_nl_cam
+!.......................................................
+! nudging
+!.......................................................
+ Nudge_Model = .True.
+ Nudge_Path  = '${INPUT_NUDGING}/ne30/'
+ Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-00000.nc'
+ Nudge_Times_Per_Day = 4  !! nudging input data frequency 
+ Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
+ Nudge_Uprof = 1
+ Nudge_Ucoef = 1.
+ Nudge_Vprof = 1
+ Nudge_Vcoef = 1.
+ Nudge_Tprof = 0
+ Nudge_Tcoef = 0.
+ Nudge_Qprof = 0
+ Nudge_Qcoef = 0.
+ Nudge_PSprof = 0
+ Nudge_PScoef = 0.
+ Nudge_Beg_Year = 0000
+ Nudge_Beg_Month = 1
+ Nudge_Beg_Day = 1
+ Nudge_End_Year = 9999
+ Nudge_End_Month = 1
+ Nudge_End_Day = 1
+EOF
 
 Switching on Satellite/Aircraft Sampler 
 ---------------------------------------
@@ -79,19 +122,15 @@ cat <<EOF >> user_nl_cam
 EOF
 
 Then the radiative flux calculated without aerosols are diagnosed 
-(with "_d1" appended to the original radiative flux name, e.g. FSNT_d1). 
+(with "_d1" appended to the original radiative flux name, e.g. "FSNT_d1"). 
 
 The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013). 
 
 Changing External Forcings
 --------------------------
 
-under construction 
+- Changing SST, e.g. : 
 
-
-Changing Spatial Resolutions
-----------------------------
-
-under construction 
-
-
+  ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc' 
+  ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc'
+  
