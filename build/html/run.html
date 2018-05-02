@@ -91,18 +91,16 @@
 <div class="section" id="run-script">
 <h2>Run Script<a class="headerlink" href="#run-script" title="Permalink to this headline">¶</a></h2>
 <p>A runscript is available in the E3SM model source code directory (parallel to “cime” and “compoment”).</p>
-<p>An example is available here:</p>
-<p><a class="reference external" href="https://e3sm.org/wp-content/uploads/2018/04/">https://e3sm.org/wp-content/uploads/2018/04/</a><a href="#id1"><span class="problematic" id="id2">run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_</span></a>.txt</p>
 </div>
 <div class="section" id="create-a-new-case">
 <h2>Create a new case<a class="headerlink" href="#create-a-new-case" title="Permalink to this headline">¶</a></h2>
 <p>A new case is often created for each simulation</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./create_newcase -case $temp_case_scripts_dir  \
-                     -mach $newcase_machine        \
-                     -compset $compset             \
-                     -res $resolution              \
-                     -project $project             \
-                     -pecount $std_proc_configuration
+                 -mach $newcase_machine        \
+                 -compset $compset             \
+                 -res $resolution              \
+                 -project $project             \
+                 -pecount $std_proc_configuration
 </pre></div>
 </div>
 </div>

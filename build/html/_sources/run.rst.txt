@@ -10,10 +10,6 @@ Run Script
 -----------
 A runscript is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 
-An example is available here: 
-
-https://e3sm.org/wp-content/uploads/2018/04/run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_.txt
-
 
 Create a new case 
 -----------------
@@ -21,11 +17,11 @@ Create a new case
 A new case is often created for each simulation :: 
 
   ./create_newcase -case $temp_case_scripts_dir  \
-	     	       -mach $newcase_machine        \
-	     	       -compset $compset             \
-	     	       -res $resolution              \
-	     	       -project $project             \
-	     	       -pecount $std_proc_configuration
+                   -mach $newcase_machine        \
+                   -compset $compset             \
+                   -res $resolution              \
+                   -project $project             \
+                   -pecount $std_proc_configuration
 
 Compsets
 --------
