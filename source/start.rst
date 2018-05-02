@@ -7,7 +7,7 @@ Getting Started
 Quick start guide: 
 ------------------
 
-http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/
+https://e3sm.org/model/running-e3sm/e3sm-quick-start/
 
 To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.  
 https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
@@ -17,15 +17,24 @@ https://github.com/settings/keys
 
 Checkout the code::
 
-  Check out a new master: 
-    $ git clone git@github.com:ACME-Climate/ACME.git
+  Check out the V1 release: 
+    $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
+
+  Check out the current master: 
+    $ git clone git@github.com:E3SM-Project/E3SM.git
+    
+    
+    $ cd E3SM
+
+  Update the sub-modules: 
+    $ git submodule update –init
 
   Create a new branch:
     $ git checkout -b username/component/name
 
 Development guide: 
 
-http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/
+https://e3sm.org/model/running-e3sm/developing-e3sm/
 
 Flow Chart
 -----------------
