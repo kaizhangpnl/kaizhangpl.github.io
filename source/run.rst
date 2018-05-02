@@ -20,12 +20,12 @@ Create a new case
 
 A new case is often created for each simulation :: 
 
-./create_newcase -case $temp_case_scripts_dir  \
-		         -mach $newcase_machine        \
-		         -compset $compset             \
-		         -res $resolution              \
-		         -project $project             \
-		         -pecount $std_proc_configuration
+  ./create_newcase -case $temp_case_scripts_dir  \
+	     	       -mach $newcase_machine        \
+	     	       -compset $compset             \
+	     	       -res $resolution              \
+	     	       -project $project             \
+	     	       -pecount $std_proc_configuration
 
 Compsets
 --------
@@ -43,9 +43,9 @@ Changing Spatial Resolutions
 ----------------------------
 
 Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
-(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set 
+(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set :: 
 
-resolution = ne30 (or ne4, ne11, ne16, ne120) 
+  set resolution = ne30_ne30 (or ne4_ne4, ne11_ne11, ne16_ne16, ne120_ne120) 
 
 before executing "create_newcase" 
 
@@ -62,9 +62,9 @@ Switching on COSP Simulator
 
 - Namelist change :: 
 
-cat <<EOF >> user_nl_cam
- cosp_lite = .true.
-EOF
+  cat <<EOF >> user_nl_cam
+    cosp_lite = .true.
+  EOF
 
 If cosp_lite = true, the COSP cloud simulators are run to produce 
 select output for the AMWG diagnostics package.
@@ -135,8 +135,17 @@ The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9
 Changing External Forcings
 --------------------------
 
+The following changes need to be made before executing "create_newcase". 
+
 - Changing SST, e.g. :: 
 
   ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc' 
   ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc'
   
+- Changing aerosol emissions, e.g. :: 
+
+
+
+
+
+
