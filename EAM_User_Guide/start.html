@@ -16,7 +16,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Running the model" href="run.html" />
+    <link rel="next" title="Compiling and running the model" href="run.html" />
     <link rel="prev" title="Important References" href="refer.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -26,7 +26,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="run.html" title="Running the model"
+          <a href="run.html" title="Compiling and running the model"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="refer.html" title="Important References"
@@ -50,7 +50,7 @@
                         title="previous chapter">Important References</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="run.html"
-                        title="next chapter">Running the model</a></p>
+                        title="next chapter">Compiling and running the model</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -88,19 +88,22 @@
 <p>You might check if your ssh public key for your machine is associated with github
 <a class="reference external" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
 <p>Checkout the code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check out the V1 release:
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check out the V1 release ::
+
   $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
 
-Or check out the current master:
+Or check out the current master ::
+
   $ git clone git@github.com:E3SM-Project/E3SM.git
 
 
-  $ cd E3SM
+Update the sub-modules ::
 
-Update the sub-modules:
+  $ cd E3SM
   $ git submodule update –init
 
-Create a new branch:
+Create a new branch ::
+
   $ git checkout -b username/component/name
 </pre></div>
 </div>
@@ -137,7 +140,7 @@ See Zhang et al. (2018) for more details.</span></p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="run.html" title="Running the model"
+          <a href="run.html" title="Compiling and running the model"
              >next</a> |</li>
         <li class="right" >
           <a href="refer.html" title="Important References"

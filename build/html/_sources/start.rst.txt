@@ -17,19 +17,22 @@ https://github.com/settings/keys
 
 Checkout the code::
 
-  Check out the V1 release: 
+  Check out the V1 release :: 
+  
     $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
 
-  Or check out the current master: 
+  Or check out the current master :: 
+  
     $ git clone git@github.com:E3SM-Project/E3SM.git
     
-    
-    $ cd E3SM
 
-  Update the sub-modules: 
+  Update the sub-modules :: 
+  
+    $ cd E3SM
     $ git submodule update –init
 
-  Create a new branch:
+  Create a new branch :: 
+  
     $ git checkout -b username/component/name
 
 Development guide: 

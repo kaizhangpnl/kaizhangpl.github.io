@@ -52,11 +52,11 @@ Switching on COSP Simulator
 -------------------------
 
 
-- Configuration :: 
+- Configuration ::
 
   ./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val "-cosp"
 
-- Namelist change :: 
+- Namelist change ::
 
   cat <<EOF >> user_nl_cam
     cosp_lite = .true.
