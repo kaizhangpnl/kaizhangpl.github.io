@@ -41,13 +41,14 @@
 <li><a class="reference internal" href="#">Compiling and running the model</a><ul>
 <li><a class="reference internal" href="#run-script">Run Script</a></li>
 <li><a class="reference internal" href="#create-a-new-case">Create a new case</a></li>
-<li><a class="reference internal" href="#compsets">Compsets</a></li>
-<li><a class="reference internal" href="#changing-spatial-resolutions">Changing Spatial Resolutions</a></li>
-<li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP Simulator</a></li>
-<li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
-<li><a class="reference internal" href="#switching-on-satellite-aircraft-sampler">Switching on Satellite/Aircraft Sampler</a></li>
-<li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on Aerosol Forcing Diagnostics</a></li>
-<li><a class="reference internal" href="#changing-external-forcings">Changing External Forcings</a></li>
+<li><a class="reference internal" href="#set-compsets">Set compsets</a></li>
+<li><a class="reference internal" href="#change-spatial-resolutions">Change Spatial Resolutions</a></li>
+<li><a class="reference internal" href="#switch-on-cosp-simulator">Switch on COSP Simulator</a></li>
+<li><a class="reference internal" href="#switch-on-nudging">Switch on Nudging</a></li>
+<li><a class="reference internal" href="#switch-on-satellite-aircraft-sampler">Switch on Satellite/Aircraft Sampler</a></li>
+<li><a class="reference internal" href="#switch-on-aerosol-forcing-diagnostics">Switch on Aerosol Forcing Diagnostics</a></li>
+<li><a class="reference internal" href="#change-external-forcings">Change External Forcings</a></li>
+<li><a class="reference internal" href="#other-options">Other options</a></li>
 </ul>
 </li>
 </ul>
@@ -104,8 +105,8 @@
 </pre></div>
 </div>
 </div>
-<div class="section" id="compsets">
-<h2>Compsets<a class="headerlink" href="#compsets" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="set-compsets">
+<h2>Set compsets<a class="headerlink" href="#set-compsets" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">Atmosphere-only simulation with present-day external forcing</p>
 <p>FC5AV1C-04P2</p>
@@ -115,8 +116,8 @@
 </li>
 </ul>
 </div>
-<div class="section" id="changing-spatial-resolutions">
-<h2>Changing Spatial Resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="change-spatial-resolutions">
+<h2>Change Spatial Resolutions<a class="headerlink" href="#change-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
 <p>Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
 (with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">resolution</span> <span class="o">=</span> <span class="n">ne30_ne30</span> <span class="p">(</span><span class="ow">or</span> <span class="n">ne4_ne4</span><span class="p">,</span> <span class="n">ne11_ne11</span><span class="p">,</span> <span class="n">ne16_ne16</span><span class="p">,</span> <span class="n">ne120_ne120</span><span class="p">)</span>
@@ -125,8 +126,8 @@
 <p>before executing “create_newcase”</p>
 <p>The vertical resolution is L30 for V0 and L72 for V1.</p>
 </div>
-<div class="section" id="switching-on-cosp-simulator">
-<h2>Switching on COSP Simulator<a class="headerlink" href="#switching-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="switch-on-cosp-simulator">
+<h2>Switch on COSP Simulator<a class="headerlink" href="#switch-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">Configuration</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">append</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_build</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">CAM_CONFIG_OPTS</span> <span class="o">-</span><span class="n">val</span> <span class="s2">&quot;-cosp&quot;</span>
@@ -150,8 +151,8 @@ and runs MISR, ISCCP, MODIS, and CALIPSO lidar simulators
 cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.</p>
 </div>
-<div class="section" id="switching-on-nudging">
-<h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="switch-on-nudging">
+<h2>Switch on Nudging<a class="headerlink" href="#switch-on-nudging" title="Permalink to this headline">¶</a></h2>
 <p>The following variables need to be modified to activate nudging.
 The example shown below allows nudging for horizontal winds</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
@@ -186,12 +187,12 @@ The example shown below allows nudging for horizontal winds</p>
 created from the baseline simulation by archiving the 6-hourly meteorological fields.
 Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 </div>
-<div class="section" id="switching-on-satellite-aircraft-sampler">
-<h2>Switching on Satellite/Aircraft Sampler<a class="headerlink" href="#switching-on-satellite-aircraft-sampler" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="switch-on-satellite-aircraft-sampler">
+<h2>Switch on Satellite/Aircraft Sampler<a class="headerlink" href="#switch-on-satellite-aircraft-sampler" title="Permalink to this headline">¶</a></h2>
 <p>under construction</p>
 </div>
-<div class="section" id="switching-on-aerosol-forcing-diagnostics">
-<h2>Switching on Aerosol Forcing Diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="switch-on-aerosol-forcing-diagnostics">
+<h2>Switch on Aerosol Forcing Diagnostics<a class="headerlink" href="#switch-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
 <p>Namelist setup</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
    <span class="n">rad_diag_1</span> <span class="o">=</span> <span class="s1">&#39;A:Q:H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:O2:O2&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CO2:CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;A:O3:O3&#39;</span><span class="p">,</span> <span class="s1">&#39;N:N2O:N2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CH4:CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC11:CFC11&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC12:CFC12&#39;</span><span class="p">,</span>
@@ -202,9 +203,9 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 (with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
 <p>The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013).</p>
 </div>
-<div class="section" id="changing-external-forcings">
-<h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
-<p>The following changes need to be made before executing “create_newcase”.</p>
+<div class="section" id="change-external-forcings">
+<h2>Change External Forcings<a class="headerlink" href="#change-external-forcings" title="Permalink to this headline">¶</a></h2>
+<p>The following changes need to be made after executing “create_newcase”.</p>
 <ul>
 <li><p class="first">Changing SST, e.g.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc&#39;</span>
@@ -215,6 +216,13 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 <li><p class="first">Changing aerosol emissions, e.g.</p>
 </li>
 </ul>
+</div>
+<div class="section" id="other-options">
+<h2>Other options<a class="headerlink" href="#other-options" title="Permalink to this headline">¶</a></h2>
+<p>The complete namelist options are listed in</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">components</span><span class="o">/</span><span class="n">cam</span><span class="o">/</span><span class="n">bld</span><span class="o">/</span><span class="n">namelist_files</span><span class="o">/</span><span class="n">namelist_definition</span><span class="o">.</span><span class="n">xml</span>
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -23,8 +23,8 @@ A new case is often created for each simulation ::
                    -project $project             \
                    -pecount $std_proc_configuration
 
-Compsets
---------
+Set compsets
+------------
 
 - Atmosphere-only simulation with present-day external forcing :: 
 
@@ -35,7 +35,7 @@ Compsets
   F1850C5AV1C-04P2 
 
 
-Changing Spatial Resolutions
+Change Spatial Resolutions
 ----------------------------
 
 Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
@@ -48,7 +48,7 @@ before executing "create_newcase"
 The vertical resolution is L30 for V0 and L72 for V1.  
 
 
-Switching on COSP Simulator
+Switch on COSP Simulator
 -------------------------
 
 
@@ -72,7 +72,7 @@ cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.
 
 
-Switching on Nudging
+Switch on Nudging
 --------------------
 
 The following variables need to be modified to activate nudging. 
@@ -109,12 +109,12 @@ This setup will nudge the model towards a baseline simulation. The nudging data 
 created from the baseline simulation by archiving the 6-hourly meteorological fields. 
 Only the horizontal winds are nudged, with a relaxation time scale of 6h. 
 
-Switching on Satellite/Aircraft Sampler 
+Switch on Satellite/Aircraft Sampler 
 ---------------------------------------
 
 under construction 
 
-Switching on Aerosol Forcing Diagnostics
+Switch on Aerosol Forcing Diagnostics
 ----------------------------------------
 
 Namelist setup :: 
@@ -128,10 +128,10 @@ Then the radiative flux calculated without aerosols are diagnosed
 
 The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013). 
 
-Changing External Forcings
+Change External Forcings
 --------------------------
 
-The following changes need to be made before executing "create_newcase". 
+The following changes need to be made after executing "create_newcase". 
 
 - Changing SST, e.g. :: 
 
@@ -140,6 +140,13 @@ The following changes need to be made before executing "create_newcase".
   
 - Changing aerosol emissions, e.g. :: 
 
+
+Other options
+-------------
+
+The complete namelist options are listed in :: 
+
+   components/cam/bld/namelist_files/namelist_definition.xml
 
 
 
