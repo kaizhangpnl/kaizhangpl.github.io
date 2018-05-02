@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Running the model &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
+    <title>Compiling and running the model &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -38,8 +38,10 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Running the model</a><ul>
+<li><a class="reference internal" href="#">Compiling and running the model</a><ul>
 <li><a class="reference internal" href="#run-script">Run Script</a></li>
+<li><a class="reference internal" href="#compsets">Compsets</a></li>
+<li><a class="reference internal" href="#resolution">Resolution</a></li>
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP Simulator</a></li>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
 <li><a class="reference internal" href="#switching-on-satellite-aircraft-sampler">Switching on Satellite/Aircraft Sampler</a></li>
@@ -83,8 +85,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="running-the-model">
-<span id="run"></span><h1>Running the model<a class="headerlink" href="#running-the-model" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="compiling-and-running-the-model">
+<span id="run"></span><h1>Compiling and running the model<a class="headerlink" href="#compiling-and-running-the-model" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://e3sm.org/model/running-e3sm/e3sm-quick-start/">https://e3sm.org/model/running-e3sm/e3sm-quick-start/</a></p>
 <div class="section" id="run-script">
 <h2>Run Script<a class="headerlink" href="#run-script" title="Permalink to this headline">¶</a></h2>
@@ -92,9 +94,45 @@
 <p>An example is available here:</p>
 <p><a class="reference external" href="https://e3sm.org/wp-content/uploads/2018/04/">https://e3sm.org/wp-content/uploads/2018/04/</a><a href="#id1"><span class="problematic" id="id2">run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_</span></a>.txt</p>
 </div>
+<div class="section" id="compsets">
+<h2>Compsets<a class="headerlink" href="#compsets" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Atmosphere-only simulation with present-day external forcing</p>
+<p>FC5AV1C-04P2</p>
+</li>
+<li><p class="first">Atmosphere-only simulation with pre-industrial external forcing</p>
+<p>F1850C5AV1C-04P2</p>
+</li>
+</ul>
+</div>
+<div class="section" id="resolution">
+<h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this headline">¶</a></h2>
+<p>Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
+(with F1850C5AV1C-04P2 compset).</p>
+<p>The vertical resolution is L30 for V0 and L72 for V1.</p>
+</div>
 <div class="section" id="switching-on-cosp-simulator">
 <h2>Switching on COSP Simulator<a class="headerlink" href="#switching-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
-<p>under construction</p>
+<ul>
+<li><p class="first">Configuration:</p>
+<p>./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val “-cosp”</p>
+</li>
+<li><p class="first">Namelist change:</p>
+</li>
+</ul>
+<dl class="docutils">
+<dt>cat &lt;&lt;EOF &gt;&gt; user_nl_cam</dt>
+<dd>cosp_lite = .true.</dd>
+</dl>
+<p>EOF</p>
+<p>If cosp_lite = true, the COSP cloud simulators are run to produce
+select output for the AMWG diagnostics package.
+sets cosp_ncolumns=10 and cosp_nradsteps=3
+(appropriate for COSP statistics derived from seasonal averages),
+and runs MISR, ISCCP, MODIS, and CALIPSO lidar simulators
+(cosp_lmisr_sim=.true.,cosp_lisccp_sim=.true.,
+cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
+This default logical is set in cospsimulator_intr.F90.</p>
 </div>
 <div class="section" id="switching-on-nudging">
 <h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
@@ -106,7 +144,15 @@
 </div>
 <div class="section" id="switching-on-aerosol-forcing-diagnostics">
 <h2>Switching on Aerosol Forcing Diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
-<p>under construction</p>
+<p>Namelist setup:</p>
+<dl class="docutils">
+<dt>cat &lt;&lt;EOF &gt;&gt; user_nl_cam</dt>
+<dd>rad_diag_1 = ‘A:Q:H2O’, ‘N:O2:O2’, ‘N:CO2:CO2’, ‘A:O3:O3’, ‘N:N2O:N2O’, ‘N:CH4:CH4’, ‘N:CFC11:CFC11’, ‘N:CFC12:CFC12’,</dd>
+</dl>
+<p>EOF</p>
+<p>Then the radiative flux calculated without aerosols are diagnosed
+(with “_d1” appended to the original radiative flux name, e.g. FSNT_d1).</p>
+<p>The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013).</p>
 </div>
 <div class="section" id="changing-external-forcings">
 <h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>

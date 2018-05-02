@@ -30,7 +30,7 @@ E3SM Diagnostics
 
 https://github.com/E3SM-Project/acme_diags
 
-Examples from DECK Simulations: 
+Examples from DECK Simulations (internal): 
 
 http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/e3sm_diags/1985-2014/viewer/index.html
 
