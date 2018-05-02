@@ -12,7 +12,7 @@ AMWG Diagnostics
 
   https://www2.cesm.ucar.edu/working-groups/amwg/amwg-diagnostics-package
 
-- How to run AMWG diagnostics package
+- How to run AMWG diagnostics package (internal) 
 
   https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/41353486/How+to+run+AMWG+diagnostics+package
   
@@ -20,7 +20,7 @@ AMWG Diagnostics
   
   http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html
 
-- AMWG Multiple Diagnostics View
+- AMWG Multiple Diagnostics View (internal) 
 
   https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/29753895/AMWG+Multiple+Diagnostics+View
 

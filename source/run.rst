@@ -4,16 +4,15 @@
 Running the model
 ============
 
-http://e3sm.hyperarts.com/model/running-e3sm/
+https://e3sm.org/model/running-e3sm/e3sm-quick-start/
 
 Run Script
 -----------
 A runscript is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 
-See this page for details 
+An example is available here: 
 
-https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/45285715/The+run+acme+script
-
+https://e3sm.org/wp-content/uploads/2018/04/run_e3sm.DECKv1b_piControl.ne30_oEC.edison.csh_.txt
 
 Switching on COSP Simulator
 -------------------------

@@ -10,12 +10,7 @@ under construction
 NCO 
 ----
 
-http://e3sm.hyperarts.com/resources/tools/diagnostic-tools/nco/
-
-Processflow
------------
-
-http://e3sm.hyperarts.com/resources/tools/end-to-end-processing/e3sm-processflow/
+https://e3sm.org/resources/tools/analysis-tools/nco/
 
 
 Regridding from SE grid to lat-lon grid  
@@ -47,5 +42,5 @@ Users can specify the Number of Significant Digits (NSD) to retain, for example:
 Note that it's better to do averaging or similar computations before Bit-Grooming. If BG is 
 done first, the averaging (or other operations) process could be very slow. 
 
-See details here: 
+See details here (internal): 
 https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/107709358/Compress+and+Bit+Groom+ACME+data

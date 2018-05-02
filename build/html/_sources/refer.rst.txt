@@ -7,7 +7,7 @@ Important information can be found at:
 
 - E3SM project page at the DOE website: 
 
-  http://e3sm.hyperarts.com/
+  https://e3sm.org/
 
 - E3SM project public page: 
   
@@ -19,6 +19,6 @@ Important information can be found at:
 
 - E3SM github page:
 
-  https://github.com/ACME-Climate/ACME
+  https://github.com/E3SM-Project/E3SM
 
 

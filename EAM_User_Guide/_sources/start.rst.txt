@@ -20,7 +20,7 @@ Checkout the code::
   Check out the V1 release: 
     $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
 
-  Check out the current master: 
+  Or check out the current master: 
     $ git clone git@github.com:E3SM-Project/E3SM.git
     
     
