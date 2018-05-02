@@ -141,6 +141,36 @@ The following changes need to be made after executing "create_newcase".
 - Changing aerosol emissions, e.g. :: 
 
 
+Setup single column simulations
+-------------------------------
+
+Under construction 
+
+
+
+Frequently-used namelist options
+--------------------------------
+
+The following namelist options are frequently used for detailed diagnostics: 
+
+- Switch for diagnostic output of the aerosol tendencies :: 
+
+     history_aerosol = .true.
+
+- Switch for diagnostic output of the aerosol optics :: 
+ 
+     history_aero_optics = .true. 
+
+- Produce output for the AMWG diagnostic package :: 
+
+     history_amwg = .true. 
+  
+- Switch for water/heat budget analysis output 
+
+     history_budget = .true. 
+
+
+
 Other options
 -------------
 
