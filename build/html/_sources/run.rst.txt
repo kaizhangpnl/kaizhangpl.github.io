@@ -54,13 +54,13 @@ Switching on COSP Simulator
 
 - Configuration ::
 
-  ./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val "-cosp"
+     ./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val "-cosp"
 
 - Namelist change ::
 
-  cat <<EOF >> user_nl_cam
-    cosp_lite = .true.
-  EOF
+     cat <<EOF >> user_nl_cam
+       cosp_lite = .true.
+     EOF
 
 If cosp_lite = true, the COSP cloud simulators are run to produce 
 select output for the AMWG diagnostics package.
