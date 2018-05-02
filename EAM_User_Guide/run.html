@@ -96,13 +96,12 @@
 </div>
 <div class="section" id="create-a-new-case">
 <h2>Create a new case<a class="headerlink" href="#create-a-new-case" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>./create_newcase -case $temp_case_scripts_dir  </dt>
-<dd><blockquote class="first">
-<div>-mach $newcase_machine        -compset $compset        -res $resolution         -project $project        </div></blockquote>
-<p class="last">-pecount $std_proc_configuration</p>
-</dd>
-</dl>
+<p>A new case is often created for each simulation</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./create_newcase -case $temp_case_scripts_dir  \
+</pre></div>
+</div>
+<blockquote>
+<div>-mach $newcase_machine        -compset $compset             -res $resolution              -project $project             -pecount $std_proc_configuration</div></blockquote>
 </div>
 <div class="section" id="compsets">
 <h2>Compsets<a class="headerlink" href="#compsets" title="Permalink to this headline">¶</a></h2>
@@ -126,10 +125,12 @@
 <div class="section" id="switching-on-cosp-simulator">
 <h2>Switching on COSP Simulator<a class="headerlink" href="#switching-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">Configuration:</p>
-<p>./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val “-cosp”</p>
+<li><p class="first">Configuration</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">append</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_build</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">CAM_CONFIG_OPTS</span> <span class="o">-</span><span class="n">val</span> <span class="s2">&quot;-cosp&quot;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first">Namelist change:</p>
+<li><p class="first">Namelist change</p>
 </li>
 </ul>
 <dl class="docutils">
@@ -188,12 +189,12 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 </div>
 <div class="section" id="switching-on-aerosol-forcing-diagnostics">
 <h2>Switching on Aerosol Forcing Diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
-<p>Namelist setup:</p>
-<dl class="docutils">
-<dt>cat &lt;&lt;EOF &gt;&gt; user_nl_cam</dt>
-<dd>rad_diag_1 = ‘A:Q:H2O’, ‘N:O2:O2’, ‘N:CO2:CO2’, ‘A:O3:O3’, ‘N:N2O:N2O’, ‘N:CH4:CH4’, ‘N:CFC11:CFC11’, ‘N:CFC12:CFC12’,</dd>
-</dl>
-<p>EOF</p>
+<p>Namelist setup</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">rad_diag_1</span> <span class="o">=</span> <span class="s1">&#39;A:Q:H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:O2:O2&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CO2:CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;A:O3:O3&#39;</span><span class="p">,</span> <span class="s1">&#39;N:N2O:N2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CH4:CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC11:CFC11&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC12:CFC12&#39;</span><span class="p">,</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
 <p>Then the radiative flux calculated without aerosols are diagnosed
 (with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
 <p>The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013).</p>
@@ -201,9 +202,11 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 <div class="section" id="changing-external-forcings">
 <h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">Changing SST, e.g. :</p>
-<p>./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val ‘$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc’
-./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val ‘$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc’</p>
+<li><p class="first">Changing SST, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc&#39;</span>
+<span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc&#39;</span>
+</pre></div>
+</div>
 </li>
 </ul>
 </div>

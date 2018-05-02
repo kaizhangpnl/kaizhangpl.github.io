@@ -18,21 +18,23 @@ https://e3sm.org/wp-content/uploads/2018/04/run_e3sm.DECKv1b_piControl.ne30_oEC.
 Create a new case 
 -----------------
 
+A new case is often created for each simulation :: 
+
 ./create_newcase -case $temp_case_scripts_dir  \
-		 -mach $newcase_machine        \
-		 -compset $compset        \
-		 -res $resolution         \
-		 -project $project        \
-         -pecount $std_proc_configuration
+		         -mach $newcase_machine        \
+		         -compset $compset             \
+		         -res $resolution              \
+		         -project $project             \
+		         -pecount $std_proc_configuration
 
 Compsets
 --------
 
-- Atmosphere-only simulation with present-day external forcing 
+- Atmosphere-only simulation with present-day external forcing :: 
 
   FC5AV1C-04P2 
 
-- Atmosphere-only simulation with pre-industrial external forcing 
+- Atmosphere-only simulation with pre-industrial external forcing :: 
 
   F1850C5AV1C-04P2 
 
@@ -54,11 +56,11 @@ Switching on COSP Simulator
 -------------------------
 
 
-- Configuration: 
+- Configuration :: 
 
   ./xmlchange -append -file env_build.xml -id CAM_CONFIG_OPTS -val "-cosp"
 
-- Namelist change: 
+- Namelist change :: 
 
 cat <<EOF >> user_nl_cam
  cosp_lite = .true.
@@ -119,11 +121,11 @@ under construction
 Switching on Aerosol Forcing Diagnostics
 ----------------------------------------
 
-Namelist setup:  
+Namelist setup :: 
 
-cat <<EOF >> user_nl_cam
- rad_diag_1 = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12', 
-EOF
+  cat <<EOF >> user_nl_cam
+     rad_diag_1 = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12', 
+  EOF
 
 Then the radiative flux calculated without aerosols are diagnosed 
 (with "_d1" appended to the original radiative flux name, e.g. "FSNT_d1"). 
@@ -133,7 +135,7 @@ The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9
 Changing External Forcings
 --------------------------
 
-- Changing SST, e.g. : 
+- Changing SST, e.g. :: 
 
   ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc' 
   ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc'
