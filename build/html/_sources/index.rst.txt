@@ -45,8 +45,7 @@ Documentation Outline
 
 
 
-
-Current version: |version| by Kai Zhang 
+Maintained by Kai Zhang (kai.zhang@pnnl.gov) 
 
 Documentation last edited : |today|
 
