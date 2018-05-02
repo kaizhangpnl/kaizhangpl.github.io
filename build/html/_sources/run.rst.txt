@@ -78,34 +78,38 @@ Switching on Nudging
 --------------------
 
 The following variables need to be modified to activate nudging. 
-The example shown below allows nudging for horizontal winds:
+The example shown below allows nudging for horizontal winds :: 
 
-cat <<EOF >> user_nl_cam
-!.......................................................
-! nudging
-!.......................................................
- Nudge_Model = .True.
- Nudge_Path  = '${INPUT_NUDGING}/ne30/'
- Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-00000.nc'
- Nudge_Times_Per_Day = 4  !! nudging input data frequency 
- Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
- Nudge_Uprof = 1
- Nudge_Ucoef = 1.
- Nudge_Vprof = 1
- Nudge_Vcoef = 1.
- Nudge_Tprof = 0
- Nudge_Tcoef = 0.
- Nudge_Qprof = 0
- Nudge_Qcoef = 0.
- Nudge_PSprof = 0
- Nudge_PScoef = 0.
- Nudge_Beg_Year = 0000
- Nudge_Beg_Month = 1
- Nudge_Beg_Day = 1
- Nudge_End_Year = 9999
- Nudge_End_Month = 1
- Nudge_End_Day = 1
-EOF
+ cat <<EOF >> user_nl_cam
+  !.......................................................
+  ! nudging
+  !.......................................................
+   Nudge_Model = .True.
+   Nudge_Path  = '${INPUT_NUDGING}/ne30/'
+   Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-00000.nc'
+   Nudge_Times_Per_Day = 4  !! nudging input data frequency 
+   Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
+   Nudge_Uprof = 1
+   Nudge_Ucoef = 1.
+   Nudge_Vprof = 1
+   Nudge_Vcoef = 1.
+   Nudge_Tprof = 0
+   Nudge_Tcoef = 0.
+   Nudge_Qprof = 0
+   Nudge_Qcoef = 0.
+   Nudge_PSprof = 0
+   Nudge_PScoef = 0.
+   Nudge_Beg_Year = 0000
+   Nudge_Beg_Month = 1
+   Nudge_Beg_Day = 1
+   Nudge_End_Year = 9999
+   Nudge_End_Month = 1
+   Nudge_End_Day = 1
+  EOF
+
+This setup will nudge the model towards a baseline simulation. The nudging data were 
+created from the baseline simulation by archiving the 6-hourly meteorological fields. 
+Only the horizontal winds are nudged, with a relaxation time scale of 6h. 
 
 Switching on Satellite/Aircraft Sampler 
 ---------------------------------------
