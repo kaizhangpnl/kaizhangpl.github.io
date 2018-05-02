@@ -82,21 +82,30 @@
 <span id="start"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="quick-start-guide">
 <h2>Quick start guide:<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/">http://e3sm.hyperarts.com/model/running-e3sm/e3sm-quick-start/</a></p>
+<p><a class="reference external" href="https://e3sm.org/model/running-e3sm/e3sm-quick-start/">https://e3sm.org/model/running-e3sm/e3sm-quick-start/</a></p>
 <p>To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.
 <a class="reference external" href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/</a></p>
 <p>You might check if your ssh public key for your machine is associated with github
 <a class="reference external" href="https://github.com/settings/keys">https://github.com/settings/keys</a></p>
 <p>Checkout the code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check out a new master:
-  $ git clone git@github.com:ACME-Climate/ACME.git
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Check out the V1 release:
+  $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
+
+Check out the current master:
+  $ git clone git@github.com:E3SM-Project/E3SM.git
+
+
+  $ cd E3SM
+
+Update the sub-modules:
+  $ git submodule update –init
 
 Create a new branch:
   $ git checkout -b username/component/name
 </pre></div>
 </div>
 <p>Development guide:</p>
-<p><a class="reference external" href="http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/">http://e3sm.hyperarts.com/model/running-e3sm/developing-e3sm/</a></p>
+<p><a class="reference external" href="https://e3sm.org/model/running-e3sm/developing-e3sm/">https://e3sm.org/model/running-e3sm/developing-e3sm/</a></p>
 </div>
 <div class="section" id="flow-chart">
 <h2>Flow Chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h2>
