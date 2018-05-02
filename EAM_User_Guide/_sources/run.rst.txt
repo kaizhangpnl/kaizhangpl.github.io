@@ -11,7 +11,7 @@ Run Script
 A runscript is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 
 
-Create a new case 
+Creating a new case 
 -----------------
 
 A new case is often created for each simulation :: 
@@ -23,8 +23,8 @@ A new case is often created for each simulation ::
                    -project $project             \
                    -pecount $std_proc_configuration
 
-Set compsets
-------------
+Setting compsets
+----------------
 
 - Atmosphere-only simulation with present-day external forcing :: 
 
@@ -35,7 +35,7 @@ Set compsets
   F1850C5AV1C-04P2 
 
 
-Change Spatial Resolutions
+Changing Spatial Resolutions
 ----------------------------
 
 Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
@@ -48,7 +48,7 @@ before executing "create_newcase"
 The vertical resolution is L30 for V0 and L72 for V1.  
 
 
-Switch on COSP Simulator
+Switching on COSP Simulator
 -------------------------
 
 
@@ -72,7 +72,7 @@ cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.
 
 
-Switch on Nudging
+Switching on Nudging
 --------------------
 
 The following variables need to be modified to activate nudging. 
@@ -109,12 +109,14 @@ This setup will nudge the model towards a baseline simulation. The nudging data 
 created from the baseline simulation by archiving the 6-hourly meteorological fields. 
 Only the horizontal winds are nudged, with a relaxation time scale of 6h. 
 
-Switch on Satellite/Aircraft Sampler 
+
+Switching on Satellite/Aircraft Sampler 
 ---------------------------------------
 
 under construction 
 
-Switch on Aerosol Forcing Diagnostics
+
+Switching on Aerosol Forcing Diagnostics
 ----------------------------------------
 
 Namelist setup :: 
@@ -128,7 +130,8 @@ Then the radiative flux calculated without aerosols are diagnosed
 
 The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013). 
 
-Change External Forcings
+
+Changing External Forcings
 --------------------------
 
 The following changes need to be made after executing "create_newcase". 
@@ -141,7 +144,7 @@ The following changes need to be made after executing "create_newcase".
 - Changing aerosol emissions, e.g. :: 
 
 
-Setup single column simulations
+Single column simulations
 -------------------------------
 
 Under construction 
@@ -165,7 +168,7 @@ The following namelist options are frequently used for detailed diagnostics:
 
      history_amwg = .true. 
   
-- Switch for water/heat budget analysis output 
+- Switch for water/heat budget analysis output :: 
 
      history_budget = .true. 
 
