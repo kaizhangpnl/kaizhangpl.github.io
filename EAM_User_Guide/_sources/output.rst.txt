@@ -34,7 +34,7 @@ under construction
 
 
 NetCDF header from DECK simulations 
-===================================
+----------------------------
 
 .. literalinclude:: info_h0
 

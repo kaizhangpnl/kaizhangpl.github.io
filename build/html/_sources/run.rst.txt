@@ -171,19 +171,27 @@ The following namelist options are frequently used for detailed diagnostics:
 - Switch for water/heat budget analysis output :: 
 
      history_budget = .true. 
+  
+- Switch for the AMWG variability diagnostics output :: 
+
+     history_vdiag = .true. 
+  
+- Switch for verbose (mostly aerosol-related) history output :: 
+
+     history_verbose = .true. 
+
 
 
 
 Other options
 -------------
 
-The complete namelist options are listed in :: 
+The complete namelist options are listed in: 
 
-   components/cam/bld/namelist_files/namelist_definition.xml
+  `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`
 
-Link: 
 
-https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml
+
 
 
 
