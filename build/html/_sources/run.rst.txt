@@ -63,12 +63,12 @@ Available compsets for EAM can be found in:
 .. The vertical resolution is L30 for V0 and L72 for V1.  
 .. 
  
- Debugging mode 
- --------------
- 
- Before compiling the code ::
- 
- ./xmlchange -file env_build.xml -id DEBUG -val "TRUE"
+Debugging mode 
+--------------
+
+Before compiling the code ::
+
+./xmlchange -file env_build.xml -id DEBUG -val "TRUE"
  
 .. 
 .. Sanity-check for state variables
@@ -186,47 +186,47 @@ Available compsets for EAM can be found in:
 .. Under construction 
 .. 
 .. 
-.. 
- Frequently-used namelist options
- --------------------------------
+
+Frequently-used namelist options
+--------------------------------
+
+The following namelist options are frequently used for detailed diagnostics: 
+
+- Switch for diagnostic output of the aerosol tendencies :: 
+
+     history_aerosol = .true.
+
+- Switch for diagnostic output of the aerosol optics :: 
  
- The following namelist options are frequently used for detailed diagnostics: 
- 
- - Switch for diagnostic output of the aerosol tendencies :: 
- 
-      history_aerosol = .true.
- 
- - Switch for diagnostic output of the aerosol optics :: 
+     history_aero_optics = .true. 
+
+- Produce output for the AMWG diagnostic package :: 
+
+     history_amwg = .true. 
   
-      history_aero_optics = .true. 
- 
- - Produce output for the AMWG diagnostic package :: 
- 
-      history_amwg = .true. 
-   
- - Switch for water/heat budget analysis output :: 
- 
-      history_budget = .true. 
-   
- - Switch for the AMWG variability diagnostics output :: 
- 
-      history_vdiag = .true. 
-   
- - Switch for verbose (mostly aerosol-related) history output :: 
- 
-      history_verbose = .true. 
- 
- 
- 
- 
- Other options
- -------------
- 
- The complete namelist options are listed in: 
- 
-    `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
- 
- 
+- Switch for water/heat budget analysis output :: 
+
+     history_budget = .true. 
+  
+- Switch for the AMWG variability diagnostics output :: 
+
+     history_vdiag = .true. 
+  
+- Switch for verbose (mostly aerosol-related) history output :: 
+
+     history_verbose = .true. 
+
+
+
+
+Other options
+-------------
+
+The complete namelist options are listed in: 
+
+   `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
+
+
 
 
 

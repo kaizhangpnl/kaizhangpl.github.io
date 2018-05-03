@@ -42,6 +42,9 @@
 <li><a class="reference internal" href="#run-script">Run Script</a></li>
 <li><a class="reference internal" href="#creating-a-new-case">Creating a new case</a></li>
 <li><a class="reference internal" href="#setting-compsets">Setting compsets</a></li>
+<li><a class="reference internal" href="#debugging-mode">Debugging mode</a></li>
+<li><a class="reference internal" href="#frequently-used-namelist-options">Frequently-used namelist options</a></li>
+<li><a class="reference internal" href="#other-options">Other options</a></li>
 </ul>
 </li>
 </ul>
@@ -116,12 +119,55 @@ is available in the E3SM model source code directory (parallel to “cime” and
 <p>F1850C5AV1C-04P2</p>
 </li>
 </ul>
-<blockquote>
-<div><p>Before compiling the code</p>
+</div>
+<div class="section" id="debugging-mode">
+<h2>Debugging mode<a class="headerlink" href="#debugging-mode" title="Permalink to this headline">¶</a></h2>
+<p>Before compiling the code</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_build</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">DEBUG</span> <span class="o">-</span><span class="n">val</span> <span class="s2">&quot;TRUE&quot;</span>
 </pre></div>
 </div>
-</div></blockquote>
+</div>
+<div class="section" id="frequently-used-namelist-options">
+<h2>Frequently-used namelist options<a class="headerlink" href="#frequently-used-namelist-options" title="Permalink to this headline">¶</a></h2>
+<p>The following namelist options are frequently used for detailed diagnostics:</p>
+<ul>
+<li><p class="first">Switch for diagnostic output of the aerosol tendencies</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_aerosol</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Switch for diagnostic output of the aerosol optics</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_aero_optics</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Produce output for the AMWG diagnostic package</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_amwg</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Switch for water/heat budget analysis output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_budget</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Switch for the AMWG variability diagnostics output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_vdiag</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Switch for verbose (mostly aerosol-related) history output</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">history_verbose</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="other-options">
+<h2>Other options<a class="headerlink" href="#other-options" title="Permalink to this headline">¶</a></h2>
+<p>The complete namelist options are listed in:</p>
+<blockquote>
+<div><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml">components/cam/bld/namelist_files/namelist_definition.xml</a></div></blockquote>
 </div>
 </div>
 
