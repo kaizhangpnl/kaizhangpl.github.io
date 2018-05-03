@@ -26,6 +26,16 @@ A new case is often created for each simulation ::
 Setting compsets
 ----------------
 
+Available compsets for E3SM can be found in: 
+
+   `cime/config/e3sm/allactive/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml>`_
+
+Available compsets for EAM can be found in: 
+
+   `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_
+
+
+
 - Atmosphere-only simulation with present-day external forcing :: 
 
   FC5AV1C-04P2 
@@ -188,7 +198,7 @@ Other options
 
 The complete namelist options are listed in: 
 
-  `namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml/>`
+   `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
 
 
 
