@@ -4,11 +4,15 @@
 Compiling and running the model
 ===============================
 
-https://e3sm.org/model/running-e3sm/e3sm-quick-start/
+First of all, please read 
+
+`E3SM Quick Start <https://e3sm.org/model/running-e3sm/e3sm-quick-start/>`_ 
+
 
 Run Script
 -----------
-A runscript is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
+A `runscript <https://github.com/E3SM-Project/E3SM/blob/master/run_e3sm.template.csh>`_ 
+is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 
 
 Creating a new case 
@@ -35,12 +39,13 @@ Available compsets for EAM can be found in:
    `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_
 
 
+- Examples: 
 
-- Atmosphere-only simulation with present-day external forcing :: 
+  Atmosphere-only simulation with present-day external forcing :: 
 
   FC5AV1C-04P2 
 
-- Atmosphere-only simulation with pre-industrial external forcing :: 
+  Atmosphere-only simulation with pre-industrial external forcing :: 
 
   F1850C5AV1C-04P2 
 
