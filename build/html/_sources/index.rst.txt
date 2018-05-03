@@ -28,11 +28,11 @@ Documentation Outline
     refer
     start
     run
-    bug
     output
     post
     diag
     advanced
+    bug
     other
 
 
