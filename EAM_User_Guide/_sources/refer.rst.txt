@@ -3,22 +3,14 @@
 Important References
 ============
 
-Important information can be found at:
+Useful information can be found at the following locations:
 
-- E3SM project page at the DOE website: 
+- E3SM `project website <https://e3sm.org/>`_
 
-  https://e3sm.org/
+- E3SM project information at the `DOE website <https://climatemodeling.science.energy.gov/projects/energy-exascale-earth-system-model>`_
 
-- E3SM project public page: 
-  
-  https://climatemodeling.science.energy.gov/projects/energy-exascale-earth-system-model
+- E3SM internal `confluence page <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_
 
-- E3SM internal confluence page:
-
-  https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global
-
-- E3SM github page:
-
-  https://github.com/E3SM-Project/E3SM
+- E3SM `github <https://github.com/E3SM-Project/E3SM>`_
 
 

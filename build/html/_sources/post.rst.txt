@@ -18,9 +18,7 @@ Example: ::
 
    $ ncremap -i input.nc -m map_ne30np4_to_fv129x256_aave.20150901.nc -o output.nc 
 
-See details 
-
-     `here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap>`_ (internal) 
+See details `here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap>`_ (internal) 
    
 
 Bit-Grooming 
