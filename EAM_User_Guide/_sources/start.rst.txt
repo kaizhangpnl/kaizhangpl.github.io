@@ -7,13 +7,15 @@ Getting Started
 Quick start guide: 
 ------------------
 
-https://e3sm.org/model/running-e3sm/e3sm-quick-start/
+First of all, please read: 
 
-To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first.  
-https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+`E3SM Quick Start Guide <https://e3sm.org/model/running-e3sm/e3sm-quick-start/>`_
 
-You might check if your ssh public key for your machine is associated with github
-https://github.com/settings/keys
+To checkout code from github, you need to add your public SSH key (on the machine your use) to your GitHub account first. 
+See details `here <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>`_
+
+You might check if your ssh public key for your machine is associated with github. 
+See details `here <https://github.com/settings/keys>`_
 
 Checkout the code::
 
@@ -37,7 +39,7 @@ Checkout the code::
 
 Development guide: 
 
-https://e3sm.org/model/running-e3sm/developing-e3sm/
+See details `here <https://e3sm.org/model/running-e3sm/developing-e3sm/>`_
 
 Flow Chart
 -----------------
