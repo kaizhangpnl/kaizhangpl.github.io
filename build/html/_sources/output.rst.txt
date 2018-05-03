@@ -22,7 +22,6 @@ The list below can be changed by modifying the csv table and recompile the doc
    :header: "Index", "Name", "Unit", "Dimension", "Longname & Notes"
    :file: output_h0.csv
 
-
 Variables on the master list 
 ---------------------------- 
 
@@ -34,5 +33,9 @@ Variables lists for Special Diagnostics
 under construction 
 
 
+NetCDF header from DECK simulations 
+===================================
+
+.. literalinclude:: info_h0
 
 
