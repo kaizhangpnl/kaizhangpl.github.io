@@ -5,9 +5,6 @@ Advanced modifications to E3SM
 ============
 
 
-.. code-block:: text
-
-
    - config_batch.xml    
    
      `cime/config/e3sm/machines/config_batch.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_batch.xml>`_
