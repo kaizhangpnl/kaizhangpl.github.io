@@ -4,14 +4,8 @@
 Other stuff
 ============
 
-More information can be found at the E3SM confluence page: 
+More information can be found at:
 
-https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global
+- E3SM `confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
 
-and E3SM github pape: 
-
-https://e3sm.org/
-
-
-
-
+- E3SM `github <https://github.com/E3SM-Project/E3SM>`_

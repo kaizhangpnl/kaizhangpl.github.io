@@ -8,9 +8,7 @@ Diagnostics
 AMWG Diagnostics 
 ----------------
 
-- NCAR resources
-
-  https://www2.cesm.ucar.edu/working-groups/amwg/amwg-diagnostics-package
+See details `here <https://www2.cesm.ucar.edu/working-groups/amwg/amwg-diagnostics-package>`_ 
 
 .. - How to run AMWG diagnostics package (internal) 
 ..
@@ -28,7 +26,7 @@ AMWG Diagnostics
 E3SM Diagnostics
 ----------------
 
-https://github.com/E3SM-Project/acme_diags
+See details `here <https://github.com/E3SM-Project/acme_diags>`_ 
 
 .. Examples from DECK Simulations (internal): 
 .. 
@@ -38,4 +36,5 @@ https://github.com/E3SM-Project/acme_diags
 ARM Diagnostics 
 ----------------
 
-https://github.com/ARM-DOE/arm-gcm-diagnostics
+See details `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
+
