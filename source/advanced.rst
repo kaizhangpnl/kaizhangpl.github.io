@@ -16,6 +16,7 @@ Advanced modifications to E3SM
    
    - config_compsets.xml 
      -> cime/config/e3sm/allactive/config_compsets.xml
+     -> components/cam/cime_config/config_compsets.xml
    
    - config_machines.xml 
      -> cime/config/e3sm/machines/config_machines.xml
