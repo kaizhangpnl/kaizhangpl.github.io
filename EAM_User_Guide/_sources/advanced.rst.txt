@@ -1,7 +1,7 @@
 .. _advanced:
 
 
-Advanced modifications to EAM/E3SM 
+Advanced configurations of EAM/E3SM 
 ==================================
 
 Creating a new compset

@@ -63,6 +63,27 @@ before executing "create_newcase"
 The vertical resolution is L30 for V0 and L72 for V1.  
 
 
+Debugging mode 
+--------------
+
+Before compiling the code ::
+
+./xmlchange -file env_build.xml -id DEBUG -val "TRUE"
+
+
+Sanity-check for state variables
+--------------------------------
+
+- Namelist change ::
+
+     cat <<EOF >> user_nl_cam
+       state_debug_checks = .true.
+     EOF
+
+The model will check if the state variables are within a plausible range 
+(e.g. temperature above zero) when physics_upstate is called. 
+
+
 Switching on COSP Simulator
 -------------------------
 
