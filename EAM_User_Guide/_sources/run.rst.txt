@@ -183,8 +183,10 @@ The following changes need to be made after executing "create_newcase".
 Single column simulations
 -------------------------------
 
-Under construction 
+Some instructions on how to configure and run a single column model can be found 
+`here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/128294958/Running+the+ACME+Single+Column+Model>`_. 
 
+A runscript template can be found `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/128294958/Running+the+ACME+Single+Column+Model>`_. 
 
 
 Frequently-used namelist options
