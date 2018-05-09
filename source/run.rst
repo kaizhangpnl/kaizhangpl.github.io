@@ -186,7 +186,7 @@ Single column simulations
 Some instructions on how to configure and run a single column model can be found 
 `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/128294958/Running+the+ACME+Single+Column+Model>`_. 
 
-A runscript template can be found `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/128294958/Running+the+ACME+Single+Column+Model>`_. 
+A runscript template can be found `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/scm_runscript.rst>`_. 
 
 
 Frequently-used namelist options
