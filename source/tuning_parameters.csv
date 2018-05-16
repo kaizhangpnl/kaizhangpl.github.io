@@ -9,3 +9,9 @@
 9,micro_mg_dcs ,Autoconversion size threshold for cloud ice to snow ,6.00E-04,Temperature dependent 
 10,ice_sed_ai ,Fall speed parameter for cloud ice ,700,500
 11,so4_sz_thresh_icenuc ,Aitken mode sulfate aerosol size threshold for homogeneous ice nucleation ,1.00E-07,7.50E-08
+12,c1 ,Constant associated with the dissipation of w variance ,N/A,1.335
+13,c2rt ,Constant associated with the dissipation of total water mixing ratio ,N/A,1.75
+14,c8 ,Constant associated with the damping of w skewness  used in  CLUBB ,N/A,4.3
+15,c14 ,Constant in Newtonian damping of u variance and v variance used in CLUBB,N/A,1.3
+16,ck10 ,Momentum diffusion factor ,N/A,0.3
+,, ,,
