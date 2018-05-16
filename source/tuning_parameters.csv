@@ -1,0 +1,11 @@
+1,dmpdz ,Convective entrainment rate ,-1.00E-03,-7.00E-04
+2,c0_ocn ,Autoconversion parameter for deep convective clouds over ocean ,0.0035,0.007
+3,c0_lnd ,Autoconversion parameter for deep convective clouds over land ,0.009,0.007
+4,ke,Convective rain evaporation ,1.00E-06,1.50E-06
+5,tiedke_add ,Perturbation added to the parcel buoyancy in ZM scheme ,0.5,0.8
+6,dp1 ,Convective cloud fraction coefficient ,0.025,0.045
+7,rhmaxi ,Threshold RH with respect to ice for ice cloud fraction to equal to 1.0 ,1.1,1.05
+8,re_ice_deep ,Convective ice cloud effective radius ,2.50E-05,1.60E-05
+9,micro_mg_dcs ,Autoconversion size threshold for cloud ice to snow ,6.00E-04,Temperature dependent 
+10,ice_sed_ai ,Fall speed parameter for cloud ice ,700,500
+11,so4_sz_thresh_icenuc ,Aitken mode sulfate aerosol size threshold for homogeneous ice nucleation ,1.00E-07,7.50E-08

@@ -28,6 +28,19 @@ Create new emission files
 Under construction 
 
 
+List of tuning parameters 
+-------------------------
+
+.. csv-table:: 
+   :widths: 5 15 30 10 10
+   :header: "Index", "Namelist Variables", "Description", "EAM V0", "EAM V1"
+   :file: tuning_parameters.csv
+
+
+
+Under construction 
+
+
 Configurations files
 --------------------
 
