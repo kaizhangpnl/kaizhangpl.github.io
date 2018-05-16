@@ -2,6 +2,7 @@
 
 
 `Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/bug.rst>`_ 
+
 `Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/bug.html>`_ 
 
 Reporting a bug

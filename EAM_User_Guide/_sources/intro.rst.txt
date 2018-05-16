@@ -3,6 +3,7 @@
 
 
 `Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/diag.rst>`_ 
+
 `Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_  
 
 Introduction
