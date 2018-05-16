@@ -57,6 +57,6 @@ Flow Chart
    The colored boxes indicate parts of EAM that affect the concentrations of water 
    species; these include the numerical fixers, deep and shallow convection, 
    turbulent transport, and stratiform cloud macro- and microphysics. 
-   See Zhang et al. (2018) for more details. 
+   See `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_ for more details. 
    
    
