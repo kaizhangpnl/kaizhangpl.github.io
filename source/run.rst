@@ -45,6 +45,11 @@ Available compsets for EAM can be found in:
 
   FC5AV1C-04P2 
 
+  The present-day external forcing (so-called “year 2000”, mean of 1995-2005) will be used. 
+  The anthropogenic aerosol emissions and greenhouse gas concentration are constant. 
+  The atmosphere model is coupled with the ELM land model (similar to CLM4.5), and 
+  driven by prescribed climatological SST / sea ice cover. 
+  
   Atmosphere-only simulation with pre-industrial external forcing :: 
 
   F1850C5AV1C-04P2 
