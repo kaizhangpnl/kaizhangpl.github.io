@@ -45,7 +45,7 @@ Documentation Outline
 
 
 
-Maintained by Kai Zhang (kai.zhang@pnnl.gov) 
+Maintained by Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) 
 
 Documentation last edited : |today|
 
