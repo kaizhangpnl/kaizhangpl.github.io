@@ -111,6 +111,9 @@ This default logical is set in cospsimulator_intr.F90.
 Switching on Nudging
 --------------------
 
+An introduction of nudging can be found in 
+`Zhang et al. (2014) <https://www.atmos-chem-phys.net/14/8631/2014/>`_ and references therein. 
+
 The following variables need to be modified to activate nudging. 
 The example shown below allows nudging for horizontal winds :: 
 
@@ -164,7 +167,7 @@ Namelist setup ::
 Then the radiative flux calculated without aerosols are diagnosed 
 (with "_d1" appended to the original radiative flux name, e.g. "FSNT_d1"). 
 
-The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013). 
+The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-chem-phys.net/13/9971/2013/>`_. 
 
 
 Changing External Forcings

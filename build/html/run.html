@@ -183,6 +183,8 @@ This default logical is set in cospsimulator_intr.F90.</p>
 </div>
 <div class="section" id="switching-on-nudging">
 <h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
+<p>An introduction of nudging can be found in
+<a class="reference external" href="https://www.atmos-chem-phys.net/14/8631/2014/">Zhang et al. (2014)</a> and references therein.</p>
 <p>The following variables need to be modified to activate nudging.
 The example shown below allows nudging for horizontal winds</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
@@ -227,7 +229,7 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
 </div>
 <p>Then the radiative flux calculated without aerosols are diagnosed
 (with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
-<p>The detailed diagnostic method can be found in Ghan (2013, doi: 10.5194/acp-13-9971-2013).</p>
+<p>The detailed diagnostic method can be found in <a class="reference external" href="https://www.atmos-chem-phys.net/13/9971/2013/">Ghan (2013)</a>.</p>
 </div>
 <div class="section" id="changing-external-forcings">
 <h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
