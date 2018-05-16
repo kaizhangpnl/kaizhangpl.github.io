@@ -44,6 +44,7 @@
 <li><a class="reference internal" href="#setting-compsets">Setting compsets</a></li>
 <li><a class="reference internal" href="#changing-spatial-resolutions">Changing Spatial Resolutions</a></li>
 <li><a class="reference internal" href="#debugging-mode">Debugging mode</a></li>
+<li><a class="reference internal" href="#sanity-check-for-state-variables">Sanity-check for state variables</a></li>
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP Simulator</a></li>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on Aerosol Forcing Diagnostics</a></li>
@@ -142,8 +143,10 @@ is available in the E3SM model source code directory (parallel to “cime” and
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_build</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">DEBUG</span> <span class="o">-</span><span class="n">val</span> <span class="s2">&quot;TRUE&quot;</span>
 </pre></div>
 </div>
-<blockquote>
-<div><ul>
+</div>
+<div class="section" id="sanity-check-for-state-variables">
+<h2>Sanity-check for state variables<a class="headerlink" href="#sanity-check-for-state-variables" title="Permalink to this headline">¶</a></h2>
+<ul>
 <li><p class="first">Namelist change</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
   <span class="n">state_debug_checks</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
@@ -154,7 +157,6 @@ is available in the E3SM model source code directory (parallel to “cime” and
 </ul>
 <p>The model will check if the state variables are within a plausible range
 (e.g. temperature above zero) when physics_upstate is called.</p>
-</div></blockquote>
 </div>
 <div class="section" id="switching-on-cosp-simulator">
 <h2>Switching on COSP Simulator<a class="headerlink" href="#switching-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
