@@ -41,9 +41,6 @@ The csv file is available `here <https://github.com/kaizhangpnl/kaizhangpnl.gith
    :file: tuning_parameters.csv
 
 
-Under construction 
-
-
 Configurations files
 --------------------
 
