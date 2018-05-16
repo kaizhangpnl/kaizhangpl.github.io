@@ -1,6 +1,9 @@
 .. _start:
 
 
+The github version of this document is available 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/start.rst>`_ 
+
 Getting Started
 ===============
 

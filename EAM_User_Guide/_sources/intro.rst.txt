@@ -1,5 +1,9 @@
 .. _intro:
 
+
+The github version of this document is available 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/intro.rst>`_ 
+
 Introduction
 ============
 
