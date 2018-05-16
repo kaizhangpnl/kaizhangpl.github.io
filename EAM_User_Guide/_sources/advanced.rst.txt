@@ -1,6 +1,9 @@
 .. _advanced:
 
 
+The github version of this document is available 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst>`_ 
+
 Advanced configurations of EAM/E3SM 
 ==================================
 
