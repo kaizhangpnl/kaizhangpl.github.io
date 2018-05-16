@@ -16,14 +16,14 @@ Adding a new parameterization
 Under construction 
 
 
-Create new initial condition files
-----------------------------------
+Creating new initial condition files
+-------------------------------------
 
 Under construction 
 
 
-Create new emission files
--------------------------
+Creating new emission files
+-----------------------------
 
 Under construction 
 
