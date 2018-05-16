@@ -82,7 +82,8 @@ Sanity-check for state variables
 
 The model will check if the state variables are within a plausible range 
 (e.g. temperature above zero) when physics_upstate is called. 
- 
+Note that this sanity-check will be switched on automatically when the model is 
+running in debugging mode. 
  
 Switching on COSP Simulator
 -------------------------

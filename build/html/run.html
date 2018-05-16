@@ -156,7 +156,9 @@ is available in the E3SM model source code directory (parallel to “cime” and
 </li>
 </ul>
 <p>The model will check if the state variables are within a plausible range
-(e.g. temperature above zero) when physics_upstate is called.</p>
+(e.g. temperature above zero) when physics_upstate is called.
+Note that this sanity-check will be switched on automatically when the model is
+running in debugging mode.</p>
 </div>
 <div class="section" id="switching-on-cosp-simulator">
 <h2>Switching on COSP Simulator<a class="headerlink" href="#switching-on-cosp-simulator" title="Permalink to this headline">¶</a></h2>
