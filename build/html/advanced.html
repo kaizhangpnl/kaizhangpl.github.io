@@ -111,39 +111,39 @@
 <col width="15%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">Namelist Variables</th>
+<tr class="row-odd"><th class="head">Parameter</th>
 <th class="head">Description</th>
 <th class="head">EAM V0</th>
 <th class="head">EAM V1</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>dmpdz</td>
+<tr class="row-even"><td>zmconv_dmpdz</td>
 <td>Convective entrainment rate</td>
 <td>-1.00E-03</td>
 <td>-7.00E-04</td>
 </tr>
-<tr class="row-odd"><td>c0_ocn</td>
+<tr class="row-odd"><td>zmconv_c0_ocn</td>
 <td>Autoconversion parameter for deep convective clouds over ocean</td>
 <td>0.0035</td>
 <td>0.007</td>
 </tr>
-<tr class="row-even"><td>c0_lnd</td>
+<tr class="row-even"><td>zmconv_c0_lnd</td>
 <td>Autoconversion parameter for deep convective clouds over land</td>
 <td>0.009</td>
 <td>0.007</td>
 </tr>
-<tr class="row-odd"><td>ke</td>
+<tr class="row-odd"><td>zmconv_ke</td>
 <td>Convective rain evaporation</td>
 <td>1.00E-06</td>
 <td>1.50E-06</td>
 </tr>
-<tr class="row-even"><td>tiedke_add</td>
+<tr class="row-even"><td>zmconv_tiedke_add</td>
 <td>Perturbation added to the parcel buoyancy in ZM scheme</td>
 <td>0.5</td>
 <td>0.8</td>
 </tr>
-<tr class="row-odd"><td>dp1</td>
+<tr class="row-odd"><td>cldfrc_dp1</td>
 <td>Convective cloud fraction coefficient</td>
 <td>0.025</td>
 <td>0.045</td>
@@ -178,30 +178,40 @@
 <td>N/A</td>
 <td>1.335</td>
 </tr>
-<tr class="row-even"><td>c2rt</td>
+<tr class="row-even"><td>clubb_C2rt</td>
 <td>Constant associated with the dissipation of total water mixing ratio</td>
 <td>N/A</td>
 <td>1.75</td>
 </tr>
-<tr class="row-odd"><td>c8</td>
+<tr class="row-odd"><td>clubb_C8</td>
 <td>Constant associated with the damping of w skewness  used in  CLUBB</td>
 <td>N/A</td>
 <td>4.3</td>
 </tr>
-<tr class="row-even"><td>c14</td>
+<tr class="row-even"><td>clubb_C14</td>
 <td>Constant in Newtonian damping of u variance and v variance used in CLUBB</td>
 <td>N/A</td>
 <td>1.3</td>
 </tr>
-<tr class="row-odd"><td>ck10</td>
+<tr class="row-odd"><td>clubb_c_K10</td>
 <td>Momentum diffusion factor</td>
 <td>N/A</td>
 <td>0.3</td>
 </tr>
-<tr class="row-even"><td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td>clubb_gamma_coef</td>
+<td>Constant of the width of PDF in w-coordinate</td>
+<td>N/A</td>
+<td>0.32</td>
+</tr>
+<tr class="row-odd"><td>dust_emis_fact</td>
+<td>Tuning parameter for dust emissions.</td>
+<td>0.55</td>
+<td>2.05</td>
+</tr>
+<tr class="row-even"><td>n_so4_monolayers_pcage</td>
+<td>Number of so4(+nh4) monolayers needed to “age” a carbon particle</td>
+<td>3</td>
+<td>8</td>
 </tr>
 </tbody>
 </table>

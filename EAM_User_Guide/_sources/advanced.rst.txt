@@ -32,12 +32,12 @@ List of tuning parameters
 -------------------------
 
 Below is a list of parameters that are often tuned in EAM. 
-
+ 
+ 
 .. csv-table:: 
    :widths: 15 30 10 10
-   :header: "Namelist Variables", "Description", "EAM V0", "EAM V1"
+   :header: "Parameter", "Description", "EAM V0", "EAM V1"
    :file: tuning_parameters.csv
-
 
 
 Under construction 
