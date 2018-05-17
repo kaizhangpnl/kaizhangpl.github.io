@@ -75,7 +75,12 @@ The most frequently used compsets are listed below:
 
   High-resolution (ne120L72) V1 atmosphere-only simulation with  pre-industrial external forcing. 
 
+- **F20TRC5-CMIP6** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/20TR_cam5_CMIP6.xml>`_ 
 
+  V1 atmosphere-only simulation with time-varying 20th-century external forcing from CMIP6. 
+  
+  
+  
 Changing Spatial Resolutions
 ----------------------------
 
