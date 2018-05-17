@@ -42,22 +42,30 @@ Available compsets for EAM can be found in:
 
    `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_
 
+The most frequently used compsets are listed below: 
 
-- Examples: 
-
-  Atmosphere-only simulation with present-day external forcing :: 
-
-  FC5AV1C-04P2 
+- **FC5AV1C-04P2**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml>`_ 
+ 
+  V1 Atmosphere-only simulation with present-day external forcing. 
 
   The present-day external forcing (so-called “year 2000”, mean of 1995-2005) will be used. 
   The anthropogenic aerosol emissions and greenhouse gas concentration are constant. 
   The atmosphere model is coupled with the ELM land model (similar to CLM4.5), and 
   driven by prescribed climatological SST / sea ice cover. 
   
-  Atmosphere-only simulation with pre-industrial external forcing :: 
+- **F1850C5AV1C-04P2**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
 
-  F1850C5AV1C-04P2 
+  Atmosphere-only simulation with pre-industrial external forcing. 
+  
+- **FC5**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml>`_ 
 
+  V0-like Atmosphere-only simulation with present-day external forcing.  
+  Note that some tuning parameters need to be changed for version 0.3. 
+
+- **F1850C5**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml>`_ 
+
+  V0-like Atmosphere-only simulation with pre-industrial external forcing. 
+  Note that some tuning parameters need to be changed for version 0.3.  
 
 Changing Spatial Resolutions
 ----------------------------
