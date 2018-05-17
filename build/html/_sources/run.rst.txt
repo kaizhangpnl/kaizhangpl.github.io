@@ -46,7 +46,7 @@ The most frequently used compsets are listed below:
 
 - **FC5AV1C-04P2**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml>`_ 
  
-  V1 Atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L72 resolution. 
+  V1 atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L72 resolution. 
 
   The present-day external forcing (so-called “year 2000”, mean of 1995-2005) will be used. 
   The anthropogenic aerosol emissions and greenhouse gas concentration are constant. 
@@ -55,25 +55,25 @@ The most frequently used compsets are listed below:
   
 - **F1850C5AV1C-04P2**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
 
-  Atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L72 resolution. 
+  V1 atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L72 resolution. 
   
 - **FC5**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml>`_ 
 
-  V0-like Atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution. 
+  V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution. 
   Note that some tuning parameters need to be changed for version 0.3. 
 
 - **F1850C5**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml>`_ 
 
-  V0-like Atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution. 
+  V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution. 
   Note that some tuning parameters need to be changed for version 0.3.  
 
 - **FC5AV1C-H01C** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
 
-  High-resolution (ne120L72) V1 Atmosphere-only simulation with present-day external forcing. 
+  High-resolution (ne120L72) V1 atmosphere-only simulation with present-day external forcing. 
 
 - **F1850C5AV1C-H01C** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
 
-  High-resolution (ne120L72) V1 Atmosphere-only simulation with  pre-industrial external forcing. 
+  High-resolution (ne120L72) V1 atmosphere-only simulation with  pre-industrial external forcing. 
 
 
 Changing Spatial Resolutions
