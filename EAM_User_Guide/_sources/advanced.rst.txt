@@ -84,3 +84,9 @@ Configuration files
 To find out more, search those items in http://esmci.github.io/cime/index.html 
 
 
+Reference 
+----------
+
+Documentation from `CAM5.3 <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
+
+

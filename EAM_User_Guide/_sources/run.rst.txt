@@ -5,6 +5,7 @@
 
 `Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/run.html>`_ 
 
+
 Compiling and running the model
 ===============================
 
@@ -267,7 +268,10 @@ The complete namelist options are listed in:
    `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
 
 
+Reference 
+----------
 
+Documentation from `CAM5.3 <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
 
 
 

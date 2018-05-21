@@ -44,3 +44,8 @@ NetCDF header from DECK simulations
 .. literalinclude:: info_h0
 
 
+Reference 
+----------
+
+Documentation from `CAM5.3 <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
+
