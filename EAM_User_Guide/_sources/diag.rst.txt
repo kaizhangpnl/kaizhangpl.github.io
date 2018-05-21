@@ -13,19 +13,19 @@ Diagnostics Packages
 AMWG Diagnostics 
 ----------------
 
-See details `here <https://www2.cesm.ucar.edu/working-groups/amwg/amwg-diagnostics-package>`_ 
+See details `here <http://www.cesm.ucar.edu/working_groups/Atmosphere/amwg-diagnostics-package/>`_ 
 
-.. - How to run AMWG diagnostics package (internal) 
-..
-..  https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/41353486/How+to+run+AMWG+diagnostics+package
-..  
-..  Examples: 
-..  
-..  http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html
-..
-.. - AMWG Multiple Diagnostics View (internal) 
-..
-..  https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/29753895/AMWG+Multiple+Diagnostics+View
+- How to run AMWG diagnostics package (internal) 
+
+ https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/41353486/How+to+run+AMWG+diagnostics+package
+ 
+ Examples: 
+ 
+ http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html
+
+- AMWG Multiple Diagnostics View (internal) 
+
+ https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/29753895/AMWG+Multiple+Diagnostics+View
 
 
 E3SM Diagnostics
