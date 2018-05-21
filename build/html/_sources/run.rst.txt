@@ -230,10 +230,14 @@ IOP forcing data to drive the SCM can be found
 `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library>`_. 
 
 
-Regionally-refinement Model (RRM) simulations 
+Regionally-Refinement Model (RRM) simulations 
 --------------------------------------------- 
- 
-under construction 
+
+Right now, resources are available internally: 
+
+- `How to run RRM <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/11010268/How+to+run+the+regionally+refined+model+RRM>`_.
+- `Regridding RRM simulations <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/27951986/Regridding+RRM+simulations>`_.
+- `How to perform nudged simulations with RRM <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM>`_.
 
 
 Frequently-used namelist options
