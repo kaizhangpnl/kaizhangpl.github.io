@@ -194,9 +194,10 @@ running in debugging mode.</p>
 </div>
 </li>
 <li><p class="first">Namelist change</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
-  <span class="n">cosp_lite</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
-<span class="n">EOF</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
+  docosp = .true. !!! needed for some versions of E3SM
+  cosp_lite = .true.
+EOF
 </pre></div>
 </div>
 </li>

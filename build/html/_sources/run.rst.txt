@@ -128,6 +128,7 @@ Switching on COSP Simulator
 - Namelist change ::
 
      cat <<EOF >> user_nl_cam
+       docosp = .true. !!! needed for some versions of E3SM 
        cosp_lite = .true.
      EOF
 

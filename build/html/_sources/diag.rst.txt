@@ -6,8 +6,8 @@
 
 `Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_ 
 
-Diagnostics 
-===================
+Diagnostics Packages
+====================
 
 
 AMWG Diagnostics 
