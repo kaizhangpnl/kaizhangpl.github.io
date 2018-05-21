@@ -9,7 +9,7 @@
 Getting Started
 ===============
 
-Quick start guide: 
+Quick start guide
 ------------------
 
 First of all, please read: 
