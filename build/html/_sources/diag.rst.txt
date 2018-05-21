@@ -17,7 +17,7 @@ See details `here <http://www.cesm.ucar.edu/working_groups/Atmosphere/amwg-diagn
 
 - `How to run AMWG diagnostics package (internal) <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/41353486/How+to+run+AMWG+diagnostics+package>`_ 
  
-   See examples here (internal): `here <http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html>`_ 
+  See examples here (internal): `here <http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/amwg/1985-2014_vs_obs/index.html>`_ 
 
 - `AMWG Multiple Diagnostics View (internal) <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/29753895/AMWG+Multiple+Diagnostics+View>`_ 
 
