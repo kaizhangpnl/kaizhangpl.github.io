@@ -20,8 +20,11 @@ Internal resources:
 - `How to run AMWG diagnostics package (internal) <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/41353486/How+to+run+AMWG+diagnostics+package>`_ 
 - `AMWG Multiple Diagnostics View (internal) <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/29753895/AMWG+Multiple+Diagnostics+View>`_ 
 - Diagnostics from beta0 simulations: 
+
   `FC5AV1C-04P2 <http://portal.nersc.gov/project/acme/coupled/beta/20161118.beta0.FC5COSP.ne30_ne30.edison/0002-0011-vs-obs/>`_ 
+
   `F1850C5AV1C-04P2 <http://portal.nersc.gov/project/acme/coupled/beta/20161118.beta0.F1850COSP.ne30_ne30.edison/0002-0011-vs-obs/>`_  
+
   `F20TR <http://portal.nersc.gov/project/acme/coupled/beta/20161118.beta0.F20TRCOSP.ne30_ne30.edison/1976-1999-vs-obs/>`_  
   
 
