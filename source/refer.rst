@@ -19,4 +19,5 @@ Useful information can be found at the following locations:
 
 - E3SM `github <https://github.com/E3SM-Project/E3SM>`_
 
+- Documentation from `CAM5.3 <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
 
