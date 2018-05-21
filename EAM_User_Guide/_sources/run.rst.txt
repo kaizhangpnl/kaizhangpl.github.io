@@ -221,12 +221,12 @@ Single column model (SCM) simulations
 -------------------------------------
 
 EAM can run in the single column mode. 
-Some instructions on how to configure and run a single column model can be found 
+Some instructions (internal) on how to configure and run a single column model can be found 
 `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/128294958/Running+the+ACME+Single+Column+Model>`_. 
 
 A runscript template can be found `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/scm_runscript.rst>`_. 
 
-IOP forcing data to drive the SCM can be found 
+IOP forcing data to drive the SCM can be found (internal) 
 `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library>`_. 
 
 
