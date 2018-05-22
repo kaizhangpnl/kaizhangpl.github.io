@@ -95,7 +95,6 @@ before executing "create_newcase"
 The vertical resolution is L30 (`lev <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels_L30.csv>`_)for V0 :
 
 
-
 .. csv-table:: 
    :widths: 5 15
    :header: "Index", "Lev" 
