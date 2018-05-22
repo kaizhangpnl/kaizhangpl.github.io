@@ -36,7 +36,7 @@ E3SM Diagnostics
 
 
 .. figure:: acme_diags.jpeg
-   :scale: 10 %
+   :scale: 50 %
    :alt: E3SM Diagnostics 
    :align: center
    
