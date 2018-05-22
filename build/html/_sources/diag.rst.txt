@@ -33,7 +33,7 @@ Internal resources:
 
 E3SM Diagnostics
 ----------------
-   
+
 See details `here <https://github.com/E3SM-Project/acme_diags>`_ 
 
 Examples: `DECK Simulations (internal) <http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/e3sm_diags/1985-2014/viewer/index.html>`_ 
@@ -42,12 +42,7 @@ Examples: `DECK Simulations (internal) <http://portal.nersc.gov/project/acme/cou
 ARM Diagnostics 
 ----------------
 
-"A Python based ARM data-oriented diagnostics package for climate model evaluation. 
-This package use long-term high frequency measurements from the ARM program to evaluate 
-the regional climate simulation of clouds, radiation and precipitation. 
-It computes climatological means of targeted climate model simulation and generates 
-tables and plots for comparing the model simulation with ARM observational data. 
-The CMIP model data sets are also included in the package to enable model inter-comparison." 
+A Python based ARM data-oriented diagnostics package for climate model evaluation. 
 
 See details `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
 
