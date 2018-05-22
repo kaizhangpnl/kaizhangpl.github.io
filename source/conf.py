@@ -88,6 +88,11 @@ html_theme = 'sphinxdoc'
 #html_theme = 'classic'
 #html_theme = 'agogo'
 #html_theme = 'nature'
+#html_theme = 'scrolls'
+#html_theme = 'haiku'
+#html_theme = 'pyramid'
+#html_theme = 'bizstyle'
+#html_theme = 'epub'
 #html_theme = 'traditional'
 
 # Theme options are theme-specific and customize the look and feel of a theme
