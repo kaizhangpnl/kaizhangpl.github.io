@@ -34,6 +34,12 @@ Internal resources:
 E3SM Diagnostics
 ----------------
 
+
+.. figure:: acme_diags.jpeg
+   :scale: 20 %
+   :alt: E3SM Diagnostics 
+   :align: center
+   
 See details `here <https://github.com/E3SM-Project/acme_diags>`_ 
 
 .. Examples from DECK Simulations (internal): 
