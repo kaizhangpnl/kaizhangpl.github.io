@@ -33,21 +33,23 @@ Internal resources:
 
 E3SM Diagnostics
 ----------------
-
-.. figure:: acme_diags.jpeg
-   :scale: 20 %
-   :alt: E3SM Diagnostics 
-   :align: center
    
 See details `here <https://github.com/E3SM-Project/acme_diags>`_ 
 
-.. Examples from DECK Simulations (internal): 
-.. 
-.. http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/e3sm_diags/1985-2014/viewer/index.html
+Examples: `DECK Simulations (internal) <http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/e3sm_diags/1985-2014/viewer/index.html>`_ 
 
 
 ARM Diagnostics 
 ----------------
 
 See details `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
+
+
+E3SM A-prime diagnostics
+-------------------------
+
+Python based scripts to generate ACME Coupled Priority Metrics. 
+
+See details `here <https://github.com/E3SM-Project/a-prime>`_ 
+
 
