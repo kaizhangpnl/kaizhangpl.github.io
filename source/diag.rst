@@ -33,8 +33,6 @@ Internal resources:
 
 E3SM Diagnostics
 ----------------
-
-
 .. figure:: acme_diags.jpeg
    :scale: 50 %
    :alt: E3SM Diagnostics 
