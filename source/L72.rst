@@ -1,7 +1,10 @@
 .. _L72:
 
 
-L72 levels:: 
+L72 levels 
+===========
+
+Table::
 
    index     lev
    1         0.124
