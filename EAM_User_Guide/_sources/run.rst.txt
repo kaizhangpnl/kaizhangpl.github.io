@@ -92,21 +92,8 @@ Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne
 
 before executing "create_newcase" 
 
-The vertical resolution is L30 (`lev <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels_L30.csv>`_) for V0 :
+The vertical resolution is L30 (`lev <./L30.html>`_) for V0 and L72  (`lev <./L72.html>`_) for V1. 
 
-.. csv-table:: 
-   :widths: 5 15
-   :header: "Index", "Lev" 
-   :file: levels_L30.csv
-
-and L72  (`lev <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels_L72.csv>`_) for V1: 
-
-.. csv-table:: 
-   :widths: 5 15
-   :header: "Index", "Lev" 
-   :file: levels_L72.csv
-   
-   
  
 Debugging mode 
 --------------
