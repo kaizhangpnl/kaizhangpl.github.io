@@ -42,6 +42,13 @@ Examples: `DECK Simulations (internal) <http://portal.nersc.gov/project/acme/cou
 ARM Diagnostics 
 ----------------
 
+| A Python based ARM data-oriented diagnostics package for climate model evaluation. 
+| This package use long-term high frequency measurements from the ARM program to evaluate 
+| the regional climate simulation of clouds, radiation and precipitation. 
+| It computes climatological means of targeted climate model simulation and generates 
+| tables and plots for comparing the model simulation with ARM observational data. 
+| The CMIP model data sets are also included in the package to enable model inter-comparison.
+
 See details `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
 
 
