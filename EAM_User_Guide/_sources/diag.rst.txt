@@ -44,7 +44,7 @@ ARM Diagnostics
 
 A Python based ARM data-oriented diagnostics package for climate model evaluation. 
 
-See details `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
+See details `here <https://www.arm.gov/capabilities/vaps/adcme-123>`_ and `here <https://github.com/ARM-DOE/arm-gcm-diagnostics>`_ 
 
 
 E3SM A-prime diagnostics
