@@ -37,9 +37,9 @@ Scientific model description in journal articles
    Version 1 (EAMv1), Geosci. Model Dev., 
    https://doi.org/10.5194/gmd-2017-293, 2018. 
    
-#. Qian et al. 2018, Parametric sensitivity and uncertainty quantification in the version 
-   1 of E3SM Atmosphere Model based on short Perturbed Parameters Ensemble simulations, 
-   submitted to JGR-Atmosphere
+.. #. Qian et al. 2018, Parametric sensitivity and uncertainty quantification in the version 
+..    1 of E3SM Atmosphere Model based on short Perturbed Parameters Ensemble simulations, 
+..    submitted to JGR-Atmosphere
    
 .. #. Tang et al. 2018: How well does a regionally refined model represent the globally 
 ..    uniform high-resolution E3SM Atmosphere Model Version 1 (EAM1) over the contiguous United States?, 
