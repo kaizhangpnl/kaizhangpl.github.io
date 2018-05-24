@@ -33,7 +33,8 @@ Making `climo` files
 
 A script is available 
 `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/make_climo.csh>`_. 
-which calls climo_nco.sh to make climo files for E3SM output. 
+which calls `climo_nco.sh <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/climo_nco.sh>`_ 
+to make climo files for E3SM output. 
 
 
 Bit-Grooming 
