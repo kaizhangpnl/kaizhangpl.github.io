@@ -28,6 +28,14 @@ Example: ::
 See details `here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/31129737/Generate+Regrid+and+Split+Climatologies+climo+files+with+ncclimo+and+ncremap>`_ (internal) 
    
 
+Making `climo` files 
+-----------------------
+
+A script is available 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/make_climo.csh>`_. 
+which calls climo_nco.sh to make climo files for E3SM output. 
+
+
 Bit-Grooming 
 ------------
 
