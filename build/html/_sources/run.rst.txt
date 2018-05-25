@@ -235,7 +235,7 @@ Regionally-Refinement Model (RRM) simulations
 
 RRM can be configured by specifying the resolution (e.g. "conusx4v1_conusx4v1") ::
 
-   ./create_newcase -case fFC5AV1C-04P2_conusx4v1 -project 150001 -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach skybridge
+   ./create_newcase -case $MYCASE -project $MYPROJECT -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach $MYMACH
 
 Some resources are available internally within E3SM: 
 
