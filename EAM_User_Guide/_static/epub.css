@@ -1,706 +1,310 @@
 /*
- * epub.css_t
- * ~~~~~~~~~~
+ * default.css_t
+ * ~~~~~~~~~~~~~
  *
- * Sphinx stylesheet -- epub theme.
+ * Sphinx stylesheet -- default theme.
  *
  * :copyright: Copyright 2007-2018 by the Sphinx team, see AUTHORS.
  * :license: BSD, see LICENSE for details.
  *
  */
 
-/* -- main layout ----------------------------------------------------------- */
+@import url("basic.css");
 
+/* -- page layout ----------------------------------------------------------- */
 
-
-div.clearer {
-    clear: both;
-}
-
-a:link, a:visited {
-    color: #3333ff;
-    text-decoration: underline;
-}
-
-img {
-    border: 0;
-    max-width: 100%;
-}
-
-/* -- relbar ---------------------------------------------------------------- */
-
-div.related {
-    width: 100%;
-    font-family: sans-serif;
-    font-size: 90%;
-}
-
-div.related h3 {
-    display: none;
-}
-
-div.related ul {
-    margin: 0;
-    padding: 0 0 0 10px;
-    list-style: none;
-}
-
-div.related li {
-    display: inline;
-}
-
-div.related li.right {
-    float: right;
-    margin-right: 5px;
-}
-
-/* -- sidebar --------------------------------------------------------------- */
-
-div.sphinxsidebarwrapper {
-    padding: 10px 5px 0 10px;
-}
-
-div.sphinxsidebar {
-    float: left;
-    width: 230px;
-    margin-left: -100%;
-    font-size: 90%;
-}
-
-div.sphinxsidebar ul {
-    list-style: none;
-}
-
-div.sphinxsidebar ul ul,
-div.sphinxsidebar ul.want-points {
-    margin-left: 20px;
-    list-style: square;
-}
-
-div.sphinxsidebar ul ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-div.sphinxsidebar form {
-    margin-top: 10px;
-}
-
-div.sphinxsidebar input {
-    border: 1px solid #98dbcc;
-    font-family: sans-serif;
+body {
+    font-family: {{ theme_bodyfont }};
     font-size: 100%;
-}
-
-img {
-    border: 0;
-    max-width: 100%;
-}
-
-/* -- search page ----------------------------------------------------------- */
-
-ul.search {
-    margin: 10px 0 0 20px;
+    background-color: {{ theme_footerbgcolor }};
+    color: #000;
+    margin: 0;
     padding: 0;
 }
 
-ul.search li {
-    padding: 5px 0 5px 20px;
-    background-image: url(file.png);
-    background-repeat: no-repeat;
-    background-position: 0 7px;
+div.document {
+    background-color: {{ theme_sidebarbgcolor }};
 }
 
-ul.search li a {
-    font-weight: bold;
-}
-
-ul.search li div.context {
-    color: #888;
-    margin: 2px 0 0 30px;
-    text-align: left;
-}
-
-ul.keywordmatches li.goodmatch a {
-    font-weight: bold;
-}
-
-/* -- index page ------------------------------------------------------------ */
-
-table.contentstable {
-    width: 90%;
-}
-
-table.contentstable p.biglink {
-    line-height: 150%;
-}
-
-a.biglink {
-    font-size: 130%;
-}
-
-span.linkdescr {
-    font-style: italic;
-    padding-top: 5px;
-    font-size: 90%;
-}
-
-/* -- general index --------------------------------------------------------- */
-
-table.indextable td {
-    text-align: left;
-    vertical-align: top;
-}
-
-table.indextable ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    list-style-type: none;
-}
-
-table.indextable > tbody > tr > td > ul {
-    padding-left: 0em;
-}
-
-table.indextable tr.pcap {
-    height: 10px;
-}
-
-table.indextable tr.cap {
-    margin-top: 10px;
-    background-color: #f2f2f2;
-}
-
-img.toggler {
-    margin-right: 3px;
-    margin-top: 3px;
-    cursor: pointer;
-}
-
-/* -- domain module index --------------------------------------------------- */
-
-table.modindextable td {
-    padding: 2px;
-    border-collapse: collapse;
-}
-
-/* -- general body styles --------------------------------------------------- */
-
-a.headerlink {
-    visibility: hidden;
-}
-
-div.body p.caption {
-    text-align: inherit;
-}
-
-div.body td {
-    text-align: left;
-}
-
-.first {
-    margin-top: 0 !important;
-}
-
-p.rubric {
-    margin-top: 30px;
-    font-weight: bold;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
-}
-
-/* -- sidebars -------------------------------------------------------------- */
-
-div.sidebar {
-    margin: 0 0 0.5em 1em;
-    border: 1px solid #ddb;
-    padding: 7px 7px 0 7px;
-    background-color: #ffe;
-    width: 40%;
-    float: right;
-}
-
-p.sidebar-title {
-    font-weight: bold;
-}
-
-/* -- topics ---------------------------------------------------------------- */
-
-div.topic {
-    border: 1px solid #ccc;
-    padding: 7px 7px 0 7px;
-    margin: 10px 0 10px 0;
-}
-
-p.topic-title {
-    font-size: 110%;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* -- admonitions ----------------------------------------------------------- */
-
-div.admonition {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 7px;
-}
-
-div.admonition dt {
-    font-weight: bold;
-}
-
-div.admonition dl {
-    margin-bottom: 0;
-}
-
-p.admonition-title {
-    margin: 0px 10px 5px 0px;
-    font-weight: bold;
-}
-
-div.body p.centered {
-    text-align: center;
-    margin-top: 25px;
-}
-
-/* -- tables ---------------------------------------------------------------- */
-
-table.docutils {
-    border: 0;
-    border-collapse: collapse;
-}
-
-table caption span.caption-number {
-    font-style: italic;
-}
-
-table caption span.caption-text {
-}
-
-table.docutils td, table.docutils th {
-    padding: 1px 8px 1px 5px;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 1px solid #aaa;
-}
-
-table.footnote td, table.footnote th {
-    border: 0 !important;
-}
-
-th {
-    text-align: left;
-    padding-right: 5px;
-}
-
-table.citation {
-    border-left: solid 1px gray;
-    margin-left: 1px;
-}
-
-table.citation td {
-    border-bottom: none;
-}
-
-/* -- figures --------------------------------------------------------------- */
-
-div.figure p.caption span.caption-number {
-    font-style: italic;
-}
-
-div.figure p.caption span.caption-text {
-}
-
-/* -- field list styles ----------------------------------------------------- */
-
-/* -- for html4 -- */
-
-table.field-list td, table.field-list th {
-    border: 0 !important;
-}
-
-.field-list ul {
-    margin: 0;
-    padding-left: 1em;
-}
-
-.field-list p {
-    margin: 0;
-}
-
-/* -- for html5 -- */
-
-/* bold field name, content starts on the same line */
-
-dl.field-list > dt,
-dl.option-list > dt,
-dl.docinfo > dt,
-dl.footnote > dt,
-dl.citation > dt {
-    font-weight: bold;
-    clear: left;
+div.documentwrapper {
     float: left;
-    margin: 0;
-    padding: 0;
-    padding-right: 0.5em;
-}
-
-/* Offset for field content (corresponds to the --field-name-limit option) */
-
-dl.field-list > dd,
-dl.option-list > dd,
-dl.docinfo > dd {
-    margin-left:  9em; /* ca. 14 chars in the test examples */
-}
-
-/* start field-body on a new line after long field names */
-
-dl.field-list > dd > *:first-child,
-dl.option-list > dd > *:first-child
-{
-    display: inline-block;
     width: 100%;
-    margin: 0;
 }
 
-dl.field-list > dt:after,
-dl.docinfo > dt:after {
-    content: ":";
+div.bodywrapper {
+    margin: 0 0 0 230px;
 }
 
-/* -- option lists ---------------------------------------------------------- */
-
-dl.option-list {
-    margin-left: 40px;
+div.body {
+    background-color: {{ theme_bgcolor }};
+    color: {{ theme_textcolor }};
+    padding: 0 20px 30px 20px;
 }
 
-dl.option-list > dt {
-    font-weight: normal;
+{%- if theme_rightsidebar|tobool %}
+div.bodywrapper {
+    margin: 0 230px 0 0;
 }
+{%- endif %}
 
-span.option {
-    white-space: nowrap;
-}
-
-/* -- lists ----------------------------------------------------------------- */
-
-/* -- compact and simple lists: no margin between items -- */
-
-.simple  li, .compact li,
-.simple  ul, .compact ul,
-.simple  ol, .compact ol,
-.simple > li p, .compact > li p,
-dl.simple > dd, dl.compact > dd {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* -- enumerated lists ------------------------------------------------------ */
-
-ol.arabic {
-    list-style: decimal;
-}
-
-ol.loweralpha {
-    list-style: lower-alpha;
-}
-
-ol.upperalpha {
-    list-style: upper-alpha;
-}
-
-ol.lowerroman {
-    list-style: lower-roman;
-}
-
-ol.upperroman {
-    list-style: upper-roman;
-}
-
-dt span.classifier {
-    font-style: italic;
-}
-
-dt span.classifier:before {
-    font-style: normal;
-    margin: 0.5em;
-    content: ":";
-}
-
-/* -- other body styles ----------------------------------------------------- */
-
-dl {
-    margin-bottom: 15px;
-}
-
-dd p {
-    margin-top: 0px;
-}
-
-dd ul, dd table {
-    margin-bottom: 10px;
-}
-
-dd {
-    margin-top: 3px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-}
-
-dt:target, .highlighted {
-    background-color: #ddd;
-}
-
-dl.glossary dt {
-    font-weight: bold;
-    font-size: 110%;
-}
-
-.optional {
-    font-size: 130%;
-}
-
-.sig-paren {
-    font-size: larger;
-}
-
-.versionmodified {
-    font-style: italic;
-}
-
-.system-message {
-    background-color: #fda;
-    padding: 5px;
-    border: 3px solid red;
-}
-
-/* -- footnotes and citations ----------------------------------------------- */
-
-/* -- for html4 -- */
-.footnote:target  {
-    background-color: #dddddd;
-}
-
-/* -- for html5 -- */
-
-dl.footnote.superscript > dd {
-    margin-left: 1em;
-}
-
-dl.footnote.brackets > dd {
-    margin-left: 2em;
-}
-
-dl > dt.label {
-    font-weight: normal;
-}
-
-a.footnote-reference.brackets:before,
-dt.label > span.brackets:before {
-    content: "[";
-}
-
-a.footnote-reference.brackets:after,
-dt.label > span.brackets:after {
-    content: "]";
-}
-
-a.footnote-reference.superscript,
-dl.footnote.superscript > dt.label {
-    vertical-align: super;
-    font-size: smaller;
-}
-
-dt.label > span.fn-backref {
-    margin-left: 0.2em;
-}
-
-dt.label > span.fn-backref > a {
-    font-style: italic;
-}
-
-/* -- line blocks ----------------------------------------------------------- */
-
-.line-block {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.line-block .line-block {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 1.5em;
-}
-
-.guilabel, .menuselection {
-    font-style: italic;
-}
-
-.accelerator {
-    text-decoration: underline;
-}
-
-.classifier {
-    font-style: oblique;
-}
-
-abbr, acronym {
-    border-bottom: dotted 1px;
-    cursor: help;
-}
-
-/* -- code displays --------------------------------------------------------- */
-
-pre {
-    font-family: monospace;
-    overflow: auto;
-    overflow-y: hidden;
-}
-
-td.linenos pre {
-    padding: 5px 0px;
-    border: 0;
-    background-color: transparent;
-    color: #aaa;
-}
-
-table.highlighttable {
-    margin-left: 0.5em;
-}
-
-table.highlighttable td {
-    padding: 0 0.5em 0 0.5em;
-}
-
-code {
-    font-family: monospace;
-}
-
-div.code-block-caption span.caption-number {
-    padding: 0.1em 0.3em;
-    font-style: italic;
-}
-
-div.code-block-caption span.caption-text {
-}
-
-div.literal-block-wrapper {
-    padding: 1em 1em 0;
-}
-
-div.literal-block-wrapper div.highlight {
-    margin: 0;
-}
-
-code.descname {
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-code.descclassname {
-    background-color: transparent;
-}
-
-code.xref, a code {
-    background-color: transparent;
-    font-weight: bold;
-}
-
-h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
-    background-color: transparent;
-}
-
-/* -- math display ---------------------------------------------------------- */
-
-img.math {
-    vertical-align: middle;
-}
-
-div.body div.math p {
-    text-align: center;
-}
-
-span.eqno {
-    float: right;
-}
-
-/* -- special divs  --------------------------------------------------------- */
-
-div.quotebar {
-    background-color: #e3eff1;
-    max-width: 250px;
-    float: right;
-    font-family: sans-serif;
-    padding: 7px 7px;
-    border: 1px solid #ccc;
-}
 div.footer {
-    background-color: #e3eff1;
-    padding: 3px 8px 3px 0;
-    clear: both;
-    font-family: sans-serif;
-    font-size: 80%;
-    text-align: right;
+    color: {{ theme_footertextcolor }};
+    width: 100%;
+    padding: 9px 0 9px 0;
+    text-align: center;
+    font-size: 75%;
 }
 
 div.footer a {
+    color: {{ theme_footertextcolor }};
     text-decoration: underline;
 }
 
-/* -- link-target ----------------------------------------------------------- */
-
-.link-target {
-    font-size: 80%;
+div.related {
+    background-color: {{ theme_relbarbgcolor }};
+    line-height: 30px;
+    color: {{ theme_relbartextcolor }};
 }
 
-table .link-target {
-    /* Do not show links in tables, there is not enough space */
-    display: none;
+div.related a {
+    color: {{ theme_relbarlinkcolor }};
 }
 
-/* -- font-face ------------------------------------------------------------- */
+div.sphinxsidebar {
+    {%- if theme_stickysidebar|tobool %}
+    top: 30px;
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
+    {%- endif %}
+    {%- if theme_rightsidebar|tobool %}
+    float: right;
+    {%- if theme_stickysidebar|tobool %}
+    right: 0;
+    {%- endif %}
+    {%- endif %}
+}
 
+{%- if theme_stickysidebar|tobool %}
+/* this is nice, but it it leads to hidden headings when jumping
+   to an anchor */
 /*
-@font-face {
-    font-family: "LiberationNarrow";
-    font-style: normal;
-    font-weight: normal;
-    src: url("res:///Data/fonts/LiberationNarrow-Regular.otf")
-        format("opentype");
+div.related {
+    position: fixed;
 }
-@font-face {
-    font-family: "LiberationNarrow";
-    font-style: oblique, italic;
-    font-weight: normal;
-    src: url("res:///Data/fonts/LiberationNarrow-Italic.otf")
-        format("opentype");
-}
-@font-face {
-    font-family: "LiberationNarrow";
-    font-style: normal;
-    font-weight: bold;
-    src: url("res:///Data/fonts/LiberationNarrow-Bold.otf")
-        format("opentype");
-}
-@font-face {
-    font-family: "LiberationNarrow";
-    font-style: oblique, italic;
-    font-weight: bold;
-    src: url("res:///Data/fonts/LiberationNarrow-BoldItalic.otf")
-        format("opentype");
+
+div.documentwrapper {
+    margin-top: 30px;
 }
 */
+{%- endif %}
+
+div.sphinxsidebar h3 {
+    font-family: {{ theme_headfont }};
+    color: {{ theme_sidebartextcolor }};
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+div.sphinxsidebar h3 a {
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar h4 {
+    font-family: {{ theme_headfont }};
+    color: {{ theme_sidebartextcolor }};
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+div.sphinxsidebar p {
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar p.topless {
+    margin: 5px 10px 10px 10px;
+}
+
+div.sphinxsidebar ul {
+    margin: 10px;
+    padding: 0;
+    color: {{ theme_sidebartextcolor }};
+}
+
+div.sphinxsidebar a {
+    color: {{ theme_sidebarlinkcolor }};
+}
+
+div.sphinxsidebar input {
+    border: 1px solid {{ theme_sidebarlinkcolor }};
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+{% if theme_collapsiblesidebar|tobool %}
+/* for collapsible sidebar */
+div#sidebarbutton {
+    background-color: {{ theme_sidebarbtncolor }};
+}
+{% endif %}
+
+/* -- hyperlink styles ------------------------------------------------------ */
+
+a {
+    color: {{ theme_linkcolor }};
+    text-decoration: none;
+}
+
+a:visited {
+    color: {{ theme_visitedlinkcolor }};
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+{% if theme_externalrefs|tobool %}
+a.external {
+   text-decoration: none;
+   border-bottom: 1px dashed {{ theme_linkcolor }};
+}
+
+a.external:hover {
+   text-decoration: none;
+   border-bottom: none;
+}
+
+a.external:visited {
+    text-decoration: none;
+    border-bottom: 1px dashed {{ theme_visitedlinkcolor }};
+}
+{% endif %}
+
+/* -- body styles ----------------------------------------------------------- */
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    font-family: {{ theme_headfont }};
+    background-color: {{ theme_headbgcolor }};
+    font-weight: normal;
+    color: {{ theme_headtextcolor }};
+    border-bottom: 1px solid #ccc;
+    margin: 20px -20px 10px -20px;
+    padding: 3px 0 3px 10px;
+}
+
+div.body h1 { margin-top: 0; font-size: 200%; }
+div.body h2 { font-size: 160%; }
+div.body h3 { font-size: 140%; }
+div.body h4 { font-size: 120%; }
+div.body h5 { font-size: 110%; }
+div.body h6 { font-size: 100%; }
+
+a.headerlink {
+    color: {{ theme_headlinkcolor }};
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+
+a.headerlink:hover {
+    background-color: {{ theme_headlinkcolor }};
+    color: white;
+}
+
+div.body p, div.body dd, div.body li {
+    text-align: justify;
+    line-height: 130%;
+}
+
+div.admonition p.admonition-title + p {
+    display: inline;
+}
+
+div.admonition p {
+    margin-bottom: 5px;
+}
+
+div.admonition pre {
+    margin-bottom: 5px;
+}
+
+div.admonition ul, div.admonition ol {
+    margin-bottom: 5px;
+}
+
+div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+div.seealso {
+    background-color: #ffc;
+    border: 1px solid #ff6;
+}
+
+div.topic {
+    background-color: #eee;
+}
+
+div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+
+p.admonition-title {
+    display: inline;
+}
+
+p.admonition-title:after {
+    content: ":";
+}
+
+pre {
+    padding: 5px;
+    background-color: {{ theme_codebgcolor }};
+    color: {{ theme_codetextcolor }};
+    line-height: 120%;
+    border: 1px solid #ac9;
+    border-left: none;
+    border-right: none;
+}
+
+code {
+    background-color: #ecf0f3;
+    padding: 0 1px 0 1px;
+    font-size: 0.95em;
+}
+
+th {
+    background-color: #ede;
+}
+
+.warning code {
+    background: #efc2c2;
+}
+
+.note code {
+    background: #d6d6d6;
+}
+
+.viewcode-back {
+    font-family: {{ theme_bodyfont }};
+}
+
+div.viewcode-block:target {
+    background-color: #f4debf;
+    border-top: 1px solid #ac9;
+    border-bottom: 1px solid #ac9;
+}
