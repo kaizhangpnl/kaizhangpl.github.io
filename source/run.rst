@@ -93,7 +93,8 @@ Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne
 before executing "create_newcase" 
 
 The vertical resolution is L30 (`lev <./L30.html>`_) for V0 and L72  (`lev <./L72.html>`_) for V1. 
-
+Detailed information about the vertical coordinate in EAMv1 can be found 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels.txt>`_ 
  
 Debugging mode 
 --------------
