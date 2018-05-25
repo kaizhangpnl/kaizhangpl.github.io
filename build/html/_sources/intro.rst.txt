@@ -17,7 +17,7 @@ Community Earth System Model (CESM). More information about E3SM can be found be
 - `Project website <https://e3sm.org/>`_ 
 - `Project strategy <https://e3sm.org/publications/project-documents/>`_ 
 - `E3SM confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
-- `E3SM github <https://github.com/E3SM-Project/E3SM>`_
+- `E3SM github repository <https://github.com/E3SM-Project/E3SM>`_
 
 This user's guide focuses on the atmosphere component. A scientific description of 
 the E3SM Atmosphere Model (EAM) is available `here <https://e3sm.org/model/e3sm-model-description/v1-description/>`_ 
