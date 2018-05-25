@@ -20,7 +20,7 @@ Useful information
 
 - `E3SM github repository <https://github.com/E3SM-Project/E3SM>`_
 
-- Documentation from `CAM5.3 <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
+- `CAM5.3 Documentation <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_. 
 
 Scientific model description in journal articles 
 ------------------------------------------------
