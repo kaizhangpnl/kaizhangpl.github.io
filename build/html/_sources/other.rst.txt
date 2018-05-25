@@ -18,13 +18,13 @@ More information can be found at:
 Input data 
 ---------------
 
-E3SM input data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_ 
+E3SM input data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/>`_ 
 
 
 Mapping files 
 ---------------
 
-E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_ 
+E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/maps/>`_ 
 
 
 Grids 
@@ -32,3 +32,7 @@ Grids
 
 E3SM grid data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_ 
 
+
+Observational data for analysis
+---------------------------------
+Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_
