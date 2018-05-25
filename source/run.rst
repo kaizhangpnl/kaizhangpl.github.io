@@ -85,16 +85,12 @@ The most frequently used compsets are listed below:
 Changing Spatial Resolutions
 ----------------------------
 
-Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
-(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set :: 
+To change the horizontal resolution, set :: 
 
   set resolution = ne30_ne30 (or ne4_ne4, ne11_ne11, ne16_ne16, ne120_ne120) 
 
 before executing "create_newcase" 
 
-The vertical resolution is L30 (`lev <./L30.html>`_) for V0 and L72  (`lev <./L72.html>`_) for V1. 
-Detailed information about the vertical coordinate in EAMv1 can be found 
-`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels.txt>`_ 
  
 Debugging mode 
 --------------

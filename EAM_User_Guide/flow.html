@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Flow Chart &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
+    <title>Technical overview of EAM &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
     <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -49,9 +49,11 @@
             
   <p id="flow"><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/flow.rst">Github version</a></p>
 <p><a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/flow.html">Spinx version</a></p>
+<div class="section" id="technical-overview-of-eam">
+<h1>Technical overview of EAM<a class="headerlink" href="#technical-overview-of-eam" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="flow-chart">
-<h1>Flow Chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-center" id="id1">
+<h2>Flow Chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/flow_chart.png"><img alt="Flow Chart" src="_images/flow_chart.png" style="width: 401.6px; height: 569.0px;" /></a>
 <p class="caption"><span class="caption-text">Diagrams showing the sequence of calculation (i.e., the time integration loop) in EAM.
 The blue stadium shapes refer to the resolved-scale dynamics and transport, and
@@ -64,6 +66,140 @@ turbulent transport, and stratiform cloud macro- and microphysics.
 See <a class="reference external" href="https://www.geosci-model-dev-discuss.net/gmd-2017-293/">Zhang et al. (2018)</a> for more details.</span></p>
 </div>
 </div>
+<div class="section" id="spatial-resolution">
+<h2>Spatial resolution<a class="headerlink" href="#spatial-resolution" title="Permalink to this headline">¶</a></h2>
+<p>Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
+(with F1850C5AV1C-04P2 compset).</p>
+<p>The vertical resolution is L30 (<a class="reference external" href="./L30.html">lev</a>) for V0 and L72  (<a class="reference external" href="./L72.html">lev</a>) for V1.
+Detailed information about the vertical coordinate in EAMv1 can be found
+<a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels.txt">here</a></p>
+</div>
+<div class="section" id="list-of-advective-tracers">
+<h2>List of advective tracers<a class="headerlink" href="#list-of-advective-tracers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tracers_adv.txt">List of advective tracers in EAMv1</a></li>
+<li><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tracers_adv_EAMv0.txt">List of advective tracers in EAMv0</a></li>
+</ul>
+</div>
+<div class="section" id="list-of-tuning-parameters">
+<h2>List of tuning parameters<a class="headerlink" href="#list-of-tuning-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Below is a list of parameters that are often tuned in EAM.
+Note that only V1 has CLUBB-related parameters.
+The csv file is available <a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tuning_parameters.csv">here</a>.</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="23%" />
+<col width="46%" />
+<col width="15%" />
+<col width="15%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Parameter</th>
+<th class="head">Description</th>
+<th class="head">EAM V0</th>
+<th class="head">EAM V1</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>zmconv_dmpdz</td>
+<td>Convective entrainment rate</td>
+<td>-1.00E-03</td>
+<td>-7.00E-04</td>
+</tr>
+<tr class="row-odd"><td>zmconv_c0_ocn</td>
+<td>Autoconversion parameter for deep convective clouds over ocean</td>
+<td>0.0035</td>
+<td>0.007</td>
+</tr>
+<tr class="row-even"><td>zmconv_c0_lnd</td>
+<td>Autoconversion parameter for deep convective clouds over land</td>
+<td>0.009</td>
+<td>0.007</td>
+</tr>
+<tr class="row-odd"><td>zmconv_ke</td>
+<td>Convective rain evaporation</td>
+<td>1.00E-06</td>
+<td>1.50E-06</td>
+</tr>
+<tr class="row-even"><td>zmconv_tiedke_add</td>
+<td>Perturbation added to the parcel buoyancy in ZM scheme</td>
+<td>0.5</td>
+<td>0.8</td>
+</tr>
+<tr class="row-odd"><td>cldfrc_dp1</td>
+<td>Convective cloud fraction coefficient</td>
+<td>0.025</td>
+<td>0.045</td>
+</tr>
+<tr class="row-even"><td>rhmaxi</td>
+<td>Threshold RH with respect to ice for ice cloud fraction to equal to 1.0</td>
+<td>1.1</td>
+<td>1.05</td>
+</tr>
+<tr class="row-odd"><td>re_ice_deep</td>
+<td>Convective ice cloud effective radius</td>
+<td>2.50E-05</td>
+<td>1.60E-05</td>
+</tr>
+<tr class="row-even"><td>micro_mg_dcs</td>
+<td>Autoconversion size threshold for cloud ice to snow</td>
+<td>6.00E-04</td>
+<td>Temperature dependent</td>
+</tr>
+<tr class="row-odd"><td>ice_sed_ai</td>
+<td>Fall speed parameter for cloud ice</td>
+<td>700</td>
+<td>500</td>
+</tr>
+<tr class="row-even"><td>so4_sz_thresh_icenuc</td>
+<td>Aitken mode sulfate aerosol size threshold for homogeneous ice nucleation</td>
+<td>1.00E-07</td>
+<td>7.50E-08</td>
+</tr>
+<tr class="row-odd"><td>c1</td>
+<td>Constant associated with the dissipation of w variance</td>
+<td>N/A</td>
+<td>1.335</td>
+</tr>
+<tr class="row-even"><td>clubb_C2rt</td>
+<td>Constant associated with the dissipation of total water mixing ratio</td>
+<td>N/A</td>
+<td>1.75</td>
+</tr>
+<tr class="row-odd"><td>clubb_C8</td>
+<td>Constant associated with the damping of w skewness  used in  CLUBB</td>
+<td>N/A</td>
+<td>4.3</td>
+</tr>
+<tr class="row-even"><td>clubb_C14</td>
+<td>Constant in Newtonian damping of u variance and v variance used in CLUBB</td>
+<td>N/A</td>
+<td>1.3</td>
+</tr>
+<tr class="row-odd"><td>clubb_c_K10</td>
+<td>Momentum diffusion factor</td>
+<td>N/A</td>
+<td>0.3</td>
+</tr>
+<tr class="row-even"><td>clubb_gamma_coef</td>
+<td>Constant of the width of PDF in w-coordinate</td>
+<td>N/A</td>
+<td>0.32</td>
+</tr>
+<tr class="row-odd"><td>dust_emis_fact</td>
+<td>Tuning parameter for dust emissions.</td>
+<td>0.55</td>
+<td>2.05</td>
+</tr>
+<tr class="row-even"><td>n_so4_monolayers_pcage</td>
+<td>Number of so4(+nh4) monolayers needed to “age” a carbon particle</td>
+<td>3</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
           </div>
@@ -71,6 +207,17 @@ See <a class="reference external" href="https://www.geosci-model-dev-discuss.net
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Technical overview of EAM</a><ul>
+<li><a class="reference internal" href="#flow-chart">Flow Chart</a></li>
+<li><a class="reference internal" href="#spatial-resolution">Spatial resolution</a></li>
+<li><a class="reference internal" href="#list-of-advective-tracers">List of advective tracers</a></li>
+<li><a class="reference internal" href="#list-of-tuning-parameters">List of tuning parameters</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="start.html"
                         title="previous chapter">Getting Started</a></p>

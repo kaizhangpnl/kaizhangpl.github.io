@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="List of output variables" href="output.html" />
-    <link rel="prev" title="Flow Chart" href="flow.html" />
+    <link rel="prev" title="Technical overview of EAM" href="flow.html" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -36,7 +36,7 @@
           <a href="output.html" title="List of output variables"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="flow.html" title="Flow Chart"
+          <a href="flow.html" title="Technical overview of EAM"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
       </ul>
@@ -111,15 +111,11 @@ Note that some tuning parameters need to be changed for version 0.3.</p>
 </div>
 <div class="section" id="changing-spatial-resolutions">
 <h2>Changing Spatial Resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
-<p>Technically, EAM can run with horizontal resolution from ne4 (about 750km) to ne120 (about 25km)
-(with F1850C5AV1C-04P2 compset). To change the horizontal resolution, set</p>
+<p>To change the horizontal resolution, set</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">resolution</span> <span class="o">=</span> <span class="n">ne30_ne30</span> <span class="p">(</span><span class="ow">or</span> <span class="n">ne4_ne4</span><span class="p">,</span> <span class="n">ne11_ne11</span><span class="p">,</span> <span class="n">ne16_ne16</span><span class="p">,</span> <span class="n">ne120_ne120</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>before executing “create_newcase”</p>
-<p>The vertical resolution is L30 (<a class="reference external" href="./L30.html">lev</a>) for V0 and L72  (<a class="reference external" href="./L72.html">lev</a>) for V1.
-Detailed information about the vertical coordinate in EAMv1 can be found
-<a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/levels.txt">here</a></p>
 </div>
 <div class="section" id="debugging-mode">
 <h2>Debugging mode<a class="headerlink" href="#debugging-mode" title="Permalink to this headline">¶</a></h2>
@@ -178,7 +174,7 @@ Some instructions on how to configure and run a single column model can be found
 <p>A runscript template can be found <a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/scm_runscript.rst">here</a>.</p>
 <p>IOP forcing data to drive the SCM can be found
 <a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library">here</a>. (internal) or
-from the E3SM input data server <a href="#id11"><span class="problematic" id="id12">`here &lt;https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/`_</span></a>.</p>
+from the E3SM input data server <a href="#id9"><span class="problematic" id="id10">`here &lt;https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/`_</span></a>.</p>
 </div>
 <div class="section" id="frequently-used-namelist-options">
 <h2>Frequently-used namelist options<a class="headerlink" href="#frequently-used-namelist-options" title="Permalink to this headline">¶</a></h2>
@@ -254,7 +250,7 @@ from the E3SM input data server <a href="#id11"><span class="problematic" id="id
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="flow.html"
-                        title="previous chapter">Flow Chart</a></p>
+                        title="previous chapter">Technical overview of EAM</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="output.html"
                         title="next chapter">List of output variables</a></p>
@@ -291,7 +287,7 @@ from the E3SM input data server <a href="#id11"><span class="problematic" id="id
           <a href="output.html" title="List of output variables"
              >next</a> |</li>
         <li class="right" >
-          <a href="flow.html" title="Flow Chart"
+          <a href="flow.html" title="Technical overview of EAM"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
       </ul>
