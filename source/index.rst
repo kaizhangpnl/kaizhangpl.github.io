@@ -34,6 +34,7 @@ Documentation Outline
     diag
     advanced
     bug
+    freq
     other
 
 
