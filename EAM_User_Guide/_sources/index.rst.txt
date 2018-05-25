@@ -46,9 +46,9 @@ Documentation Outline
 .. * :ref:`search`
 
 
+Written by Kai Zhang with input from the EAM development team. 
 
-Written by Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) with 
-input from the EAM development team. 
+Contact: Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) 
 
 Documentation last edited : |today|
 
