@@ -22,6 +22,10 @@ Input data
 - `E3SM external input data server <https://web.lcrc.anl.gov/public/e3sm/inputdata/>`_ 
 - `CESM external input data server <https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/>`_
 
+Further information about E3SM internal input data repository can be found 
+`here (internal) <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/7998629/ACME+Input+Data+Repository>`_. 
+
+
 Mapping files 
 ---------------
 
