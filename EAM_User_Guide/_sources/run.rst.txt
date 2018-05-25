@@ -233,7 +233,11 @@ IOP forcing data to drive the SCM can be found
 Regionally-Refinement Model (RRM) simulations 
 --------------------------------------------- 
 
-Right now, resources are available internally: 
+RRM can be configured by specifying the resolution (e.g. "conusx4v1_conusx4v1") ::
+
+   ./create_newcase -case fFC5AV1C-04P2_conusx4v1 -project 150001 -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach skybridge
+
+Some resources are available internally within E3SM: 
 
 - `How to run RRM <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/11010268/How+to+run+the+regionally+refined+model+RRM>`_
 - `Regridding RRM simulations <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/27951986/Regridding+RRM+simulations>`_
