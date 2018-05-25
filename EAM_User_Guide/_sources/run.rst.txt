@@ -138,6 +138,8 @@ and runs MISR, ISCCP, MODIS, and CALIPSO lidar simulators
 cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.
 
+More detailed information on how to configure the COSP output can be found in the 
+source code `cospsimulator_intr.F90 <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/cospsimulator_intr.F90>`_. 
 
 Single column model (SCM) simulations
 -------------------------------------
