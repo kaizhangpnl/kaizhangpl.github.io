@@ -3,7 +3,7 @@
 
       Name      Description                                   Type
       ------    ----------------------------------------      ----- 
-   1  Q         Specific humidity                                                                                                                 wet
+   1  Q         Specific humidity                             wet
    2  CLDLIQ    Grid box averaged cloud liquid amount         wet
    3  CLDICE    Grid box averaged cloud ice amount            wet
    4  NUMLIQ    Grid box averaged cloud liquid number         wet
