@@ -2,9 +2,9 @@
 
 
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/diag.rst>`_ 
+`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/intro.rst>`_ 
 
-`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_  
+`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/intro.html>`_  
 
 Introduction
 ============
