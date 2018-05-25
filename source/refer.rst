@@ -36,20 +36,9 @@ Scientific model description in journal articles
    Impact of numerical choices on water conservation in the E3SM Atmosphere Model 
    Version 1 (EAMv1), Geosci. Model Dev., 
    https://doi.org/10.5194/gmd-2017-293, 2018. 
-   
-.. #. Qian et al. 2018, Parametric sensitivity and uncertainty quantification in the version 
-..    1 of E3SM Atmosphere Model based on short Perturbed Parameters Ensemble simulations, 
-..    submitted to JGR-Atmosphere
-   
-.. #. Tang et al. 2018: How well does a regionally refined model represent the globally 
-..    uniform high-resolution E3SM Atmosphere Model Version 1 (EAM1) over the contiguous United States?, 
-..    submitted to JAMES.
 
 #. Xie et al. 2018, Understanding Cloud and Convective Characteristics in Version 1 of 
    the E3SM Atmosphere Model, submitted to JAMES.
-   
-.. #. Zhang, Y. et al. 2018: Evaluation of EAMv1 simulated clouds and their sensitivity to model 
-..   resolution with satellite and ground-based simulators, to be submitted to JAMES.
    
 #. Zhang, K. et al. 2018: Representation of ice cloud microphysics and its interaction with 
    aerosols in the E3SM Atmosphere Model (EAM) V1, to be submitted to JAMES.
@@ -63,6 +52,16 @@ Scientific model description in journal articles
    (MAM4) within version 5.3 of the Community Atmosphere Model, 
    Geosci. Model Dev., 9, 505-522, https://doi.org/10.5194/gmd-9-505-2016, 2016. 
 
+.. #. Qian et al. 2018, Parametric sensitivity and uncertainty quantification in the version 
+..    1 of E3SM Atmosphere Model based on short Perturbed Parameters Ensemble simulations, 
+..    submitted to JGR-Atmosphere
+   
+.. #. Tang et al. 2018: How well does a regionally refined model represent the globally 
+..    uniform high-resolution E3SM Atmosphere Model Version 1 (EAM1) over the contiguous United States?, 
+..    submitted to JAMES.
+
+.. #. Zhang, Y. et al. 2018: Evaluation of EAMv1 simulated clouds and their sensitivity to model 
+..   resolution with satellite and ground-based simulators, to be submitted to JAMES.
 
 
 
