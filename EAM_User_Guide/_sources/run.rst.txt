@@ -142,81 +142,6 @@ cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.
 
 
-Switching on Nudging
---------------------
-
-An introduction of nudging can be found in 
-`Zhang et al. (2014) <https://www.atmos-chem-phys.net/14/8631/2014/>`_ and references therein. 
-
-The following variables need to be modified to activate nudging. 
-The example shown below allows nudging for horizontal winds :: 
-
- cat <<EOF >> user_nl_cam
-  !.......................................................
-  ! nudging
-  !.......................................................
-   Nudge_Model = .True.
-   Nudge_Path  = '${INPUT_NUDGING}/ne30/'
-   Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-00000.nc'
-   Nudge_Times_Per_Day = 4  !! nudging input data frequency 
-   Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
-   Nudge_Uprof = 1
-   Nudge_Ucoef = 1.
-   Nudge_Vprof = 1
-   Nudge_Vcoef = 1.
-   Nudge_Tprof = 0
-   Nudge_Tcoef = 0.
-   Nudge_Qprof = 0
-   Nudge_Qcoef = 0.
-   Nudge_PSprof = 0
-   Nudge_PScoef = 0.
-   Nudge_Beg_Year = 0000
-   Nudge_Beg_Month = 1
-   Nudge_Beg_Day = 1
-   Nudge_End_Year = 9999
-   Nudge_End_Month = 1
-   Nudge_End_Day = 1
-  EOF
-
-This setup will nudge the model towards a baseline simulation. The nudging data were 
-created from the baseline simulation by archiving the 6-hourly meteorological fields. 
-Only the horizontal winds are nudged, with a relaxation time scale of 6h. 
-
-
-.. Switching on Satellite/Aircraft Sampler 
-.. ---------------------------------------
-.. 
-.. under construction 
-.. 
- 
-Switching on Aerosol Forcing Diagnostics
-----------------------------------------
-
-Namelist setup :: 
-
-  cat <<EOF >> user_nl_cam
-     rad_diag_1 = 'A:Q:H2O', 'N:O2:O2', 'N:CO2:CO2', 'A:O3:O3', 'N:N2O:N2O', 'N:CH4:CH4', 'N:CFC11:CFC11', 'N:CFC12:CFC12', 
-  EOF
-
-Then the radiative flux calculated without aerosols are diagnosed 
-(with "_d1" appended to the original radiative flux name, e.g. "FSNT_d1"). 
-
-The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-chem-phys.net/13/9971/2013/>`_. 
-
-
-Changing External Forcings
---------------------------
-
-The following changes need to be made after executing "create_newcase". 
-
-- Changing SST, e.g. :: 
-
-  ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc' 
-  ./xmlchange -file env_run.xml -id SSTICE_DATA_FILENAME -val '$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc'
-  
-- Changing aerosol emissions, e.g. :: 
-
-
 Single column model (SCM) simulations
 -------------------------------------
 
@@ -230,18 +155,6 @@ IOP forcing data to drive the SCM can be found
 `here <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library>`_. (internal) or 
 from the E3SM input data server `here <https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/`_. 
 
-Regionally-Refinement Model (RRM) simulations 
---------------------------------------------- 
-
-RRM can be configured by specifying the resolution (e.g. "conusx4v1_conusx4v1") ::
-
-   ./create_newcase -case $MYCASE -project $MYPROJECT -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach $MYMACH
-
-Some resources are available internally within E3SM: 
-
-- `How to run RRM <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/11010268/How+to+run+the+regionally+refined+model+RRM>`_
-- `Regridding RRM simulations <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/27951986/Regridding+RRM+simulations>`_
-- `How to perform nudged simulations with RRM <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM>`_
 
 
 Frequently-used namelist options

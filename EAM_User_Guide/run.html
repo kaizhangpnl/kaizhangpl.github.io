@@ -168,70 +168,6 @@ and runs MISR, ISCCP, MODIS, and CALIPSO lidar simulators
 cosp_lmodis_sim=.true.,cosp_llidar_sim=.true.).
 This default logical is set in cospsimulator_intr.F90.</p>
 </div>
-<div class="section" id="switching-on-nudging">
-<h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
-<p>An introduction of nudging can be found in
-<a class="reference external" href="https://www.atmos-chem-phys.net/14/8631/2014/">Zhang et al. (2014)</a> and references therein.</p>
-<p>The following variables need to be modified to activate nudging.
-The example shown below allows nudging for horizontal winds</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
- !.......................................................
- ! nudging
- !.......................................................
-  Nudge_Model = .True.
-  Nudge_Path  = &#39;${INPUT_NUDGING}/ne30/&#39;
-  Nudge_File_Template = &#39;ACME.cam.h2.%y-%m-%d-00000.nc&#39;
-  Nudge_Times_Per_Day = 4  !! nudging input data frequency
-  Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s
-  Nudge_Uprof = 1
-  Nudge_Ucoef = 1.
-  Nudge_Vprof = 1
-  Nudge_Vcoef = 1.
-  Nudge_Tprof = 0
-  Nudge_Tcoef = 0.
-  Nudge_Qprof = 0
-  Nudge_Qcoef = 0.
-  Nudge_PSprof = 0
-  Nudge_PScoef = 0.
-  Nudge_Beg_Year = 0000
-  Nudge_Beg_Month = 1
-  Nudge_Beg_Day = 1
-  Nudge_End_Year = 9999
-  Nudge_End_Month = 1
-  Nudge_End_Day = 1
- EOF
-</pre></div>
-</div>
-<p>This setup will nudge the model towards a baseline simulation. The nudging data were
-created from the baseline simulation by archiving the 6-hourly meteorological fields.
-Only the horizontal winds are nudged, with a relaxation time scale of 6h.</p>
-</div>
-<div class="section" id="switching-on-aerosol-forcing-diagnostics">
-<h2>Switching on Aerosol Forcing Diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
-<p>Namelist setup</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
-   <span class="n">rad_diag_1</span> <span class="o">=</span> <span class="s1">&#39;A:Q:H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:O2:O2&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CO2:CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;A:O3:O3&#39;</span><span class="p">,</span> <span class="s1">&#39;N:N2O:N2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CH4:CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC11:CFC11&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC12:CFC12&#39;</span><span class="p">,</span>
-<span class="n">EOF</span>
-</pre></div>
-</div>
-<p>Then the radiative flux calculated without aerosols are diagnosed
-(with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
-<p>The detailed diagnostic method can be found in <a class="reference external" href="https://www.atmos-chem-phys.net/13/9971/2013/">Ghan (2013)</a>.</p>
-</div>
-<div class="section" id="changing-external-forcings">
-<h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
-<p>The following changes need to be made after executing “create_newcase”.</p>
-<ul>
-<li><p class="first">Changing SST, e.g.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc&#39;</span>
-<span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc&#39;</span>
-</pre></div>
-</div>
-</li>
-<li><p class="first">Changing aerosol emissions, e.g.</p>
-</li>
-</ul>
-</div>
 <div class="section" id="single-column-model-scm-simulations">
 <h2>Single column model (SCM) simulations<a class="headerlink" href="#single-column-model-scm-simulations" title="Permalink to this headline">¶</a></h2>
 <p>EAM can run in the single column mode.
@@ -241,19 +177,6 @@ Some instructions on how to configure and run a single column model can be found
 <p>IOP forcing data to drive the SCM can be found
 <a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library">here</a>. (internal) or
 from the E3SM input data server <a href="#id10"><span class="problematic" id="id11">`here &lt;https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/`_</span></a>.</p>
-</div>
-<div class="section" id="regionally-refinement-model-rrm-simulations">
-<h2>Regionally-Refinement Model (RRM) simulations<a class="headerlink" href="#regionally-refinement-model-rrm-simulations" title="Permalink to this headline">¶</a></h2>
-<p>RRM can be configured by specifying the resolution (e.g. “conusx4v1_conusx4v1”)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./create_newcase -case $MYCASE -project $MYPROJECT -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach $MYMACH
-</pre></div>
-</div>
-<p>Some resources are available internally within E3SM:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/11010268/How+to+run+the+regionally+refined+model+RRM">How to run RRM</a></li>
-<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/27951986/Regridding+RRM+simulations">Regridding RRM simulations</a></li>
-<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM">How to perform nudged simulations with RRM</a></li>
-</ul>
 </div>
 <div class="section" id="frequently-used-namelist-options">
 <h2>Frequently-used namelist options<a class="headerlink" href="#frequently-used-namelist-options" title="Permalink to this headline">¶</a></h2>
@@ -319,11 +242,7 @@ from the E3SM input data server <a href="#id10"><span class="problematic" id="id
 <li><a class="reference internal" href="#debugging-mode">Debugging mode</a></li>
 <li><a class="reference internal" href="#sanity-check-for-state-variables">Sanity-check for state variables</a></li>
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP Simulator</a></li>
-<li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
-<li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on Aerosol Forcing Diagnostics</a></li>
-<li><a class="reference internal" href="#changing-external-forcings">Changing External Forcings</a></li>
 <li><a class="reference internal" href="#single-column-model-scm-simulations">Single column model (SCM) simulations</a></li>
-<li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
 <li><a class="reference internal" href="#frequently-used-namelist-options">Frequently-used namelist options</a></li>
 <li><a class="reference internal" href="#other-options">Other options</a></li>
 <li><a class="reference internal" href="#reference">Reference</a></li>
