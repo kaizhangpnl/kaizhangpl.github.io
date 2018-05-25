@@ -47,7 +47,8 @@ Documentation Outline
 
 
 
-Maintained by Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) 
+Written by Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) with 
+input from the EAM development team. 
 
 Documentation last edited : |today|
 
