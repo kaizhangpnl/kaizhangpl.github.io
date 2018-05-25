@@ -8,7 +8,10 @@
 Frequently asked questions
 ===================
 
-Please direct your questions by raising an issue `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/issues>`_. 
+Please direct your questions or comments by raising an issue `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/issues>`_
+and we will try to address them. 
+
+
 
 
 
