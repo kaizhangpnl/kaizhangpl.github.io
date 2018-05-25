@@ -11,9 +11,9 @@ Other stuff
 
 More information can be found at:
 
-- E3SM `confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
+- `E3SM confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
 
-- E3SM `github <https://github.com/E3SM-Project/E3SM>`_
+- `E3SM github repository <https://github.com/E3SM-Project/E3SM>`_
 
 Input data 
 ---------------
@@ -25,15 +25,15 @@ Input data
 Mapping files 
 ---------------
 
-E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/maps/>`_ 
+E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/maps/>`_. 
 
 
 Grids 
 ---------------
 
-E3SM grid data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_ 
+E3SM grid data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_. 
 
 
 Observational data for analysis
 ---------------------------------
-Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_
+Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_. 
