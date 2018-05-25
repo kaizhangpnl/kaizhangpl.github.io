@@ -18,8 +18,8 @@ More information can be found at:
 Input data 
 ---------------
 
-- `E3SM internal input data server <https://acme-svn2.ornl.gov/acme-repo/>`_ 
-- `E3SM external input data server <https://acme-svn2.ornl.gov/acme-repo/acme/>`_ 
+- `E3SM internal input data server <https://acme-svn2.ornl.gov/acme-repo/acme/>`_ 
+- `E3SM external input data server <https://web.lcrc.anl.gov/public/e3sm/inputdata/>`_ 
 - `CESM external input data server <https://svn-ccsm-inputdata.cgd.ucar.edu/trunk/inputdata/>`_
 
 Mapping files 
