@@ -126,7 +126,8 @@ Under construction
 List of advective tracers 
 -------------------------
 
-`List of advective tracers <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tracers_adv.txt>`_. 
+`List of advective tracers in EAMv1 <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tracers_adv.txt>`_. 
+`List of advective tracers in EAMv0 <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tracers_adv_EAMv0.txt>`_. 
 
 List of tuning parameters 
 -------------------------
