@@ -1,2 +1,0 @@
-
-.. centered:: A centered paragraph.
