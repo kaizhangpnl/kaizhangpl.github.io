@@ -18,7 +18,7 @@ List of output variables
 Variables in the default h0 file
 --------------------------------
 
-The list of variables in the default h0 file can be found `here <https://kaizhangpnl.github.io/EAM_User_Guide/output.html>`_. 
+The list of variables in the default h0 file can be found `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output_h0.csv>`_. 
 
 .. The list below can be changed by modifying the csv table and recompile the doc 
 .. (https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output_h0.csv). 
