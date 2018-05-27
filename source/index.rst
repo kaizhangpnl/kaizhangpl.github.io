@@ -12,12 +12,12 @@ User's Guide
    :caption: Contents:
 
 
-Source Code of This Documentation 
+Source code of this documentation 
 -----------------------------------
 https://github.com/kaizhangpnl/kaizhangpnl.github.io
 
 
-Documentation Outline
+Documentation outline
 ---------------------
 
 

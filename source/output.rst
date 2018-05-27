@@ -33,7 +33,7 @@ Variables on the master list
 
 under construction 
 
-Variables lists for Special Diagnostics  
+Variables lists for special diagnostics  
 --------------------------------------
 
 under construction 

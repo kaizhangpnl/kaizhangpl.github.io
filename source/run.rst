@@ -13,7 +13,7 @@ First of all, please read
 `E3SM Quick Start <https://e3sm.org/model/running-e3sm/e3sm-quick-start/>`_ 
 
 
-Run Script
+Run script
 -----------
 A `runscript <https://github.com/E3SM-Project/E3SM/blob/master/run_e3sm.template.csh>`_ 
 is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
