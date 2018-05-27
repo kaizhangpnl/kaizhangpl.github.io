@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-User's Guide (85% completed) 
+User's Guide
 ====================================
 .. to the E3SM Atmosphere model
 
