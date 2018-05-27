@@ -1,12 +1,12 @@
 .. _run:
 
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/bug.rst>`_ 
-
-`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/bug.html>`_ 
-
 Reporting a bug
 ===================
+
+`Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/bug.rst>`_ 
+`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/bug.html>`_ 
+
 
 Users can report a bug by creating an issue at the E3SM github site: 
 

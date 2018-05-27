@@ -2,12 +2,12 @@
 
 
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/post.rst>`_ 
-
-`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/post.html>`_  
-
 Post-processing 
 ===================
+
+`Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/post.rst>`_ 
+`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/post.html>`_  
+
 
 Here lists the diagnostic tools for some quick analysis of the EAM output. More comprehensive 
 diagnostics tools are available `here <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_

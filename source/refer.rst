@@ -2,12 +2,12 @@
 
 
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/refer.rst>`_ 
-
-`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/refer.html>`_ 
-
 Important References
 ============
+
+`Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/refer.rst>`_ 
+`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/refer.html>`_ 
+
 
 Useful information 
 -------------------

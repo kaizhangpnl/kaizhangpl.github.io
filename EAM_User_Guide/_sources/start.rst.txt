@@ -2,12 +2,12 @@
 
 
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/start.rst>`_ 
-
-`Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/start.html>`_ 
-
 Getting Started
 ===============
+
+`Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/start.rst>`_ 
+`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/start.html>`_ 
+
 
 Quick start guide
 ------------------
