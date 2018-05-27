@@ -33,7 +33,7 @@ Mapping files
 
 E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/maps/>`_. 
 
-The name of the mapping files are listed below: :: 
+The name of the available mapping files are listed below: :: 
 
   map_ne11np4_to_ne30np4_aave.20160601.nc
   map_ne11np4_to_ne30np4_bilin.20160601.nc
@@ -76,7 +76,7 @@ Grids
 
 E3SM grid data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_. 
 
-The name of the mapping files are listed below: :: 
+The name of the available grid files are listed below: :: 
 
   128x256_SCRIP.20160301.nc
   129x256_SCRIP.130510.nc
