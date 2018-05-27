@@ -9,7 +9,7 @@ Technical overview of EAM
 `Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/flow.html>`_ 
 
 
-Flow Chart
+Flow chart
 ----------
 
 .. figure:: flow_chart.png

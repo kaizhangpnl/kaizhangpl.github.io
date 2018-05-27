@@ -2,7 +2,7 @@
 
 
 
-Getting Started
+Getting started
 ===============
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/start.rst>`_ 

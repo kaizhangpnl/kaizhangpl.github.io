@@ -10,7 +10,7 @@ Advanced configurations of EAM/E3SM
 `Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html>`_ 
 
 
-Switching on Nudging
+Switching on nudging
 --------------------
 
 An introduction of nudging can be found in 
@@ -58,7 +58,7 @@ source code `nudging.F90 <https://github.com/E3SM-Project/E3SM/blob/master/compo
 .. under construction 
 .. 
  
-Switching on Aerosol Forcing Diagnostics
+Switching on aerosol forcing diagnostics
 ----------------------------------------
 
 Namelist setup :: 
@@ -73,7 +73,7 @@ Then the radiative flux calculated without aerosols are diagnosed
 The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-chem-phys.net/13/9971/2013/>`_. 
 
 
-Changing External Forcings
+Changing external forcings
 --------------------------
 
 The following changes need to be made after executing "create_newcase". 

@@ -2,14 +2,14 @@
 
 
 
-Diagnostics Packages
+Diagnostics packages
 ====================
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/diag.rst>`_ 
 `Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_ 
 
 
-AMWG Diagnostics 
+AMWG diagnostics 
 ----------------
 
 `NCAR resources <http://www.cesm.ucar.edu/working_groups/Atmosphere/amwg-diagnostics-package/>`_ 
@@ -30,7 +30,7 @@ Internal resources:
   `F20TR <http://portal.nersc.gov/project/acme/coupled/beta/20161118.beta0.F20TRCOSP.ne30_ne30.edison/1976-1999-vs-obs/>`_  
   
 
-E3SM Diagnostics
+E3SM diagnostics
 ----------------
 
 See details `here <https://github.com/E3SM-Project/acme_diags>`_ 
@@ -38,7 +38,7 @@ See details `here <https://github.com/E3SM-Project/acme_diags>`_
 Examples: `DECK Simulations (internal) <http://portal.nersc.gov/project/acme/coupled/DECKv1/20180215.DECKv1b_H1.ne30_oEC.edison/e3sm_diags/1985-2014/viewer/index.html>`_ 
 
 
-ARM Diagnostics 
+ARM diagnostics 
 ----------------
 
 A Python based ARM data-oriented diagnostics package for climate model evaluation. 

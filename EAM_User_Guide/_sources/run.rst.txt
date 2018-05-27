@@ -81,7 +81,7 @@ The most frequently used compsets are listed below:
   
   
   
-Changing Spatial Resolutions
+Changing spatial resolutions
 ----------------------------
 
 To change the horizontal resolution, set :: 
@@ -113,7 +113,7 @@ The model will check if the state variables are within a plausible range
 Note that this sanity-check will be switched on automatically when the model is 
 running in debugging mode. 
  
-Switching on COSP Simulator
+Switching on COSP simulator
 -------------------------
 
 

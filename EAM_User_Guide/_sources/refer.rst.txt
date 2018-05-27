@@ -2,7 +2,7 @@
 
 
 
-Important References
+Important references
 ============
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/refer.rst>`_ 

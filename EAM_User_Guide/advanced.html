@@ -17,7 +17,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Reporting a bug" href="bug.html" />
-    <link rel="prev" title="Diagnostics Packages" href="diag.html" />
+    <link rel="prev" title="Diagnostics packages" href="diag.html" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
 <!--[if lte IE 6]>
@@ -36,7 +36,7 @@
           <a href="bug.html" title="Reporting a bug"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="diag.html" title="Diagnostics Packages"
+          <a href="diag.html" title="Diagnostics packages"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
       </ul>
@@ -52,7 +52,7 @@
 <p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst">Github</a>
 <a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html">Spinx</a></p>
 <div class="section" id="switching-on-nudging">
-<h2>Switching on Nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
+<h2>Switching on nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
 <p>An introduction of nudging can be found in
 <a class="reference external" href="https://www.atmos-chem-phys.net/14/8631/2014/">Zhang et al. (2014)</a> and references therein.</p>
 <p>The following variables need to be modified to activate nudging.
@@ -92,7 +92,7 @@ More detailed information on how to setup a nudged simulation can be found in th
 source code <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/nudging.F90">nudging.F90</a>.</p>
 </div>
 <div class="section" id="switching-on-aerosol-forcing-diagnostics">
-<h2>Switching on Aerosol Forcing Diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
+<h2>Switching on aerosol forcing diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
 <p>Namelist setup</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
    <span class="n">rad_diag_1</span> <span class="o">=</span> <span class="s1">&#39;A:Q:H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:O2:O2&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CO2:CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;A:O3:O3&#39;</span><span class="p">,</span> <span class="s1">&#39;N:N2O:N2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CH4:CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC11:CFC11&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC12:CFC12&#39;</span><span class="p">,</span>
@@ -104,7 +104,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <p>The detailed diagnostic method can be found in <a class="reference external" href="https://www.atmos-chem-phys.net/13/9971/2013/">Ghan (2013)</a>.</p>
 </div>
 <div class="section" id="changing-external-forcings">
-<h2>Changing External Forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
+<h2>Changing external forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
 <p>The following changes need to be made after executing “create_newcase”.</p>
 <ul>
 <li><p class="first">Changing SST, e.g.</p>
@@ -176,9 +176,9 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Advanced configurations of EAM/E3SM</a><ul>
-<li><a class="reference internal" href="#switching-on-nudging">Switching on Nudging</a></li>
-<li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on Aerosol Forcing Diagnostics</a></li>
-<li><a class="reference internal" href="#changing-external-forcings">Changing External Forcings</a></li>
+<li><a class="reference internal" href="#switching-on-nudging">Switching on nudging</a></li>
+<li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
+<li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>
 <li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
 <li><a class="reference internal" href="#creating-a-new-compset">Creating a new compset</a></li>
 <li><a class="reference internal" href="#adding-a-new-parameterization">Adding a new parameterization</a></li>
@@ -192,7 +192,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 
   <h4>Previous topic</h4>
   <p class="topless"><a href="diag.html"
-                        title="previous chapter">Diagnostics Packages</a></p>
+                        title="previous chapter">Diagnostics packages</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="bug.html"
                         title="next chapter">Reporting a bug</a></p>
@@ -229,7 +229,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
           <a href="bug.html" title="Reporting a bug"
              >next</a> |</li>
         <li class="right" >
-          <a href="diag.html" title="Diagnostics Packages"
+          <a href="diag.html" title="Diagnostics packages"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
       </ul>
