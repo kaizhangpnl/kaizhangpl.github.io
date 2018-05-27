@@ -18,15 +18,15 @@ List of output variables
 Variables in the default h0 file
 --------------------------------
 
-The list below can be changed by modifying the csv table and recompile the doc 
-(https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output_h0.csv). 
+The list of variables in the default h0 file can be found `here <https://kaizhangpnl.github.io/EAM_User_Guide/output.html>`_. 
 
-
-
-.. csv-table:: 
-   :widths: 5 15 12 5 40
-   :header: "Index", "Name", "Unit", "Dimension", "Longname & Notes"
-   :file: output_h0.csv
+.. The list below can be changed by modifying the csv table and recompile the doc 
+.. (https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output_h0.csv). 
+..
+.. .. csv-table:: 
+..    :widths: 5 15 12 5 40
+..    :header: "Index", "Name", "Unit", "Dimension", "Longname & Notes"
+..    :file: output_h0.csv
 
 Variables on the master list 
 ---------------------------- 
@@ -42,7 +42,9 @@ under construction
 NetCDF header from DECK simulations 
 ----------------------------
 
-.. literalinclude:: info_h0
+The NetCDF header of the h0 file from the DECK simulations can be found `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/info_h0>`_. 
+
+.. .. literalinclude:: info_h0
 
 
 Reference 
