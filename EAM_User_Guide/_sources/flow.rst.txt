@@ -46,15 +46,15 @@ List of advective tracers
 
       Name      Description                                   Type
       ------    ----------------------------------------      ----- 
-   1  Q         Specific humidity                             wet
-   2  CLDLIQ    Grid box averaged cloud liquid amount         wet
-   3  CLDICE    Grid box averaged cloud ice amount            wet
-   4  NUMLIQ    Grid box averaged cloud liquid number         wet
-   5  NUMICE    Grid box averaged cloud ice number            wet
-   6  RAINQM    Grid box averaged rain amount                 wet
-   7  SNOWQM    Grid box averaged snow amount                 wet
-   8  NUMRAI    Grid box averaged rain number                 wet
-   9  NUMSNO    Grid box averaged snow number                 wet
+  01  Q         Specific humidity                             wet
+  02  CLDLIQ    Grid box averaged cloud liquid amount         wet
+  03  CLDICE    Grid box averaged cloud ice amount            wet
+  04  NUMLIQ    Grid box averaged cloud liquid number         wet
+  05  NUMICE    Grid box averaged cloud ice number            wet
+  06  RAINQM    Grid box averaged rain amount                 wet
+  07  SNOWQM    Grid box averaged snow amount                 wet
+  08  NUMRAI    Grid box averaged rain number                 wet
+  09  NUMSNO    Grid box averaged snow number                 wet
   10  O3        O3                                            dry
   11  H2O2      H2O2                                          dry
   12  H2SO4     H2SO4                                         dry
