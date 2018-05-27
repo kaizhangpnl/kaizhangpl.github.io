@@ -1,0 +1,16 @@
+*.pyc
+*~
+*.rtc
+/.python-version
+/.cache
+/.idea
+/.eggs
+/.tox
+/.coverage
+/coverage.xml
+/build
+/dist
+/pynsist_pkgs
+/macapp/macOS
+/src/rinohtype.egg-info
+/MANIFEST
