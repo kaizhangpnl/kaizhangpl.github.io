@@ -5,8 +5,7 @@
 Other stuff
 ============
 
-`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/other.rst>`_ 
-
+`Github version <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/other.rst>`_   
 `Spinx version <https://kaizhangpnl.github.io/EAM_User_Guide/other.html>`_ 
 
 
