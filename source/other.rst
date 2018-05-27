@@ -9,12 +9,6 @@
 Other stuff
 ============
 
-More information can be found at:
-
-- `E3SM confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
-
-- `E3SM github repository <https://github.com/E3SM-Project/E3SM>`_
-
 
 
 Input data 
