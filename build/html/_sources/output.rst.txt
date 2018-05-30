@@ -15,6 +15,15 @@ Model output
 .. http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/hist_flds_fv_cam5.html
 
 
+Size of h0 files
+--------------------------------
+
+Below is a list of h0 files sizes for different model component: :: 
+
+   6.1G  *.cam.h0.2010-01.nc
+    56M  *.clm2.h0.2010-01.nc
+     4M  *.rtm.h0.2010-01.nc
+   
 Size of restart files
 --------------------------------
 
