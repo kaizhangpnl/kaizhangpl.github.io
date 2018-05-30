@@ -97,6 +97,20 @@ one-year simulation is about 14G.</p>
 <h2>NetCDF header from DECK simulations<a class="headerlink" href="#netcdf-header-from-deck-simulations" title="Permalink to this headline">¶</a></h2>
 <p>The NetCDF header of the h0 file from the DECK simulations can be found <a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/info_h0">here</a>.</p>
 </div>
+<div class="section" id="aerosol-mass-concentration">
+<h2>Aerosol mass concentration<a class="headerlink" href="#aerosol-mass-concentration" title="Permalink to this headline">¶</a></h2>
+<p>EAMv1 output the total mass concentration (sum of mass in different modes)
+of different compositions (both intertial and cloud-borne masses are included):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Mass_bc</span>  <span class="o">=</span> <span class="n">bc_a1</span> <span class="o">+</span> <span class="n">bc_c1</span> <span class="o">+</span> <span class="n">bc_a3</span> <span class="o">+</span> <span class="n">bc_c3</span> <span class="o">+</span> <span class="n">bc_a4</span> <span class="o">+</span> <span class="n">bc_c4</span>
+<span class="n">Mass_pom</span> <span class="o">=</span> <span class="n">pom_a1</span> <span class="o">+</span> <span class="n">pom_c1</span> <span class="o">+</span> <span class="n">pom_a3</span> <span class="o">+</span> <span class="n">pom_c3</span> <span class="o">+</span> <span class="n">pom_a4</span> <span class="o">+</span> <span class="n">pom_c4</span>
+<span class="n">Mass_mom</span> <span class="o">=</span> <span class="n">mom_a1</span> <span class="o">+</span> <span class="n">mom_c1</span> <span class="o">+</span> <span class="n">mom_a2</span> <span class="o">+</span> <span class="n">mom_c2</span> <span class="o">+</span> <span class="n">mom_a3</span> <span class="o">+</span> <span class="n">mom_c3</span> <span class="o">+</span> <span class="n">mom_a4</span> <span class="o">+</span> <span class="n">mom_c4</span>
+<span class="n">Mass_ncl</span> <span class="o">=</span> <span class="n">ncl_a1</span> <span class="o">+</span> <span class="n">ncl_c1</span> <span class="o">+</span> <span class="n">ncl_a2</span> <span class="o">+</span> <span class="n">ncl_c2</span> <span class="o">+</span> <span class="n">ncl_a3</span> <span class="o">+</span> <span class="n">ncl_c3</span>
+<span class="n">Mass_soa</span> <span class="o">=</span> <span class="n">soa_a1</span> <span class="o">+</span> <span class="n">soa_c1</span> <span class="o">+</span> <span class="n">soa_a2</span> <span class="o">+</span> <span class="n">soa_c2</span> <span class="o">+</span> <span class="n">soa_a3</span> <span class="o">+</span> <span class="n">soa_c3</span>
+<span class="n">Mass_so4</span> <span class="o">=</span> <span class="n">so4_a1</span> <span class="o">+</span> <span class="n">so4_c1</span> <span class="o">+</span> <span class="n">so4_a2</span> <span class="o">+</span> <span class="n">so4_c2</span> <span class="o">+</span> <span class="n">so4_a3</span> <span class="o">+</span> <span class="n">so4_c3</span>
+<span class="n">Mass_dst</span> <span class="o">=</span> <span class="n">dst_a1</span> <span class="o">+</span> <span class="n">dst_c1</span> <span class="o">+</span> <span class="n">dst_a3</span> <span class="o">+</span> <span class="n">dst_c3</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="reference">
 <h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
 <p>Documentation from <a class="reference external" href="http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/">CAM5.3</a>.</p>
@@ -119,6 +133,7 @@ one-year simulation is about 14G.</p>
 <li><a class="reference internal" href="#variables-on-the-master-list">Variables on the master list</a></li>
 <li><a class="reference internal" href="#variables-lists-for-special-diagnostics">Variables lists for special diagnostics</a></li>
 <li><a class="reference internal" href="#netcdf-header-from-deck-simulations">NetCDF header from DECK simulations</a></li>
+<li><a class="reference internal" href="#aerosol-mass-concentration">Aerosol mass concentration</a></li>
 <li><a class="reference internal" href="#reference">Reference</a></li>
 </ul>
 </li>
