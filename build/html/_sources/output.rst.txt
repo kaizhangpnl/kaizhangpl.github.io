@@ -18,6 +18,9 @@ Model output
 Size of h0 (monthly mean) files
 --------------------------------
 
+The storage needed for a single level global field is about 0.2M (single precision) for ne30 
+and 3M for ne120. 
+
 Below is a list of h0 files sizes for different model component: :: 
 
    6.1G  *.cam.h0.2010-01.nc
