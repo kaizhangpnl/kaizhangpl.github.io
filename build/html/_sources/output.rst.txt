@@ -2,7 +2,7 @@
 
 
 
-List of output variables
+Model output
 ========================
 
 
@@ -15,6 +15,21 @@ List of output variables
 .. http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/hist_flds_fv_cam5.html
 
 
+Size of restart files
+--------------------------------
+
+Below is a list of restart files sizes for different model component: :: 
+
+   6.3G  *.cam.r.2010-01-01-00000.nc
+    13M  *.cice.r.2010-01-01-00000.nc
+   751M  *.clm2.r.2010-01-01-00000.nc
+   401K  *.clm2.rh0.2010-01-01-00000.nc
+    96M  *.cpl.r.2010-01-01-00000.nc
+    11K  *.docn.rs1.2010-01-01-00000.bin
+    16M  *.rtm.r.2010-01-01-00000.nc
+   109K  *.rtm.rh0.2010-01-01-00000.nc
+ 
+ 
 Variables in the default h0 file
 --------------------------------
 
