@@ -196,15 +196,16 @@ Detailed information about the vertical coordinate in EAMv1 can be found
 Time stepping
 ----------------
 
-The table below shows the model time step used in the default EAMv1 (FC5AV1C-04P2 compset) 
-at different model resolutions. 
+The table below shows the model time step used in the default EAMv1 
+(FC5AV1C-04P2 for ne11-ne30, FC5AV1C-H01C for ne120) at different model resolutions. 
+Modified from `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_.  
 
 .. figure:: timestepping.jpeg
    :scale: 40%
    :alt: Time stepping in EAMv1. 
    :align: center
 
-Modified from `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_.  
+
    
    
 List of advective tracers 
