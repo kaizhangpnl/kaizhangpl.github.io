@@ -197,7 +197,8 @@ Time stepping
 ----------------
 
 The table below shows the model time step used in the default EAMv1 
-(FC5AV1C-04P2 for ne11-ne30, FC5AV1C-H01C for ne120) at different model resolutions. 
+(FC5AV1C-04P2 compset for ne11, ne16, and ne30; FC5AV1C-H01C compset for ne120) 
+at different model resolutions. 
 Modified from `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_.  
 
 .. figure:: timestepping.jpeg
