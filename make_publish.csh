@@ -9,7 +9,7 @@ cp ${P1}/source/*.jpeg       ${P1}/EAM_User_Guide/_images/
 cp -rf ${P1}/build/html/_s* ${P1}/EAM_User_Guide/
 cd ${P1}
 
-git add * 
+#git add * 
 git commit -m "update" 
 git push origin master 
 
