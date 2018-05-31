@@ -124,3 +124,20 @@ Observational data for analysis
 ---------------------------------
 Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_. 
 
+
+List of important simulations 
+---------------------------------
+
+- `FC5 ne30 `<https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/110788954/20161118.beta0.FC5COSP.ne30+ne30.edison>`_.  
+- `F1850C5 ne30 `<https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/111673570/20161118.beta0.F1850COSP.ne30+ne30.edison>`_. 
+- `F20TR ne30 `<https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/114491591/20161118.beta0.F20TRCOSP.ne30+ne30.edison>`_.  
+- `F2000AF ne30 `<https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/111673554/20161118.beta0.F2000AFCOSP.ne30+ne30.edison>`_. 
+- `F1850C5plus4K ne30 `<https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/110788891/20161118.beta0.F1850COSPplus4K.ne30+ne30.edison>`_. 
+
+
+
+
+
+
+
+
