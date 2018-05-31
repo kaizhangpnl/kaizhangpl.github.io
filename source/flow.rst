@@ -204,7 +204,8 @@ at different model resolutions.
    :alt: Time stepping in EAMv1. 
    :align: center
 
-    at various spatial resolutions.
+
+   Modified from `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_.  
    
    
 List of advective tracers 
