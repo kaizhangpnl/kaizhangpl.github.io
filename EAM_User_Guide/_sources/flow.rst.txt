@@ -193,8 +193,8 @@ Detailed information about the vertical coordinate in EAMv1 can be found
   73    0.0000           1000.0000           1000.0000
 
 
-Time stepping
-----------------
+Temporal resolution 
+--------------------
 
 The table below shows the model time step used in the default EAMv1 
 (FC5AV1C-04P2 compset for ne11, ne16, and ne30; FC5AV1C-H01C compset for ne120) 
