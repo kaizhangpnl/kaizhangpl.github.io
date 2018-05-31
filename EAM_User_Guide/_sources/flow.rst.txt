@@ -196,14 +196,15 @@ Detailed information about the vertical coordinate in EAMv1 can be found
 Time stepping
 ----------------
 
-The table below shows the model time step used at different model resolutions. 
+The table below shows the model time step used in the default EAMv1 (FC5AV1C-04P2 compset) 
+at different model resolutions. 
 
 .. figure:: timestepping.jpeg
    :scale: 100 %
    :alt: Time stepping in EAMv1. 
    :align: center
 
-   Default model configuration parameters for EAMv1 (FC5AV1C-04P2 compset) at various spatial resolutions.
+    at various spatial resolutions.
    
    
 List of advective tracers 
