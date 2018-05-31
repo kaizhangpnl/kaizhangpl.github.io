@@ -200,7 +200,7 @@ The table below shows the model time step used in the default EAMv1 (FC5AV1C-04P
 at different model resolutions. 
 
 .. figure:: timestepping.jpeg
-   :scale: 20 %
+   :scale: 30 %
    :alt: Time stepping in EAMv1. 
    :align: center
 
