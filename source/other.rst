@@ -137,7 +137,7 @@ Beta0 ne30 AV1C-04P2 simulations:
 - `F1850C5plus4K  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/110788891/20161118.beta0.F1850COSPplus4K.ne30+ne30.edison>`_
 
 
-`ne30 DECK simulations <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/496435927/v1+DECK+simulations+low-res+water+cycle>`- : 
+`ne30 DECK simulations <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/496435927/v1+DECK+simulations+low-res+water+cycle>`_: 
 
 - `AMIP  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/607748440/DECKv1+AMIP>`_
 - `piControl coupled  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/496141149/DECKv1+piControl>`_
