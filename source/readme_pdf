@@ -1,0 +1,6 @@
+
+% module load python/3.5-anaconda
+% sphinx-build -b rinoh . _build/rinoh
+% mutt -s E3SM_atm.pdf -a E3SM_atm.pdf -- $gmail < /dev/null 
+
+

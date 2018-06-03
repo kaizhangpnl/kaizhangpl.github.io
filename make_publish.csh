@@ -1,6 +1,6 @@
 #!/bin/csh 
 
-setenv P1 /global/u2/k/kaizhang/TMP/TMP/kaizhangpnl.github.io
+setenv P1 /global/u2/k/${USER}/TMP/TMP/kaizhangpnl.github.io
 setenv P1 /Users/${USER}/tools/sphinx/kaizhangpnl.github.io
 
 cp ${P1}/build/html/*       ${P1}/EAM_User_Guide/   
