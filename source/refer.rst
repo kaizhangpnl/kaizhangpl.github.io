@@ -30,12 +30,13 @@ Scientific model description in journal articles
    implementation and impacts on clouds, Atmos. Chem. Phys. Discuss., 
    https://doi.org/10.5194/acp-2018-70, in review, 2018. 
   
-#. Zhang, K., Rasch, P. J., Taylor, M. A., Wan, H., Leung, L.-Y. R., Ma, P.-L., 
-   Golaz, J.-C., Wolfe, J., Lin, W., Singh, B., Burrows, S., Yoon, J.-H., Wang, H., 
-   Qian, Y., Tang, Q., Caldwell, P., and Xie, S.: 
+#. Zhang, K., Rasch, P. J., Taylor, M. A., Wan, H., Leung, R., Ma, P.-L., Golaz, J.-C., 
+   Wolfe, J., Lin, W., Singh, B., Burrows, S., Yoon, J.-H., Wang, H., Qian, Y., Tang, Q., 
+   Caldwell, P., and Xie, S.: 
    Impact of numerical choices on water conservation in the E3SM Atmosphere Model 
-   Version 1 (EAMv1), Geosci. Model Dev., 
-   https://doi.org/10.5194/gmd-2017-293, 2018. 
+   version 1 (EAMv1), 
+   Geosci. Model Dev., 11, 1971-1988, 
+   https://doi.org/10.5194/gmd-11-1971-2018, 2018. 
 
 #. Xie et al. 2018, Understanding Cloud and Convective Characteristics in Version 1 of 
    the E3SM Atmosphere Model, submitted to JAMES.

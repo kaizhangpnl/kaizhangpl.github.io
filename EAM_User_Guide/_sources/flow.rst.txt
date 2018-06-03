@@ -25,7 +25,7 @@ Flow chart
    The colored boxes indicate parts of EAM that affect the concentrations of water 
    species; these include the numerical fixers, deep and shallow convection, 
    turbulent transport, and stratiform cloud macro- and microphysics. 
-   See `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_ for more details. 
+   See `Zhang et al. (2018) <https://www.geosci-model-dev.net/11/1971/2018/gmd-11-1971-2018.html>`_ for more details. 
    
    
 Spatial resolution
@@ -199,7 +199,7 @@ Temporal resolution
 The table below shows the model time step used in the default EAMv1 
 (FC5AV1C-04P2 compset for ne11, ne16, and ne30; FC5AV1C-H01C compset for ne120) 
 at different model resolutions. 
-Modified from `Zhang et al. (2018) <https://www.geosci-model-dev-discuss.net/gmd-2017-293/>`_.  
+Modified from `Zhang et al. (2018) <https://www.geosci-model-dev.net/11/1971/2018/gmd-11-1971-2018.html>`_.  
 
 .. figure:: timestepping.jpeg
    :scale: 40%
