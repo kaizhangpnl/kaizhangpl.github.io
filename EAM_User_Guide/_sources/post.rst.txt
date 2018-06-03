@@ -17,6 +17,15 @@ NCO
 
 See details `here <https://e3sm.org/resources/tools/analysis-tools/nco/>`_
 
+- `NCO on github <https://github.com/nco/nco>`_ 
+
+- `NCO documentation <http://nco.sf.net/nco.pdf>`_
+
+- `NCO on zenodo <https://zenodo.org/record/1214267#.WxOGloIh1E4>`_ 
+
+- Reference: Zender, C. S. (2008), Analysis of self-describing gridded geoscience data with 
+             netCDF operators (NCO), Environ. Modell. Softw., 23(10), 1338-1342.  
+             `DOI: http://dx.doi.org/10.1016/j.envsoft.2008.03.004 <http://dx.doi.org/10.1016/j.envsoft.2008.03.004>`_
 
 Regridding from SE grid to lat-lon grid  
 ---------------------------------------
