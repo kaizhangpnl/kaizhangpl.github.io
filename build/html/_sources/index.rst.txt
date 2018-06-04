@@ -36,7 +36,8 @@ Documentation outline
     bug
     freq
     other
-
+    contrb
+    acknow
 
 .. Indices and tables
 .. ==================
