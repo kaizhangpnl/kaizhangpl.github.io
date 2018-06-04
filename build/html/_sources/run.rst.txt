@@ -19,6 +19,8 @@ A `runscript <https://github.com/E3SM-Project/E3SM/blob/master/run_e3sm.template
 is available in the E3SM model source code directory (parallel to "cime" and "compoment"). 
 For E3SM project members, more example scripts can be found `here (internal) <https://github.com/E3SM-Project/SimulationScripts/>`_. 
 
+It takes several minutes to compile and a dozen of minutes (or more) to run and generate 
+log files, so it's good time to grab a coffee or read an abstract!  
 
 Creating a new case 
 -----------------
