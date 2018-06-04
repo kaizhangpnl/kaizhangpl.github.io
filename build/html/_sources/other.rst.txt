@@ -154,6 +154,16 @@ ne30 DECK simulations (See the overview `here <https://acme-climate.atlassian.ne
 - `Historical coupled  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/537985236/DECKv1+historical+simulations>`_ 
 
 
+DOE machines 
+-------------- 
+
+- `Edison <http://www.nersc.gov/users/computational-systems/edison/>`_
+- `Cori <http://www.nersc.gov/users/computational-systems/cori/>`_
+- `Titan <https://www.olcf.ornl.gov/olcf-resources/compute-systems/titan/>`_ 
+- `Eos <https://www.olcf.ornl.gov/for-users/system-user-guides/eos/>`_ 
+- `Anvil <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/98992379>`_
+- `Constance <https://confluence.pnnl.gov/confluence/display/PICHELP/Constance>`_  
+- `Cascade <https://www.emsl.pnl.gov/MSC/UserGuide/index.html>`_   
 
 
 
