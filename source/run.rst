@@ -12,7 +12,7 @@ First of all, please read
 
 `E3SM Quick Start <https://e3sm.org/model/running-e3sm/e3sm-quick-start/>`_ 
 
-Since EAM is a descendant of CAM5, they share a lot of functionalities. Users are 
+Since EAMv1 is a descendant of CAM5, they share a lot of functionalities. Users are 
 encouraged to read the `CAM5.3 user's guide <http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/>`_ 
 to obtain more useful information. 
 
