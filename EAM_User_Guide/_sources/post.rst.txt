@@ -19,9 +19,9 @@ See details `here <https://e3sm.org/resources/tools/analysis-tools/nco/>`_
 
 - `NCO on github <https://github.com/nco/nco>`_ 
 
-- `NCO documentation <http://nco.sf.net/nco.pdf>`_
-
 - `NCO on zenodo <https://zenodo.org/record/1214267#.WxOGloIh1E4>`_ 
+
+- `NCO documentation <http://nco.sf.net/nco.pdf>`_
 
 - Reference: Zender, C. S. (2008), Analysis of self-describing gridded geoscience data with 
              netCDF operators (NCO), Environ. Modell. Softw., 23(10), 1338-1342.  
