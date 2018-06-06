@@ -154,6 +154,23 @@ ne30 DECK simulations (See the overview `here <https://acme-climate.atlassian.ne
 - `Historical coupled  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/537985236/DECKv1+historical+simulations>`_ 
 
 
+.. ..........................................................................................
+.. Following information is useful for developers, but only available internally. 
+.. 
+.. Re-tuning of ne120 L72 configuration after MG2 fixes
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/178716858/Re-tuning+of+ne120+L72+configuration+after+MG2+fixes
+..
+.. Why are F20TRAV1C-04P2 and FC5AV1C-04P2 So Different?
+.. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/211189831/Why+are+F20TRAV1C-04P2+and+FC5AV1C-04P2+So+Different
+..
+.. 20170926.FCT2.A_WCYCL1850S.ne30_oECv3.anvil retuning
+.. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/188155184/20170926.FCT2.A+WCYCL1850S.ne30+oECv3.anvil+retuning
+.. 
+.. MG2 nsubi bugfix
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/151160125/MG2+nsubi+bugfix
+.. 
+.. ..........................................................................................
+
 DOE machines 
 -------------- 
 
