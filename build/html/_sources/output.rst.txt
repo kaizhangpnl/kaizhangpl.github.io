@@ -69,7 +69,8 @@ under construction
 Variables lists for special diagnostics  
 --------------------------------------
 
-under construction 
+- `h0 diagnostics <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/128834949/Output+required+from+h0+for+ACME+Diagnostics>`_. 
+- `h1 diagnostics <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/139886723/Output+required+from+h1+for+ACME+Diagnostics>`_. 
 
 
 NetCDF header from DECK simulations 
