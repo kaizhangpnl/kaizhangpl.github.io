@@ -165,10 +165,21 @@ ne30 DECK simulations (See the overview `here <https://acme-climate.atlassian.ne
 ..
 .. 20170926.FCT2.A_WCYCL1850S.ne30_oECv3.anvil retuning
 .. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/188155184/20170926.FCT2.A+WCYCL1850S.ne30+oECv3.anvil+retuning
+..
+.. Exploration of ne240 (1/8 degree) simulations
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/133005317/Exploration+of+ne240+1+8+degree+simulations
 .. 
+.. Output Q advective tendency 
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/141131986/Output+Q+advective+tendency
+..
 .. MG2 nsubi bugfix
 .. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/151160125/MG2+nsubi+bugfix
 .. 
+.. RRM in V1 
+.. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/Tang_RRM_conusv1.pptx?version=1&modificationDate=1505410955895&cacheVersion=1&api=v2
+.. 
+.. AIE assessment 
+.. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/AIE_EAMv1_09_14_2017.pdf?version=1&modificationDate=1505430946293&cacheVersion=1&api=v2
 .. ..........................................................................................
 
 DOE machines 
