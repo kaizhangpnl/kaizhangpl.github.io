@@ -166,6 +166,10 @@ DOE machines
 - `Cascade <https://www.emsl.pnl.gov/MSC/UserGuide/index.html>`_   
 
 
+
+How to cite the model 
+----------------------
+
 How to cite the model 
 ----------------------
 
