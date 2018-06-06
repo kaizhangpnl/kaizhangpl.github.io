@@ -166,5 +166,15 @@ DOE machines
 - `Cascade <https://www.emsl.pnl.gov/MSC/UserGuide/index.html>`_   
 
 
+How to cite the model 
+----------------------
+
+Please cite the E3SM/EAM model using information (with DOI) provided 
+`here <https://www.osti.gov/doecode/biblio/10475>`_ 
+
+
+
+
+
 
 

@@ -22,5 +22,3 @@ See details `here <https://github.com/E3SM-Project/E3SM/issues>`_
 Further details can be found `here (E3SM confluence) 
 <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/16253917/Bug+Problem+Reporting>`_ (currently internal) 
 
-
-
