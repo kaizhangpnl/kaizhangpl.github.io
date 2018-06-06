@@ -86,8 +86,9 @@ The most frequently used compsets are listed below:
 
   V1 atmosphere-only simulation with time-varying 20th-century external forcing from CMIP6. 
   
-  
-  
+More information on the DECK compsets is available `here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/110100741/DECK+compsets>`_. 
+
+
 Changing spatial resolutions
 ----------------------------
 
