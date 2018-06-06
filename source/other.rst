@@ -167,8 +167,12 @@ DOE machines
 
 
 
-How to cite the model 
-----------------------
+How to acknowledge the E3SM project  
+------------------------------------
+
+Please acknowledge the E3SM project using information provided 
+`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/72450145/Protocol+for+Submitting+New+Atmosphere+Publication>`_ 
+
 
 How to cite the model 
 ----------------------
