@@ -107,7 +107,7 @@ Creating ensembles
 
 In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition 
 with a specified magnitude (e.g. 1.e-14 K). The implementation will call the random number 
-generator (L'Ecuyer, 1996) and create random samples for each grid points: ::  
+generator (L'Ecuyer, 1996) and create random samples for each grid point: ::  
 
   cat <<EOF >> user_nl_cam
      pertlim = 1.e-14
@@ -116,7 +116,8 @@ generator (L'Ecuyer, 1996) and create random samples for each grid points: ::
      seed_custom = 1
   EOF
   
-The user can change ``seed_custom`` to change the seed to the random number generator. 
+The user can change ``pertlim`` to change the perturbation magnitude and ``seed_custom`` 
+to change the seed to the random number generator. 
 
 .. reference 
 .. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/8781864/Ensemble+Simulations+performed+to+document+and+evaluate+the+V0.1-V03+model+configuration
