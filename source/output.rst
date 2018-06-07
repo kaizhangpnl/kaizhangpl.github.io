@@ -94,6 +94,12 @@ of different compositions (both interstitial and cloud-borne masses are included
     Mass_so4 = so4_a1 + so4_c1 + so4_a2 + so4_c2 + so4_a3 + so4_c3
     Mass_dst = dst_a1 + dst_c1 + dst_a3 + dst_c3 
 
+E3SM data conversion for CMIP6
+-------------------------------
+
+A list of E3SM CMIP6 output variables and the corresponding CMIP6 names can be found 
+`here <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/676036746/E3SM+data+conversion+for+CMIP6>`_.   
+
 
 Reference 
 ----------
