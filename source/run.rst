@@ -51,7 +51,7 @@ Available compsets for EAM can be found in:
 
 The most frequently used compsets are listed below: 
 
-- **``FC5AV1C-04P2``**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml>`_ 
+- ``FC5AV1C-04P2``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml>`_ 
  
   V1 atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L72 resolution. 
 
@@ -60,29 +60,29 @@ The most frequently used compsets are listed below:
   The atmosphere model is coupled with the ELM land model (similar to CLM4.5), and 
   driven by prescribed climatological SST / sea ice cover. 
   
-- **``F1850C5AV1C-04P2``**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
+- ``F1850C5AV1C-04P2``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
 
   V1 atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L72 resolution. 
   
-- **``FC5``**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml>`_ 
+- ``FC5``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml>`_ 
 
   V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution. 
   Note that some tuning parameters need to be changed for version 0.3. 
 
-- **``F1850C5``**  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml>`_ 
+- ``F1850C5``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml>`_ 
 
   V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution. 
   Note that some tuning parameters need to be changed for version 0.3.  
 
-- **``FC5AV1C-H01C``** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
+- ``FC5AV1C-H01C`` `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
 
   High-resolution (ne120L72) V1 atmosphere-only simulation with present-day external forcing. 
 
-- **``F1850C5AV1C-H01C``** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
+- ``F1850C5AV1C-H01C`` `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
 
   High-resolution (ne120L72) V1 atmosphere-only simulation with  pre-industrial external forcing. 
 
-- **``F20TRC5-CMIP6``** `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/20TR_cam5_CMIP6.xml>`_ 
+- ``F20TRC5-CMIP6`` `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/20TR_cam5_CMIP6.xml>`_ 
 
   V1 atmosphere-only simulation with time-varying 20th-century external forcing from CMIP6. 
   
