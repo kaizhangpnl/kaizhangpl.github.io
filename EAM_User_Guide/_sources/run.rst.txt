@@ -66,12 +66,12 @@ The most frequently used compsets are listed below:
   
 - ``FC5``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml>`_ 
 
-  V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution. 
+  V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ``ne30L30`` resolution. 
   Note that some tuning parameters need to be changed for version 0.3. 
 
 - ``F1850C5``  `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml>`_ 
 
-  V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution. 
+  V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ``ne30L30`` resolution. 
   Note that some tuning parameters need to be changed for version 0.3.  
 
 - ``FC5AV1C-H01C`` `namelist setup <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml>`_ 
@@ -94,7 +94,7 @@ Changing spatial resolutions
 
 To change the horizontal resolution, set :: 
 
-  set resolution = ``ne30_ne30`` (or ``ne4_ne4``, ``ne11_ne11``, ``ne16_ne16``, ``ne120_ne120``) 
+  set resolution = ne30_ne30 (or ne4_ne4, ne11_ne11, ne16_ne16, ne120_ne120) 
 
 before executing "create_newcase" 
 

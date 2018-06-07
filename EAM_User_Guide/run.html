@@ -97,11 +97,11 @@ driven by prescribed climatological SST / sea ice cover.</p>
 <p>V1 atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L72 resolution.</p>
 </li>
 <li><p class="first"><code class="docutils literal notranslate"><span class="pre">FC5</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml">namelist setup</a></p>
-<p>V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution.
+<p>V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the <code class="docutils literal notranslate"><span class="pre">ne30L30</span></code> resolution.
 Note that some tuning parameters need to be changed for version 0.3.</p>
 </li>
 <li><p class="first"><code class="docutils literal notranslate"><span class="pre">F1850C5</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml">namelist setup</a></p>
-<p>V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution.
+<p>V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the <code class="docutils literal notranslate"><span class="pre">ne30L30</span></code> resolution.
 Note that some tuning parameters need to be changed for version 0.3.</p>
 </li>
 <li><p class="first"><code class="docutils literal notranslate"><span class="pre">FC5AV1C-H01C</span></code> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml">namelist setup</a></p>
@@ -119,7 +119,7 @@ Note that some tuning parameters need to be changed for version 0.3.</p>
 <div class="section" id="changing-spatial-resolutions">
 <h2>Changing spatial resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>
 <p>To change the horizontal resolution, set</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>set resolution = ``ne30_ne30`` (or ``ne4_ne4``, ``ne11_ne11``, ``ne16_ne16``, ``ne120_ne120``)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">resolution</span> <span class="o">=</span> <span class="n">ne30_ne30</span> <span class="p">(</span><span class="ow">or</span> <span class="n">ne4_ne4</span><span class="p">,</span> <span class="n">ne11_ne11</span><span class="p">,</span> <span class="n">ne16_ne16</span><span class="p">,</span> <span class="n">ne120_ne120</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>before executing “create_newcase”</p>
