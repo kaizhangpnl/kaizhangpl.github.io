@@ -132,6 +132,12 @@ On Edison/Cori, if you have the E3SM project access, the data are available here
    /global/project/projectdirs/acme/acme_diags/obs_for_acme_diags 
 
 
+Fortran Performance Best Practices
+-----------------------------------
+
+Matthew Norman summarized some of the best practices to use when coding in Fortran. The 
+documentation is available `here <https://acme-climate.atlassian.net/wiki/spaces/PERF/pages/128585462/Fortran+Performance+Best+Practices>`_. 
+
 
 List of important simulations 
 ---------------------------------
