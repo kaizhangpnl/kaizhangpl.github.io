@@ -178,6 +178,9 @@ ne30 DECK simulations (See the overview `here <https://acme-climate.atlassian.ne
 .. RRM in V1 
 .. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/Tang_RRM_conusv1.pptx?version=1&modificationDate=1505410955895&cacheVersion=1&api=v2
 .. 
+.. How to add a new aerosol model configuration
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/129239165/How+to+add+a+new+aerosol+model+configuration
+.. 
 .. AIE assessment 
 .. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/AIE_EAMv1_09_14_2017.pdf?version=1&modificationDate=1505430946293&cacheVersion=1&api=v2
 .. ..........................................................................................
