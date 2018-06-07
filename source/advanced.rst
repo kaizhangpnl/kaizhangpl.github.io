@@ -116,7 +116,11 @@ generator (L'Ecuyer, 1996) and create random samples for each grid points: ::
      seed_custom = 1
   EOF
   
-The user can change seed_custom to change the seed to the random number generator. 
+The user can change ``seed_custom`` to change the seed to the random number generator. 
+
+.. reference 
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/8781864/Ensemble+Simulations+performed+to+document+and+evaluate+the+V0.1-V03+model+configuration
+
 
 Creating a new compset
 ----------------------
