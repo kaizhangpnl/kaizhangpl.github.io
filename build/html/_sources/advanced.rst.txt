@@ -72,6 +72,8 @@ Then the radiative flux calculated without aerosols are diagnosed
 
 The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-chem-phys.net/13/9971/2013/>`_. 
 
+Some information about the AeroCom "Indirect forcing experiment" can be found `here <https://wiki.met.no/aerocom/indirect>`_.  
+
 
 Changing external forcings
 --------------------------
