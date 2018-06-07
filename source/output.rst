@@ -15,7 +15,7 @@ Model output
 .. http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/hist_flds_fv_cam5.html
 
 
-Size of h0 (monthly mean) files
+Size of ``h0`` (monthly mean) files
 --------------------------------
 
 The storage needed for a single level global field is about 0.2M (single precision) for ne30 
@@ -48,7 +48,7 @@ Based on the sizes of h0 files and restart files, the estimated storage cost for
 one-year simulation is about 14G. 
 
 
-Variables in the default h0 file
+Variables in the default ``h0`` file
 --------------------------------
 
 The list of variables in the default h0 file can be found `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output_h0.csv>`_. 
