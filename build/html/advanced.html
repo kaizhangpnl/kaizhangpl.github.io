@@ -131,6 +131,21 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM">How to perform nudged simulations with RRM</a></li>
 </ul>
 </div>
+<div class="section" id="creating-ensembles">
+<h2>Creating ensembles<a class="headerlink" href="#creating-ensembles" title="Permalink to this headline">¶</a></h2>
+<p>In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition
+with a specified magnitude (e.g. 1.e-14 K). The implementation will call the random number
+generator (L’Ecuyer, 1996) and create random samples for each grid points:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">pertlim</span> <span class="o">=</span> <span class="mf">1.e-14</span>
+   <span class="n">new_random</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+   <span class="n">seed_clock</span> <span class="o">=</span> <span class="o">.</span><span class="n">false</span><span class="o">.</span>
+   <span class="n">seed_custom</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>The user can change seed_custom to change the seed to the random number generator.</p>
+</div>
 <div class="section" id="creating-a-new-compset">
 <h2>Creating a new compset<a class="headerlink" href="#creating-a-new-compset" title="Permalink to this headline">¶</a></h2>
 <p>Under construction</p>
@@ -181,6 +196,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>
 <li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
+<li><a class="reference internal" href="#creating-ensembles">Creating ensembles</a></li>
 <li><a class="reference internal" href="#creating-a-new-compset">Creating a new compset</a></li>
 <li><a class="reference internal" href="#adding-a-new-parameterization">Adding a new parameterization</a></li>
 <li><a class="reference internal" href="#creating-new-initial-condition-files">Creating new initial condition files</a></li>

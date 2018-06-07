@@ -102,6 +102,21 @@ Some resources are available internally within E3SM:
 - `How to perform nudged simulations with RRM <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM>`_
 
 
+Creating ensembles 
+--------------------------
+
+In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition 
+with a specified magnitude (e.g. 1.e-14 K). The implementation will call the random number 
+generator (L'Ecuyer, 1996) and create random samples for each grid points: ::  
+
+  cat <<EOF >> user_nl_cam
+     pertlim = 1.e-14
+     new_random = .true.
+     seed_clock = .false.
+     seed_custom = 1
+  EOF
+  
+The user can change seed_custom to change the seed to the random number generator. 
 
 Creating a new compset
 ----------------------
