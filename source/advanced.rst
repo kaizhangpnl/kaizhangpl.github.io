@@ -106,7 +106,7 @@ Creating ensembles
 --------------------------
 
 In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition 
-with a specified magnitude (e.g. 1.e-14 K). The implementation will call the random number 
+with a specified magnitude (e.g. ``1.e-14`` K). The implementation will call the random number 
 generator (L'Ecuyer, 1996) and create random samples for each grid point: ::  
 
   cat <<EOF >> user_nl_cam
