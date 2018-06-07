@@ -135,7 +135,7 @@ On Edison/Cori, if you have the E3SM project access, the data are available here
 Fortran Performance Best Practices
 -----------------------------------
 
-`Matthew Norman <https://www.olcf.ornl.gov/directory/staff-member/matthew-norman/`_ summarized some of the best practices to use when coding in Fortran. The 
+`Matthew Norman <https://www.olcf.ornl.gov/directory/staff-member/matthew-norman/>`_ summarized some of the best practices to use when coding in Fortran. The 
 documentation is available `here <https://acme-climate.atlassian.net/wiki/spaces/PERF/pages/128585462/Fortran+Performance+Best+Practices>`_. 
 
 
