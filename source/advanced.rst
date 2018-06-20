@@ -131,10 +131,15 @@ Following files need to be changed in order to create a new compset:
 - `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_ 
 - `components/cam/cime_config/config_component.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml>`_ 
 - `cime/src/drivers/mct/cime_config/config_component_e3sm.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml>`_ 
+- `cime/config/e3sm/allactive/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml>`_ 
+
+A new namelist configuration file is needed too, e.g. : 
+
 - `components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
 
 A detailed guide based on an older version of E3SM can be found 
-`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset>`_
+`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset>`_. 
+Note that some information on that page is obsolete. 
 
 
 Adding a new parameterization
