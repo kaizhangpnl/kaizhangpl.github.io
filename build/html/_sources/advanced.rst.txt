@@ -1,6 +1,6 @@
 .. _advanced:
 
-
+.. `Here <>`_
 
 Advanced configurations of EAM/E3SM 
 ==================================
@@ -126,7 +126,15 @@ to change the seed to the random number generator.
 Creating a new compset
 ----------------------
 
-Under construction 
+Following files need to be changed in order to create a new compset: 
+
+- `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_ 
+- `components/cam/cime_config/config_component.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml>`_ 
+- `cime/src/drivers/mct/cime_config/config_component_e3sm.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml>`_ 
+- `components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
+
+A detailed guide based on an older version of E3SM can be found 
+`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset>`_
 
 
 Adding a new parameterization

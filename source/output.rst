@@ -45,7 +45,7 @@ Below is a list of restart files sizes for different model component: ::
 Storage needed for a one-year simulation
 -----------------------------------------
 Based on the sizes of h0 files and restart files, the estimated storage cost for a 
-one-year simulation is about 14G. 
+one-year simulation is about 170G. 
 
 
 Variables in the default h0 file

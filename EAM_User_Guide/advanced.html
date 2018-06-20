@@ -47,8 +47,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="advanced-configurations-of-eam-e3sm">
-<span id="advanced"></span><h1>Advanced configurations of EAM/E3SM<a class="headerlink" href="#advanced-configurations-of-eam-e3sm" title="Permalink to this headline">¶</a></h1>
+  <span class="target" id="advanced"></span><div class="section" id="advanced-configurations-of-eam-e3sm">
+<h1>Advanced configurations of EAM/E3SM<a class="headerlink" href="#advanced-configurations-of-eam-e3sm" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst">Github</a>
 <a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html">Spinx</a></p>
 <div class="section" id="switching-on-nudging">
@@ -149,7 +149,15 @@ to change the seed to the random number generator.</p>
 </div>
 <div class="section" id="creating-a-new-compset">
 <h2>Creating a new compset<a class="headerlink" href="#creating-a-new-compset" title="Permalink to this headline">¶</a></h2>
-<p>Under construction</p>
+<p>Following files need to be changed in order to create a new compset:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml">components/cam/cime_config/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml">components/cam/cime_config/config_component.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml">cime/src/drivers/mct/cime_config/config_component_e3sm.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml">components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml</a></li>
+</ul>
+<p>A detailed guide based on an older version of E3SM can be found
+<a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset">here</a></p>
 </div>
 <div class="section" id="adding-a-new-parameterization">
 <h2>Adding a new parameterization<a class="headerlink" href="#adding-a-new-parameterization" title="Permalink to this headline">¶</a></h2>
