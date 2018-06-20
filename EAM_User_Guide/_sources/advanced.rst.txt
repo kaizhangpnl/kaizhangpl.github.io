@@ -137,7 +137,7 @@ Following files need to be changed in order to create a new compset:
 The namelist configuration files need to be changed too, e.g. : 
 
 - `components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
-- `components/cam/bld/namelist files/namelist_defaults_cam.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist files/namelist_defaults_cam.xml>`_ 
+- `components/cam/bld/namelist_files/namelist_defaults_cam.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_defaults_cam.xml>`_ 
 
 
 A detailed guide based on an older version of E3SM can be found 
