@@ -123,7 +123,14 @@ The name of the available grid files are listed below: ::
 
 Observational data for analysis
 ---------------------------------
-Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_. 
+Observational data for E3SM analysis are available at the ORNL data server: 
+
+`https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/ <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_
+
+and ANL data server: 
+
+`https://web.lcrc.anl.gov/public/e3sm/ <https://web.lcrc.anl.gov/public/e3sm/>`_
+
 E3SM users need to get the access to the data server following the instruction `here <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/7998629/ACME+Input+Data+Repository>`_ 
 (section "Working with the ACME svn data server"). 
 
