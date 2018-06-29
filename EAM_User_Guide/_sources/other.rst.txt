@@ -127,12 +127,12 @@ Observational data for E3SM analysis are available at the ORNL data server (xcam
 
 `https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/ <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_
 
-and ANL data server: 
-
-`https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/ <https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/>`_
-
 E3SM users need to get the access to the data server following the instruction `here <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/7998629/ACME+Input+Data+Repository>`_ 
 (section "Working with the ACME svn data server"). 
+
+Some data are also available on ANL LCRC data server: 
+
+`https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/ <https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/>`_
 
 On Edison/Cori, if you have the E3SM project access, the data are available here: :: 
 
