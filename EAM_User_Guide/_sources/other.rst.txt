@@ -138,6 +138,10 @@ On Edison/Cori, if you have the E3SM project access, the data are available here
 
    /global/project/projectdirs/acme/acme_diags/obs_for_acme_diags 
 
+and here: :: 
+
+   /global/project/projectdirs/acme/obs_for_diagnostics/
+   
 
 Fortran Performance Best Practices
 -----------------------------------
