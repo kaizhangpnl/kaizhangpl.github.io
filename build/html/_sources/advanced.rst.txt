@@ -74,6 +74,9 @@ The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-c
 
 Some information about the AeroCom "Indirect forcing experiment" can be found `here <https://wiki.met.no/aerocom/indirect>`_.  
 
+.. https://github.com/E3SM-Project/E3SM/pull/1400/files
+.. https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/output_aerocom_aie.F90
+
 
 Changing external forcings
 --------------------------

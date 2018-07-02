@@ -54,6 +54,21 @@
 <p>Please direct your questions or comments to us by raising an issue
 <a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/issues">here</a>
 and we will try to address them.</p>
+<ul>
+<li><p class="first">After a recent rebase with the E3SM V1, the following error occurred in a SCM simulation:</p>
+<p>ERROR:
+ice_open_nc: Cannot open /project/projectdirs/acme/inputdata//share/domains/UNS
+ET</p>
+</li>
+</ul>
+<p>The namelist setting for the input data is not correctly configured.</p>
+<ol class="arabic simple">
+<li>Check ice_in in the run directory and see if grid_file, kmt_file, and
+stream_fldfilename are correctly set.</li>
+<li>SCM is running at T42 originally, so check your cime/config/e3sm/config_grids.xml
+and/or components/cam/bld/namelist_files/namelist_defaults_cam.xml
+to see if they have the domain and SST file correctly set.</li>
+</ol>
 </div>
 
 
