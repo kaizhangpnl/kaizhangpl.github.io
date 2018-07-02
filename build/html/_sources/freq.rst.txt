@@ -20,7 +20,7 @@ and we will try to address them.
      ice_open_nc: Cannot open /project/projectdirs/acme/inputdata//share/domains/UNS
      ET
  
-     The namelist setting for the input data is not correctly configured. 
+  The namelist setting for the input data is not correctly configured. 
 
   1. Check ice_in in the run directory and see if grid_file, kmt_file, and 
      stream_fldfilename are correctly set.
