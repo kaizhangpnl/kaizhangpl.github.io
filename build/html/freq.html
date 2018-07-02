@@ -54,13 +54,15 @@
 <p>Please direct your questions or comments to us by raising an issue
 <a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/issues">here</a>
 and we will try to address them.</p>
-<ol class="arabic">
-<li><p class="first">After a recent rebase with the E3SM V1, the following error occurred in a SCM simulation:</p>
+<ul>
+<li><p class="first">Problem:</p>
+<p>After a recent rebase with the E3SM V1, the following error occurred in a SCM simulation:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ERROR</span><span class="p">:</span>
 <span class="n">ice_open_nc</span><span class="p">:</span> <span class="n">Cannot</span> <span class="nb">open</span> <span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">projectdirs</span><span class="o">/</span><span class="n">acme</span><span class="o">/</span><span class="n">inputdata</span><span class="o">//</span><span class="n">share</span><span class="o">/</span><span class="n">domains</span><span class="o">/</span><span class="n">UNS</span>
 <span class="n">ET</span>
 </pre></div>
 </div>
+<p>Answer:</p>
 <p>The namelist setting for the input data is not correctly configured.</p>
 <ol class="arabic simple">
 <li>Check ice_in in the run directory and see if grid_file, kmt_file, and
@@ -70,7 +72,7 @@ and/or components/cam/bld/namelist_files/namelist_defaults_cam.xml
 to see if they have the domain and SST file correctly set.</li>
 </ol>
 </li>
-</ol>
+</ul>
 </div>
 
 
