@@ -27,7 +27,7 @@ See details `here <https://e3sm.org/resources/tools/analysis-tools/nco/>`_
 
 - Reference: Zender, C. S. (2008), Analysis of self-describing gridded geoscience data with 
              netCDF operators (NCO), Environ. Modell. Softw., 23(10), 1338-1342.  
-             `DOI: http://dx.doi.org/10.1016/j.envsoft.2008.03.004 <http://dx.doi.org/10.1016/j.envsoft.2008.03.004>`_
+             `DOI: https://doi.org/10.1016/j.envsoft.2008.03.004 <https://doi.org/10.1016/j.envsoft.2008.03.004>`_
 
 Regridding from SE grid to lat-lon grid  
 ---------------------------------------
