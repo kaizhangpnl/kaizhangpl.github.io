@@ -47,8 +47,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="advanced-configurations-of-eam-e3sm">
-<span id="advanced"></span><h1>Advanced configurations of EAM/E3SM<a class="headerlink" href="#advanced-configurations-of-eam-e3sm" title="Permalink to this headline">¶</a></h1>
+  <span class="target" id="advanced"></span><div class="section" id="advanced-configurations-of-eam-e3sm">
+<h1>Advanced configurations of EAM/E3SM<a class="headerlink" href="#advanced-configurations-of-eam-e3sm" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst">Github</a>
 <a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html">Spinx</a></p>
 <div class="section" id="switching-on-nudging">
@@ -102,6 +102,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <p>Then the radiative flux calculated without aerosols are diagnosed
 (with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
 <p>The detailed diagnostic method can be found in <a class="reference external" href="https://www.atmos-chem-phys.net/13/9971/2013/">Ghan (2013)</a>.</p>
+<p>Some information about the AeroCom “Indirect forcing experiment” can be found <a class="reference external" href="https://wiki.met.no/aerocom/indirect">here</a>.</p>
 </div>
 <div class="section" id="changing-external-forcings">
 <h2>Changing external forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
@@ -130,9 +131,40 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM">How to perform nudged simulations with RRM</a></li>
 </ul>
 </div>
+<div class="section" id="creating-ensembles">
+<h2>Creating ensembles<a class="headerlink" href="#creating-ensembles" title="Permalink to this headline">¶</a></h2>
+<p>In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition
+with a specified magnitude (e.g. <code class="docutils literal notranslate"><span class="pre">1.e-14</span></code> K). The implementation will call the random number
+generator (L’Ecuyer, 1996) and create random samples for each grid point:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">pertlim</span> <span class="o">=</span> <span class="mf">1.e-14</span>
+   <span class="n">new_random</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+   <span class="n">seed_clock</span> <span class="o">=</span> <span class="o">.</span><span class="n">false</span><span class="o">.</span>
+   <span class="n">seed_custom</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>The user can change <code class="docutils literal notranslate"><span class="pre">pertlim</span></code> to change the perturbation magnitude and <code class="docutils literal notranslate"><span class="pre">seed_custom</span></code>
+to change the seed to the random number generator.</p>
+</div>
 <div class="section" id="creating-a-new-compset">
 <h2>Creating a new compset<a class="headerlink" href="#creating-a-new-compset" title="Permalink to this headline">¶</a></h2>
-<p>Under construction</p>
+<p>Following files need to be changed in order to create a new compset:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml">components/cam/cime_config/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml">components/cam/cime_config/config_component.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml">cime/src/drivers/mct/cime_config/config_component_e3sm.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml">cime/config/e3sm/allactive/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/build-namelist">components/cam/bld/build-namelist</a></li>
+</ul>
+<p>The namelist configuration files need to be changed too, e.g. :</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml">components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_defaults_cam.xml">components/cam/bld/namelist_files/namelist_defaults_cam.xml</a></li>
+</ul>
+<p>A detailed guide based on an older version of E3SM can be found
+<a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset">here</a>.
+Note that some information on that page is obsolete.</p>
 </div>
 <div class="section" id="adding-a-new-parameterization">
 <h2>Adding a new parameterization<a class="headerlink" href="#adding-a-new-parameterization" title="Permalink to this headline">¶</a></h2>
@@ -180,6 +212,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>
 <li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
+<li><a class="reference internal" href="#creating-ensembles">Creating ensembles</a></li>
 <li><a class="reference internal" href="#creating-a-new-compset">Creating a new compset</a></li>
 <li><a class="reference internal" href="#adding-a-new-parameterization">Adding a new parameterization</a></li>
 <li><a class="reference internal" href="#creating-new-initial-condition-files">Creating new initial condition files</a></li>

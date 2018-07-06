@@ -65,7 +65,10 @@ Scientific model description in journal articles
 ..   resolution with satellite and ground-based simulators, to be submitted to JAMES.
 
 
+More publications can be found on the E3SM confluence page (internal): 
 
+- `Atmosphere Group Publications for Phase 1 <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/188515021/Atmosphere+Group+Plan+for+Phase+1>`_
+- `AGU special collection <https://acme-climate.atlassian.net/wiki/spaces/CNCL/pages/669024482/AGU+special+collection>`_
  
 
 

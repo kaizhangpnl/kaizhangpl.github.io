@@ -1,6 +1,6 @@
 .. _advanced:
 
-
+.. `Here <>`_
 
 Advanced configurations of EAM/E3SM 
 ==================================
@@ -72,6 +72,11 @@ Then the radiative flux calculated without aerosols are diagnosed
 
 The detailed diagnostic method can be found in `Ghan (2013) <https://www.atmos-chem-phys.net/13/9971/2013/>`_. 
 
+Some information about the AeroCom "Indirect forcing experiment" can be found `here <https://wiki.met.no/aerocom/indirect>`_.  
+
+.. https://github.com/E3SM-Project/E3SM/pull/1400/files
+.. https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/output_aerocom_aie.F90
+
 
 Changing external forcings
 --------------------------
@@ -100,11 +105,47 @@ Some resources are available internally within E3SM:
 - `How to perform nudged simulations with RRM <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM>`_
 
 
+Creating ensembles 
+--------------------------
+
+In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition 
+with a specified magnitude (e.g. ``1.e-14`` K). The implementation will call the random number 
+generator (L'Ecuyer, 1996) and create random samples for each grid point: ::  
+
+  cat <<EOF >> user_nl_cam
+     pertlim = 1.e-14
+     new_random = .true.
+     seed_clock = .false.
+     seed_custom = 1
+  EOF
+  
+The user can change ``pertlim`` to change the perturbation magnitude and ``seed_custom`` 
+to change the seed to the random number generator. 
+
+.. reference 
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/8781864/Ensemble+Simulations+performed+to+document+and+evaluate+the+V0.1-V03+model+configuration
+
 
 Creating a new compset
 ----------------------
 
-Under construction 
+Following files need to be changed in order to create a new compset: 
+
+- `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_ 
+- `components/cam/cime_config/config_component.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml>`_ 
+- `cime/src/drivers/mct/cime_config/config_component_e3sm.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml>`_ 
+- `cime/config/e3sm/allactive/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml>`_ 
+- `components/cam/bld/build-namelist <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/build-namelist>`_ 
+
+The namelist configuration files need to be changed too, e.g. : 
+
+- `components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml>`_ 
+- `components/cam/bld/namelist_files/namelist_defaults_cam.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_defaults_cam.xml>`_ 
+
+
+A detailed guide based on an older version of E3SM can be found 
+`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset>`_. 
+Note that some information on that page is obsolete. 
 
 
 Adding a new parameterization

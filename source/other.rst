@@ -123,14 +123,31 @@ The name of the available grid files are listed below: ::
 
 Observational data for analysis
 ---------------------------------
-Observational data for E3SM analysis are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_. 
+Observational data for E3SM analysis are available at the ORNL data server (xcams account needed): 
+
+`https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/ <https://acme-svn2.ornl.gov/acme-repo/acme/obs_for_diagnostics/>`_
+
 E3SM users need to get the access to the data server following the instruction `here <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/7998629/ACME+Input+Data+Repository>`_ 
 (section "Working with the ACME svn data server"). 
+
+Some data are also available on ANL LCRC data server: 
+
+`https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/ <https://web.lcrc.anl.gov/public/e3sm/diagnostics/observations/>`_
 
 On Edison/Cori, if you have the E3SM project access, the data are available here: :: 
 
    /global/project/projectdirs/acme/acme_diags/obs_for_acme_diags 
 
+and here: :: 
+
+   /global/project/projectdirs/acme/obs_for_diagnostics/
+   
+
+Fortran Performance Best Practices
+-----------------------------------
+
+`Matthew Norman <https://www.olcf.ornl.gov/directory/staff-member/matthew-norman/>`_ summarized some of the best practices to use when coding in Fortran. The 
+documentation is available `here <https://acme-climate.atlassian.net/wiki/spaces/PERF/pages/128585462/Fortran+Performance+Best+Practices>`_. 
 
 
 List of important simulations 
@@ -154,6 +171,37 @@ ne30 DECK simulations (See the overview `here <https://acme-climate.atlassian.ne
 - `Historical coupled  <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/537985236/DECKv1+historical+simulations>`_ 
 
 
+.. ..........................................................................................
+.. Following information is useful for developers, but only available internally. 
+.. 
+.. Re-tuning of ne120 L72 configuration after MG2 fixes
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/178716858/Re-tuning+of+ne120+L72+configuration+after+MG2+fixes
+..
+.. Why are F20TRAV1C-04P2 and FC5AV1C-04P2 So Different?
+.. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/211189831/Why+are+F20TRAV1C-04P2+and+FC5AV1C-04P2+So+Different
+..
+.. 20170926.FCT2.A_WCYCL1850S.ne30_oECv3.anvil retuning
+.. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/188155184/20170926.FCT2.A+WCYCL1850S.ne30+oECv3.anvil+retuning
+..
+.. Exploration of ne240 (1/8 degree) simulations
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/133005317/Exploration+of+ne240+1+8+degree+simulations
+.. 
+.. Output Q advective tendency 
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/141131986/Output+Q+advective+tendency
+..
+.. MG2 nsubi bugfix
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/151160125/MG2+nsubi+bugfix
+.. 
+.. RRM in V1 
+.. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/Tang_RRM_conusv1.pptx?version=1&modificationDate=1505410955895&cacheVersion=1&api=v2
+.. 
+.. How to add a new aerosol model configuration
+.. https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/129239165/How+to+add+a+new+aerosol+model+configuration
+.. 
+.. AIE assessment 
+.. https://acme-climate.atlassian.net/wiki/download/attachments/151258247/AIE_EAMv1_09_14_2017.pdf?version=1&modificationDate=1505430946293&cacheVersion=1&api=v2
+.. ..........................................................................................
+
 DOE machines 
 -------------- 
 
@@ -164,6 +212,24 @@ DOE machines
 - `Anvil <https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/98992379>`_
 - `Constance <https://confluence.pnnl.gov/confluence/display/PICHELP/Constance>`_  
 - `Cascade <https://www.emsl.pnl.gov/MSC/UserGuide/index.html>`_   
+
+
+
+How to acknowledge the E3SM project  
+------------------------------------
+
+Please acknowledge the E3SM project using information provided 
+`here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/72450145/Protocol+for+Submitting+New+Atmosphere+Publication>`_ 
+
+
+How to cite the model 
+----------------------
+
+Please cite the E3SM/EAM model using information (with DOI) provided 
+`here <https://www.osti.gov/doecode/biblio/10475>`_ 
+
+
+
 
 
 

@@ -45,7 +45,7 @@ Below is a list of restart files sizes for different model component: ::
 Storage needed for a one-year simulation
 -----------------------------------------
 Based on the sizes of h0 files and restart files, the estimated storage cost for a 
-one-year simulation is about 14G. 
+one-year simulation is about 170G. 
 
 
 Variables in the default h0 file
@@ -69,7 +69,8 @@ under construction
 Variables lists for special diagnostics  
 --------------------------------------
 
-under construction 
+- `h0 diagnostics <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/128834949/Output+required+from+h0+for+ACME+Diagnostics>`_. 
+- `h1 diagnostics <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/139886723/Output+required+from+h1+for+ACME+Diagnostics>`_. 
 
 
 NetCDF header from DECK simulations 
@@ -92,6 +93,12 @@ of different compositions (both interstitial and cloud-borne masses are included
     Mass_soa = soa_a1 + soa_c1 + soa_a2 + soa_c2 + soa_a3 + soa_c3
     Mass_so4 = so4_a1 + so4_c1 + so4_a2 + so4_c2 + so4_a3 + so4_c3
     Mass_dst = dst_a1 + dst_c1 + dst_a3 + dst_c3 
+
+E3SM data conversion for CMIP6
+-------------------------------
+
+A list of E3SM CMIP6 output variables and the corresponding CMIP6 names can be found 
+`here <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/676036746/E3SM+data+conversion+for+CMIP6>`_.   
 
 
 Reference 

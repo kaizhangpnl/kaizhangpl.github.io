@@ -34,10 +34,11 @@ Spatial resolution
 Technically, EAM can run with horizontal resolution from ``ne4`` (about 750km) to ``ne120`` (about 25km)
 (with F1850C5AV1C-04P2 compset): 
 
-#. ``ne4_ne4``
-#. ``ne16_ne16`` 
-#. ``ne30_ne30`` 
-#. ``ne120_ne120`` 
+#. ``ne4_ne4 (~750km)``
+#. ``ne11_ne11 (~280km)`` 
+#. ``ne16_ne16 (~190km)`` 
+#. ``ne30_ne30 (~100km)`` 
+#. ``ne120_ne120 (~25km)`` 
 
 
 The vertical resolution is L30 (`lev <./L30.html>`_) for V0 and L72  (`lev <./L72.html>`_) for V1. 

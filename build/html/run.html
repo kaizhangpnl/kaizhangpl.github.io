@@ -86,34 +86,35 @@ log files, so it’s good time to grab a coffee and read an abstract!</p>
 <div><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml">components/cam/cime_config/config_compsets.xml</a></div></blockquote>
 <p>The most frequently used compsets are listed below:</p>
 <ul>
-<li><p class="first"><strong>FC5AV1C-04P2</strong>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml">namelist setup</a></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">FC5AV1C-04P2</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-04p2.xml">namelist setup</a></p>
 <p>V1 atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L72 resolution.</p>
 <p>The present-day external forcing (so-called “year 2000”, mean of 1995-2005) will be used.
 The anthropogenic aerosol emissions and greenhouse gas concentration are constant.
 The atmosphere model is coupled with the ELM land model (similar to CLM4.5), and
 driven by prescribed climatological SST / sea ice cover.</p>
 </li>
-<li><p class="first"><strong>F1850C5AV1C-04P2</strong>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml">namelist setup</a></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">F1850C5AV1C-04P2</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml">namelist setup</a></p>
 <p>V1 atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L72 resolution.</p>
 </li>
-<li><p class="first"><strong>FC5</strong>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml">namelist setup</a></p>
-<p>V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the ne30L30 resolution.
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">FC5</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_cosp.xml">namelist setup</a></p>
+<p>V0-like atmosphere-only simulation with present-day external forcing. Tuning settings are for the <code class="docutils literal notranslate"><span class="pre">ne30L30</span></code> resolution.
 Note that some tuning parameters need to be changed for version 0.3.</p>
 </li>
-<li><p class="first"><strong>F1850C5</strong>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml">namelist setup</a></p>
-<p>V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the ne30L30 resolution.
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">F1850C5</span></code>  <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5.xml">namelist setup</a></p>
+<p>V0-like atmosphere-only simulation with pre-industrial external forcing. Tuning settings are for the <code class="docutils literal notranslate"><span class="pre">ne30L30</span></code> resolution.
 Note that some tuning parameters need to be changed for version 0.3.</p>
 </li>
-<li><p class="first"><strong>FC5AV1C-H01C</strong> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml">namelist setup</a></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">FC5AV1C-H01C</span></code> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml">namelist setup</a></p>
 <p>High-resolution (ne120L72) V1 atmosphere-only simulation with present-day external forcing.</p>
 </li>
-<li><p class="first"><strong>F1850C5AV1C-H01C</strong> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml">namelist setup</a></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">F1850C5AV1C-H01C</span></code> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/2000_cam5_av1c-h01c.xml">namelist setup</a></p>
 <p>High-resolution (ne120L72) V1 atmosphere-only simulation with  pre-industrial external forcing.</p>
 </li>
-<li><p class="first"><strong>F20TRC5-CMIP6</strong> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/20TR_cam5_CMIP6.xml">namelist setup</a></p>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">F20TRC5-CMIP6</span></code> <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/20TR_cam5_CMIP6.xml">namelist setup</a></p>
 <p>V1 atmosphere-only simulation with time-varying 20th-century external forcing from CMIP6.</p>
 </li>
 </ul>
+<p>More information on the DECK compsets is available <a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/110100741/DECK+compsets">here</a>.</p>
 </div>
 <div class="section" id="changing-spatial-resolutions">
 <h2>Changing spatial resolutions<a class="headerlink" href="#changing-spatial-resolutions" title="Permalink to this headline">¶</a></h2>

@@ -23,6 +23,8 @@ See details `here <https://e3sm.org/resources/tools/analysis-tools/nco/>`_
 
 - `NCO documentation <http://nco.sf.net/nco.pdf>`_
 
+- `NCO guide by Todd Mitchell <http://research.jisao.washington.edu/data/nco/>`_ 
+
 - Reference: Zender, C. S. (2008), Analysis of self-describing gridded geoscience data with 
              netCDF operators (NCO), Environ. Modell. Softw., 23(10), 1338-1342.  
              `DOI: https://doi.org/10.1016/j.envsoft.2008.03.004 <https://doi.org/10.1016/j.envsoft.2008.03.004>`_
@@ -65,4 +67,27 @@ Note that it's better to do averaging or similar computations before Bit-Groomin
 done first, the averaging (or other operations) process could be very slow. 
 
 See details `here <https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/107709358/Compress+and+Bit+Groom+ACME+data>`_ (internal) 
-   
+
+
+NCL resources 
+----------------
+
+- `Examples <https://www.ncl.ucar.edu/Applications/>`_
+
+- `Color table <https://www.ncl.ucar.edu/Document/Graphics/color_table_gallery.shtml>`_ 
+
+- `Font table <https://www.ncl.ucar.edu/Document/Graphics/font_tables.shtml>`_ 
+
+- `Dash pattern <https://www.ncl.ucar.edu/Document/Graphics/Images/dashpatterns.png>`_
+
+- `Marker table <https://www.ncl.ucar.edu/Document/Graphics/Images/markers.png>`_  
+
+
+CDO resources 
+----------------
+
+- `CDO documentation <https://code.mpimet.mpg.de/projects/cdo/embedded/index.html>`_  
+
+- `CDO tutorial <https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial>`_  
+
+- `CDO FAQ <https://code.mpimet.mpg.de/projects/cdo/wiki/FAQ>`_   
