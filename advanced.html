@@ -1,0 +1,275 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Advanced configurations of EAM/E3SM &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reporting a bug" href="bug.html" />
+    <link rel="prev" title="Diagnostics packages" href="diag.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bug.html" title="Reporting a bug"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="diag.html" title="Diagnostics packages"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="advanced"></span><div class="section" id="advanced-configurations-of-eam-e3sm">
+<h1>Advanced configurations of EAM/E3SM<a class="headerlink" href="#advanced-configurations-of-eam-e3sm" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst">Github</a>
+<a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html">Spinx</a></p>
+<div class="section" id="switching-on-nudging">
+<h2>Switching on nudging<a class="headerlink" href="#switching-on-nudging" title="Permalink to this headline">¶</a></h2>
+<p>An introduction of nudging can be found in
+<a class="reference external" href="https://www.atmos-chem-phys.net/14/8631/2014/">Zhang et al. (2014)</a> and references therein.</p>
+<p>The following variables need to be modified to activate nudging.
+The example shown below allows nudging for horizontal winds</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
+ !.......................................................
+ ! nudging
+ !.......................................................
+  Nudge_Model = .True.
+  Nudge_Path  = &#39;${INPUT_NUDGING}/ne30/&#39;
+  Nudge_File_Template = &#39;ACME.cam.h2.%y-%m-%d-00000.nc&#39;
+  Nudge_Times_Per_Day = 4  !! nudging input data frequency
+  Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s
+  Nudge_Uprof = 1
+  Nudge_Ucoef = 1.
+  Nudge_Vprof = 1
+  Nudge_Vcoef = 1.
+  Nudge_Tprof = 0
+  Nudge_Tcoef = 0.
+  Nudge_Qprof = 0
+  Nudge_Qcoef = 0.
+  Nudge_PSprof = 0
+  Nudge_PScoef = 0.
+  Nudge_Beg_Year = 0000
+  Nudge_Beg_Month = 1
+  Nudge_Beg_Day = 1
+  Nudge_End_Year = 9999
+  Nudge_End_Month = 1
+  Nudge_End_Day = 1
+ EOF
+</pre></div>
+</div>
+<p>This setup will nudge the model towards a baseline simulation. The nudging data were
+created from the baseline simulation by archiving the 6-hourly meteorological fields.
+Only the horizontal winds are nudged, with a relaxation time scale of 6h.
+More detailed information on how to setup a nudged simulation can be found in the
+source code <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/nudging.F90">nudging.F90</a>.</p>
+</div>
+<div class="section" id="switching-on-aerosol-forcing-diagnostics">
+<h2>Switching on aerosol forcing diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
+<p>Namelist setup</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">rad_diag_1</span> <span class="o">=</span> <span class="s1">&#39;A:Q:H2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:O2:O2&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CO2:CO2&#39;</span><span class="p">,</span> <span class="s1">&#39;A:O3:O3&#39;</span><span class="p">,</span> <span class="s1">&#39;N:N2O:N2O&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CH4:CH4&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC11:CFC11&#39;</span><span class="p">,</span> <span class="s1">&#39;N:CFC12:CFC12&#39;</span><span class="p">,</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>Then the radiative flux calculated without aerosols are diagnosed
+(with “_d1” appended to the original radiative flux name, e.g. “FSNT_d1”).</p>
+<p>The detailed diagnostic method can be found in <a class="reference external" href="https://www.atmos-chem-phys.net/13/9971/2013/">Ghan (2013)</a>.</p>
+<p>Some information about the AeroCom “Indirect forcing experiment” can be found <a class="reference external" href="https://wiki.met.no/aerocom/indirect">here</a>.</p>
+</div>
+<div class="section" id="changing-external-forcings">
+<h2>Changing external forcings<a class="headerlink" href="#changing-external-forcings" title="Permalink to this headline">¶</a></h2>
+<p>The following changes need to be made after executing “create_newcase”.</p>
+<ul>
+<li><p class="first">Changing SST, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_c101029.nc&#39;</span>
+<span class="o">./</span><span class="n">xmlchange</span> <span class="o">-</span><span class="n">file</span> <span class="n">env_run</span><span class="o">.</span><span class="n">xml</span> <span class="o">-</span><span class="nb">id</span> <span class="n">SSTICE_DATA_FILENAME</span> <span class="o">-</span><span class="n">val</span> <span class="s1">&#39;$DIN_LOC_ROOT/atm/cam/sst/sst_HadOIBl_bc_1x1_clim_pi_plus4K.nc&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Changing aerosol emissions, e.g.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="regionally-refinement-model-rrm-simulations">
+<h2>Regionally-Refinement Model (RRM) simulations<a class="headerlink" href="#regionally-refinement-model-rrm-simulations" title="Permalink to this headline">¶</a></h2>
+<p>RRM can be configured by specifying the resolution (e.g. “conusx4v1_conusx4v1”)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>./create_newcase -case $MYCASE -project $MYPROJECT -compset FC5AV1C-04P2 -res conusx4v1_conusx4v1 -mach $MYMACH
+</pre></div>
+</div>
+<p>Some resources are available internally within E3SM:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/11010268/How+to+run+the+regionally+refined+model+RRM">How to run RRM</a></li>
+<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/27951986/Regridding+RRM+simulations">Regridding RRM simulations</a></li>
+<li><a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/20153276/How+to+perform+nudging+simulations+with+the+regional+refined+model+RRM">How to perform nudged simulations with RRM</a></li>
+</ul>
+</div>
+<div class="section" id="creating-ensembles">
+<h2>Creating ensembles<a class="headerlink" href="#creating-ensembles" title="Permalink to this headline">¶</a></h2>
+<p>In E3SM/EAM, ensembles can be created by perturbing the temperature field in the initial condition
+with a specified magnitude (e.g. <code class="docutils literal notranslate"><span class="pre">1.e-14</span></code> K). The implementation will call the random number
+generator (L’Ecuyer, 1996) and create random samples for each grid point:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">pertlim</span> <span class="o">=</span> <span class="mf">1.e-14</span>
+   <span class="n">new_random</span> <span class="o">=</span> <span class="o">.</span><span class="n">true</span><span class="o">.</span>
+   <span class="n">seed_clock</span> <span class="o">=</span> <span class="o">.</span><span class="n">false</span><span class="o">.</span>
+   <span class="n">seed_custom</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>The user can change <code class="docutils literal notranslate"><span class="pre">pertlim</span></code> to change the perturbation magnitude and <code class="docutils literal notranslate"><span class="pre">seed_custom</span></code>
+to change the seed to the random number generator.</p>
+</div>
+<div class="section" id="creating-a-new-compset">
+<h2>Creating a new compset<a class="headerlink" href="#creating-a-new-compset" title="Permalink to this headline">¶</a></h2>
+<p>Following files need to be changed in order to create a new compset:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml">components/cam/cime_config/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml">components/cam/cime_config/config_component.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml">cime/src/drivers/mct/cime_config/config_component_e3sm.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml">cime/config/e3sm/allactive/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/build-namelist">components/cam/bld/build-namelist</a></li>
+</ul>
+<p>The namelist configuration files need to be changed too, e.g. :</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml">components/cam/bld/namelist_files/use_cases/1850_cam5_av1c-04p2.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_defaults_cam.xml">components/cam/bld/namelist_files/namelist_defaults_cam.xml</a></li>
+</ul>
+<p>A detailed guide based on an older version of E3SM can be found
+<a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/ATM/pages/46891102/How+to+create+a+new+compset">here</a>.
+Note that some information on that page is obsolete.</p>
+</div>
+<div class="section" id="adding-a-new-parameterization">
+<h2>Adding a new parameterization<a class="headerlink" href="#adding-a-new-parameterization" title="Permalink to this headline">¶</a></h2>
+<p>Under construction</p>
+</div>
+<div class="section" id="creating-new-initial-condition-files">
+<h2>Creating new initial condition files<a class="headerlink" href="#creating-new-initial-condition-files" title="Permalink to this headline">¶</a></h2>
+<p>Under construction</p>
+</div>
+<div class="section" id="creating-new-emission-files">
+<h2>Creating new emission files<a class="headerlink" href="#creating-new-emission-files" title="Permalink to this headline">¶</a></h2>
+<p>Under construction</p>
+</div>
+<div class="section" id="configuration-files">
+<h2>Configuration files<a class="headerlink" href="#configuration-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_batch.xml">cime/config/e3sm/machines/config_batch.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_compilers.xml">cime/config/e3sm/machines/config_compilers.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml">cime/config/e3sm/allactive/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml">components/cam/cime_config/config_compsets.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/config_grids.xml">cime/config/e3sm/config_grids.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_machines.xml">cime/config/e3sm/machines/config_machines.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_pesall.xml">cime/config/e3sm/allactive/config_pesall.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_pio.xml">cime/config/e3sm/machines/config_pio.xml</a></li>
+<li><a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/template.case.run">cime/config/e3sm/machines/template.case.run</a></li>
+</ul>
+<p>To find out more, search those items in <a class="reference external" href="http://esmci.github.io/cime/index.html">http://esmci.github.io/cime/index.html</a></p>
+</div>
+<div class="section" id="reference">
+<h2>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<p>Documentation from <a class="reference external" href="http://www.cesm.ucar.edu/models/cesm1.2/cam/docs/ug5_3/">CAM5.3</a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Advanced configurations of EAM/E3SM</a><ul>
+<li><a class="reference internal" href="#switching-on-nudging">Switching on nudging</a></li>
+<li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
+<li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>
+<li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
+<li><a class="reference internal" href="#creating-ensembles">Creating ensembles</a></li>
+<li><a class="reference internal" href="#creating-a-new-compset">Creating a new compset</a></li>
+<li><a class="reference internal" href="#adding-a-new-parameterization">Adding a new parameterization</a></li>
+<li><a class="reference internal" href="#creating-new-initial-condition-files">Creating new initial condition files</a></li>
+<li><a class="reference internal" href="#creating-new-emission-files">Creating new emission files</a></li>
+<li><a class="reference internal" href="#configuration-files">Configuration files</a></li>
+<li><a class="reference internal" href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="diag.html"
+                        title="previous chapter">Diagnostics packages</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="bug.html"
+                        title="next chapter">Reporting a bug</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/advanced.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bug.html" title="Reporting a bug"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="diag.html" title="Diagnostics packages"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, E3SM.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
+    </div>
+  </body>
+</html>

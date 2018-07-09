@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Frequently asked questions &#8212; E3SM Atmosphere Model (EAM)  documentation</title>
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Other stuff" href="other.html" />
+    <link rel="prev" title="Reporting a bug" href="bug.html" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile:regular,italic,bold,bolditalic&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="other.html" title="Other stuff"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="bug.html" title="Reporting a bug"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="frequently-asked-questions">
+<span id="run"></span><h1>Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/freq.rst">Github</a>
+<a class="reference external" href="https://kaizhangpnl.github.io/EAM_User_Guide/freq.html">Spinx</a></p>
+<p>Please direct your questions or comments to us by raising an issue
+<a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/issues">here</a>
+and we will try to address them.</p>
+<ul>
+<li><p class="first">Problem:</p>
+<p>After a recent rebase with the E3SM V1, the following error occurred in a SCM simulation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ERROR</span><span class="p">:</span>
+<span class="n">ice_open_nc</span><span class="p">:</span> <span class="n">Cannot</span> <span class="nb">open</span> <span class="o">/</span><span class="n">project</span><span class="o">/</span><span class="n">projectdirs</span><span class="o">/</span><span class="n">acme</span><span class="o">/</span><span class="n">inputdata</span><span class="o">//</span><span class="n">share</span><span class="o">/</span><span class="n">domains</span><span class="o">/</span><span class="n">UNS</span>
+<span class="n">ET</span>
+</pre></div>
+</div>
+<p>Answer:</p>
+<p>The namelist setting for the input data is not correctly configured.</p>
+<ol class="arabic simple">
+<li>Check ice_in in the run directory and see if grid_file, kmt_file, and
+stream_fldfilename are correctly set.</li>
+<li>SCM is running at T42 originally, so check your cime/config/e3sm/config_grids.xml
+and/or components/cam/bld/namelist_files/namelist_defaults_cam.xml
+to see if they have the domain and SST file correctly set.</li>
+</ol>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="bug.html"
+                        title="previous chapter">Reporting a bug</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="other.html"
+                        title="next chapter">Other stuff</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/freq.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="other.html" title="Other stuff"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="bug.html" title="Reporting a bug"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">E3SM Atmosphere Model (EAM)  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, E3SM.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.2.
+    </div>
+  </body>
+</html>
