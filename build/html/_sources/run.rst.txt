@@ -203,6 +203,24 @@ The complete namelist options are listed in:
    `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
 
 
+Specific setup for Constanct (PNNL) 
+------------------------------------
+
+Add the following to your .cshrc file: :: 
+
+  limit coredumpsize unlimited
+  limit stacksize unlimited
+  module load python/2.7.8
+  module load intel/15.0.1
+  module load mvapich2/2.1
+  module load netcdf/4.3.2
+  module load mkl/15.0.1
+  setenv MKL_PATH $MLIB_LIB
+  setenv NETCDF_HOME /share/apps/netcdf/4.3.2/intel/15.0.1
+
+And contact Balwinder Singh for accessing the E3SM input file directory on Constance. 
+
+
 Reference 
 ----------
 
