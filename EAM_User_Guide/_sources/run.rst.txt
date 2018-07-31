@@ -203,7 +203,7 @@ The complete namelist options are listed in:
    `components/cam/bld/namelist_files/namelist_definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/namelist_files/namelist_definition.xml>`_
 
 
-Specific setup for Constanct (PNNL) 
+Specific setup for Constance (PNNL) 
 ------------------------------------
 
 Add the following to your .cshrc file: :: 
