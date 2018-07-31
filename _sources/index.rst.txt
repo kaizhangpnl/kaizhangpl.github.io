@@ -11,6 +11,8 @@ User's Guide for the E3SM Atmosphere Model (EAM)
    :maxdepth: 2
    :caption: Contents:
 
+Compiled by Kai Zhang with input from the EAM development team. 
+
 
 Source code of this documentation 
 -----------------------------------
@@ -46,8 +48,6 @@ Documentation outline
 .. * :ref:`modindex`
 .. * :ref:`search`
 
-
-Compiled by Kai Zhang with input from the EAM development team. 
 
 Contact: Kai Zhang (Pacific Northwest National Laboratory, kai.zhang@pnnl.gov) 
 
