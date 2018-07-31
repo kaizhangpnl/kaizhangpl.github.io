@@ -6,7 +6,7 @@ Diagnostics packages
 ====================
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/diag.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/diag.html>`_ 
 
 
 AMWG diagnostics 

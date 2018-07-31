@@ -6,7 +6,7 @@ Introduction
 ============
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/intro.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/intro.html>`_  
+`Spinx  <https://kaizhangpnl.github.io/intro.html>`_  
 
 E3SM, formerly known as Accelerated Climate Modeling for Energy (ACME), is a global Earth 
 system model developed by the U.S. Department of Energy (DOE) for high-resolution modeling 

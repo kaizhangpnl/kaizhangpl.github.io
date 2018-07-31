@@ -6,7 +6,7 @@ Frequently asked questions
 
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/freq.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/freq.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/freq.html>`_ 
 
 
 Please direct your questions or comments to us by raising an issue 

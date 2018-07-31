@@ -6,7 +6,7 @@ Technical overview of EAM
 
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/flow.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/flow.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/flow.html>`_ 
 
 
 Flow chart

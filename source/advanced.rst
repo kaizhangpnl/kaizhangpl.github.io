@@ -7,7 +7,7 @@ Advanced configurations of EAM/E3SM
 
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/advanced.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/advanced.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/advanced.html>`_ 
 
 
 Switching on nudging

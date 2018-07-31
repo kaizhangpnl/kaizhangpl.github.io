@@ -6,7 +6,7 @@ Getting started
 ===============
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/start.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/start.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/start.html>`_ 
 
 
 Quick start guide

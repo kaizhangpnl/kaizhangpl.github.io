@@ -7,7 +7,7 @@ Model output
 
 
 `Github  <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/output.rst>`_ 
-`Spinx  <https://kaizhangpnl.github.io/EAM_User_Guide/output.html>`_ 
+`Spinx  <https://kaizhangpnl.github.io/output.html>`_ 
 
 
 .. Example from CAM5: 

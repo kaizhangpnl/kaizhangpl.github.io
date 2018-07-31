@@ -6,7 +6,7 @@ Other stuff
 ============
 
 `Github <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/other.rst>`_   
-`Spinx <https://kaizhangpnl.github.io/EAM_User_Guide/other.html>`_ 
+`Spinx <https://kaizhangpnl.github.io/other.html>`_ 
 
 
 Input data 
