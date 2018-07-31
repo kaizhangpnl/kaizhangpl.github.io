@@ -218,6 +218,9 @@ Add the following to your .cshrc file: ::
   setenv MKL_PATH $MLIB_LIB
   setenv NETCDF_HOME /share/apps/netcdf/4.3.2/intel/15.0.1
 
+A script to configure and make the model on constance is available 
+`here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/tree/master/source/make_e3sm_atm.csh>`_. s
+
 And contact Balwinder Singh for accessing the E3SM input file directory on Constance. 
 
 
