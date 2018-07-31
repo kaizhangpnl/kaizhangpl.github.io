@@ -6,7 +6,7 @@ set echo verbose
 
 set fetch_code    = 0   # 0 = No, >0 = Yes
 set compile_model = 1   # 0 = No, >0 = Yes
-set run_model     = 1   # 0 = No, >0 = Yes
+set run_model     = 0   # 0 = No, >0 = Yes
 
 ####################################################################
 # First, you should checkout the E3SM code following instructions
@@ -161,7 +161,7 @@ avgflag_pertape(2) = 'A'
 /
 EOF
 
-###./$CASE.submit
+./$CASE.submit
 
 endif
 
