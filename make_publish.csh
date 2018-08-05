@@ -12,15 +12,15 @@ cd ${P1}
 
 git add * 
 
-cp ${P1}/build/html/*       ${P2}/
-cp ${P1}/source/*.png       ${P2}/_images/
-cp ${P1}/source/*.jpeg      ${P2}/_images/
-cp -rf ${P1}/build/html/_s* ${P2}/
-cd ${P2}
+###cp ${P1}/build/html/*       ${P2}/
+###cp ${P1}/source/*.png       ${P2}/_images/
+###cp ${P1}/source/*.jpeg      ${P2}/_images/
+###cp -rf ${P1}/build/html/_s* ${P2}/
+###cd ${P2}
+###
+###git add * 
 
-git add * 
-
-git commit -m "copy stuff to root directory" 
+git commit -m "update"
 git push origin master 
 
 
