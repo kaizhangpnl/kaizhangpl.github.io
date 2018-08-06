@@ -51,9 +51,16 @@
 <span id="flow"></span><h1>Technical overview of EAM<a class="headerlink" href="#technical-overview-of-eam" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/flow.rst">Github</a>
 <a class="reference external" href="https://kaizhangpnl.github.io/flow.html">Spinx</a></p>
+<div class="section" id="cime-in-e3sm">
+<h2>CIME in E3SM<a class="headerlink" href="#cime-in-e3sm" title="Permalink to this headline">¶</a></h2>
+<p>E3SM uses CIME (Common Infrastructure for Modeling the Earth), which contains the support
+scripts (configure, build, run, test), data models, essential utility libraries, a “main”
+and other tools that are needed to build a single-executable coupled Earth System Model.</p>
+<p>CIME documentation is available <a class="reference external" href="http://esmci.github.io/cime/">here</a>.</p>
+</div>
 <div class="section" id="flow-chart">
 <h2>Flow chart<a class="headerlink" href="#flow-chart" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="_images/flow_chart.png"><img alt="Flow Chart" src="_images/flow_chart.png" style="width: 401.6px; height: 569.0px;" /></a>
 <p class="caption"><span class="caption-text">Diagrams showing the sequence of calculation (i.e., the time integration loop) in EAM.
 The blue stadium shapes refer to the resolved-scale dynamics and transport, and
@@ -451,6 +458,7 @@ The csv file is available <a class="reference external" href="https://github.com
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Technical overview of EAM</a><ul>
+<li><a class="reference internal" href="#cime-in-e3sm">CIME in E3SM</a></li>
 <li><a class="reference internal" href="#flow-chart">Flow chart</a></li>
 <li><a class="reference internal" href="#spatial-resolution">Spatial resolution</a></li>
 <li><a class="reference internal" href="#temporal-resolution">Temporal resolution</a></li>

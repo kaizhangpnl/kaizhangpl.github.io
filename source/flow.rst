@@ -9,6 +9,18 @@ Technical overview of EAM
 `Spinx  <https://kaizhangpnl.github.io/flow.html>`_ 
 
 
+
+CIME in E3SM
+-----------------
+
+E3SM uses CIME (Common Infrastructure for Modeling the Earth), which contains the support 
+scripts (configure, build, run, test), data models, essential utility libraries, a “main” 
+and other tools that are needed to build a single-executable coupled Earth System Model. 
+
+CIME documentation is available `here <http://esmci.github.io/cime/>`_. 
+
+
+
 Flow chart
 ----------
 
