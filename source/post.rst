@@ -9,6 +9,8 @@ Post-processing
 `Spinx  <https://kaizhangpnl.github.io/post.html>`_  
 
 
+
+
 Here lists the diagnostic tools for some quick analysis of the EAM output. More comprehensive 
 diagnostics tools are available `here <https://kaizhangpnl.github.io/EAM_User_Guide/diag.html>`_
 
@@ -91,5 +93,13 @@ CDO resources
 - `CDO tutorial <https://code.mpimet.mpg.de/projects/cdo/wiki/Tutorial>`_  
 
 - `CDO FAQ <https://code.mpimet.mpg.de/projects/cdo/wiki/FAQ>`_   
+
+
+Zstash for archiving 
+---------------------
+
+Zstash is a Python-based tool to effectively archive E3SM data on HPSS. 
+
+Zstash documentation is available `here <https://e3sm-project.github.io/zstash/docs/html/index.html>`_. 
 
 
