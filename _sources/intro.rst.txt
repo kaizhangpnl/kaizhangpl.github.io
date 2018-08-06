@@ -18,12 +18,14 @@ Community Earth System Model (CESM). More information about E3SM can be found be
 - `E3SM confluence (internal) <https://acme-climate.atlassian.net/wiki/spaces/ACME/overview?mode=global>`_ 
 - `E3SM github repository <https://github.com/E3SM-Project/E3SM>`_
 
-This user's guide focuses on the atmosphere component. A scientific description of 
-the E3SM Atmosphere Model (EAM) is available `here <https://e3sm.org/model/e3sm-model-description/v1-description/>`_ 
+A scientific description of the E3SM Atmosphere Model (EAM) is available 
+`here <https://e3sm.org/model/e3sm-model-description/v1-description/>`_. 
+This user's guide focuses on the important technical aspects of EAM. The tools used for
+analyzing the E3SM data are briefly reviewed and the links are provided. 
 
 E3SM uses CIME (Common Infrastructure for Modeling the Earth), which contains the support 
 scripts (configure, build, run, test), data models, essential utility libraries, a “main” 
 and other tools that are needed to build a single-executable coupled Earth System Model. 
 
-CIME documentation is available `here <http://esmci.github.io/cime/>`_ 
+CIME documentation is available `here <http://esmci.github.io/cime/>`_. 
 
