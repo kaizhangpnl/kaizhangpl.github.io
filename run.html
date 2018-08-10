@@ -185,6 +185,28 @@ Some instructions on how to configure and run a single column model can be found
 <a class="reference external" href="https://acme-climate.atlassian.net/wiki/spaces/Docs/pages/127456636/ACME+Single-Column+Model+Case+Library">here</a>. (internal) or
 from the E3SM input data server <a class="reference external" href="https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/">here</a>.</p>
 </div>
+<div class="section" id="output-data-in-specified-regions">
+<h2>Output data in specified regions<a class="headerlink" href="#output-data-in-specified-regions" title="Permalink to this headline">¶</a></h2>
+<p>This functionality is inherited from CESM:</p>
+<p>“List of columns or contiguous columns at which the fincl1 fields will be
+output. Individual columns are specified as a string using a longitude
+degree (greater or equal to 0.) followed by a single character
+(e)ast/(w)est identifer, an underscore ‘_’ , and a latitude degree followed
+by a single character (n)orth/(s)outh identifier.  For example, ‘10e_20n’
+would pick the model column closest to 10 degrees east longitude by 20
+degrees north latitude.  A group of contiguous columns can be specified
+using bounding latitudes and longitudes separated by a colon.  For example,
+‘10e:20e_15n:20n’ would select the model columns which fall with in the
+longitude range from 10 east to 20 east and the latitude range from 15
+north to 20 north.”</p>
+<p>Namelist change</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
+   fincl2 = &#39;U&#39;,&#39;V&#39;,&#39;T&#39;,&#39;Q&#39;,&#39;PS&#39;
+   fincl2lonlat = &#39;210e:330e_15n:65n&#39;  ! CONUS
+EOF
+</pre></div>
+</div>
+</div>
 <div class="section" id="frequently-used-namelist-options">
 <h2>Frequently-used namelist options<a class="headerlink" href="#frequently-used-namelist-options" title="Permalink to this headline">¶</a></h2>
 <p>The following namelist options are frequently used for detailed diagnostics:</p>
@@ -268,6 +290,7 @@ setenv NETCDF_HOME /share/apps/netcdf/4.3.2/intel/15.0.1
 <li><a class="reference internal" href="#sanity-check-for-state-variables">Sanity-check for state variables</a></li>
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP simulator</a></li>
 <li><a class="reference internal" href="#single-column-model-scm-simulations">Single column model (SCM) simulations</a></li>
+<li><a class="reference internal" href="#output-data-in-specified-regions">Output data in specified regions</a></li>
 <li><a class="reference internal" href="#frequently-used-namelist-options">Frequently-used namelist options</a></li>
 <li><a class="reference internal" href="#other-options">Other options</a></li>
 <li><a class="reference internal" href="#specific-setup-for-constance-pnnl">Specific setup for Constance (PNNL)</a></li>

@@ -162,7 +162,31 @@ IOP forcing data to drive the SCM can be found
 from the E3SM input data server `here <https://acme-svn2.ornl.gov/acme-repo/acme/inputdata/atm/cam/scam/iop/>`_. 
 
 
+Output data in specified regions
+------------------------------------
 
+This functionality is inherited from CESM: 
+
+"List of columns or contiguous columns at which the fincl1 fields will be
+output. Individual columns are specified as a string using a longitude
+degree (greater or equal to 0.) followed by a single character
+(e)ast/(w)est identifer, an underscore '_' , and a latitude degree followed
+by a single character (n)orth/(s)outh identifier.  For example, '10e_20n'
+would pick the model column closest to 10 degrees east longitude by 20
+degrees north latitude.  A group of contiguous columns can be specified
+using bounding latitudes and longitudes separated by a colon.  For example,
+'10e:20e_15n:20n' would select the model columns which fall with in the
+longitude range from 10 east to 20 east and the latitude range from 15
+north to 20 north." 
+
+
+Namelist change ::
+
+     cat <<EOF >> user_nl_cam
+        fincl2 = 'U','V','T','Q','PS' 
+        fincl2lonlat = '210e:330e_15n:65n'  ! CONUS 
+     EOF
+      
 Frequently-used namelist options
 --------------------------------
 
