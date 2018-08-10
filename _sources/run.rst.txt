@@ -180,7 +180,7 @@ longitude range from 10 east to 20 east and the latitude range from 15
 north to 20 north." 
 
 
-Namelist change ::
+Namelist change: ::
 
      cat <<EOF >> user_nl_cam
         fincl2 = 'U','V','T','Q','PS' 
