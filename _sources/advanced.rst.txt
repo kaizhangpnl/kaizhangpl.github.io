@@ -52,6 +52,9 @@ Only the horizontal winds are nudged, with a relaxation time scale of 6h.
 More detailed information on how to setup a nudged simulation can be found in the 
 source code `nudging.F90 <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/nudging.F90>`_. 
 
+Note that the nudging file name `Nudge_File_Template` should not be longer than 80
+characters. 
+
 .. Switching on Satellite/Aircraft Sampler 
 .. ---------------------------------------
 .. 
