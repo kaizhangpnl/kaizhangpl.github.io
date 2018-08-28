@@ -17,7 +17,7 @@ An introduction of nudging can be found in
 `Zhang et al. (2014) <https://www.atmos-chem-phys.net/14/8631/2014/>`_ and references therein. 
 
 The following variables need to be modified to activate nudging. 
-The example shown below allows nudging for horizontal winds :: 
+The example shown below switches on nudging for horizontal winds :: 
 
  cat <<EOF >> user_nl_cam
   !.......................................................
@@ -25,7 +25,7 @@ The example shown below allows nudging for horizontal winds ::
   !.......................................................
    Nudge_Model = .True.
    Nudge_Path  = '${INPUT_NUDGING}/ne30/'
-   Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-00000.nc'
+   Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-%s.nc'
    Nudge_Times_Per_Day = 4  !! nudging input data frequency 
    Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
    Nudge_Uprof = 1
@@ -48,7 +48,8 @@ The example shown below allows nudging for horizontal winds ::
 
 This setup will nudge the model towards a baseline simulation. The nudging data were 
 created from the baseline simulation by archiving the 6-hourly meteorological fields. 
-Only the horizontal winds are nudged, with a relaxation time scale of 6h. 
+Only the horizontal winds are nudged, with a relaxation time scale of 6h. The 
+nudging is applied at every grid box.  
 More detailed information on how to setup a nudged simulation can be found in the 
 source code `nudging.F90 <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/nudging.F90>`_. 
 
