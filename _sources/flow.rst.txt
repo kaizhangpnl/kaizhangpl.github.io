@@ -313,7 +313,7 @@ Note that only V1 has CLUBB-related parameters.
 The csv file is available `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tuning_parameters.csv>`_. 
 
 .. csv-table:: 
-   :widths: 15 30 10 10
-   :header: "Parameter", "Description", "EAM V0", "EAM V1", "EAM V1 (DECK)" 
+   :widths: 15 30 10 10 10 
+   :header: "Parameter", "Description", "EAM V0", "EAM V1", "EAM V1 (DECK)"
    :file: tuning_parameters.csv
 
