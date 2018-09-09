@@ -308,12 +308,12 @@ List of advective tracers
 List of tuning parameters 
 -------------------------
 
-Below is a list of parameters that are often tuned in EAM. 
+Below is a list of parameters that are often tuned in EAM V0 (FC5), V1 default (FC5AV1C-04P2 or FC5AV1C-L), and V1 with DECK tunings. 
 Note that only V1 has CLUBB-related parameters.
 The csv file is available `here <https://github.com/kaizhangpnl/kaizhangpnl.github.io/blob/master/source/tuning_parameters.csv>`_. 
 
 .. csv-table:: 
    :widths: 15 30 10 10
-   :header: "Parameter", "Description", "EAM V0", "EAM V1"
+   :header: "Parameter", "Description", "EAM V0", "EAM V1", "EAM V1 (DECK)" 
    :file: tuning_parameters.csv
 
