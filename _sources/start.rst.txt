@@ -26,17 +26,17 @@ Checkout the code::
 
   Check out the V1 release: 
   
-    $ git clone -b maint-1.0 git@github.com:E3SM-Project/E3SM.git
+    $ git clone -b maint-1.0 --recursive git@github.com:E3SM-Project/E3SM.git
 
   Or check out the current master:
   
     $ git clone git@github.com:E3SM-Project/E3SM.git
     
 
-  Update the sub-modules:
-  
-    $ cd E3SM
-    $ git submodule update –init
+..  Update the sub-modules:
+..  
+..    $ cd E3SM
+..    $ git submodule update –init
 
   Create a new branch:
   
