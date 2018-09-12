@@ -33,10 +33,10 @@ Checkout the code::
     $ git clone git@github.com:E3SM-Project/E3SM.git
     
 
-..  Update the sub-modules:
-..  
-..    $ cd E3SM
-..    $ git submodule update –init
+  Update the sub-modules (when you checkout a specific version without "--recursive") :
+  
+    $ cd E3SM
+    $ git submodule update -–init
 
   Create a new branch:
   
