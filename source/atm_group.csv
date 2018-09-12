@@ -1,36 +1,25 @@
-Last Name,First Name,Email,Lab
-Archibald,Rick,Archibaldrk@ornl.gov,ORNL
-Bacmeister,Julio,juliob@ucar.edu,UCAR
-Branstetter,Marcia,mbranst@msr.csm.ornl.gov,ORNL
-Burrows,Susannah,Susannah.Burrows@pnnl.gov,PNNL
-Caldwell,Peter M.,caldwell19@llnl.gov,LLNL
-Cameron-Smith,Philip,cameronsmith1@llnl.gov,LLNL
-Easter,Richard C,Richard.Easter@pnnl.gov,PNNL
-Evans,Kate,evanskj@ornl.gov,ORNL
-Gaddis,Abby,Gaddisal@ornl.gov,ORNL
-Ghan,Steven J ,Steve.Ghan@pnnl.gov,PNNL
-Hannay,Cecile,hannay@ucar.edu,UCAR
-Harney,John F.,harneyjf@ornl.gov,ORNL 
-Jacob,Robert,jacob@mcs.anl.gov,ANL
-Jiang,Tianyu,jiangt@ornl.gov,ORNL
-Johannesson,Gardar,johannesson1@llnl.gov,LLNL
-Klein,Stephen A.,klein21@llnl.gov,LLNL
-Large,William,wily@ucar.edu,UCAR
-Lin,Wuyin,wlin@bnl.gov,BNL
-Lu,Yinghui,yinghuilu@lbl.gov,LBL
-Ma,Po-Lun,Po-Lun.Ma@pnnl.gov,PNNL
-Mahajan,Salil,mahajans@ornl.gov,ORNL
-Neale,Rich,rneale@ucar.edu,UCAR
-Qian,Yun ,Yun.Qian@pnnl.gov,PNNL
-Rasch,Phil,Philip.Rasch@pnl.gov,PNNL
-Roesler,Erika,elroesl@sandia.gov,SNL
-Singh,Balwinder,Balwinder.Singh@pnnl.gov,PNNL
-Tang,Qi,tang30@llnl.gov,LLNL
-Taylor,Mark,mataylo@sandia.gov,SNL
-Wan,Hui,Hui.Wan@pnnl.gov,PNNL
-Wang,Minghuai,Minghuai.Wang@pnnl.gov,PNNL
-Wang,Hailong,Hailong.Wang@pnnl.gov,PNNL
-Xie,Shaocheng,xie2@llnl.gov,LLNL
-Yoon,Jin-Ho,Jin-Ho.Yoon@pnnl.gov,PNNL
-Zhang,Yuying,zhang24@llnl.gov,LLNL
-Zhang,Kai,Kai.Zhang@pnnl.gov,PNNL
+Last Name,First Name,Lab
+Burrows,Susannah,PNNL
+Caldwell,Peter M.,LLNL
+Cameron-Smith,Philip,LLNL
+Easter,Richard C,PNNL
+Evans,Kate,ORNL
+Gaddis,Abby,ORNL
+Ghan,Steven J,PNNL
+Jacob,Robert,ANL
+Lin,Wuyin,BNL
+Ma,Po-Lun,PNNL
+Mahajan,Salil,ORNL
+Neale,Rich,UCAR
+Qian,Yun,PNNL
+Rasch,Phil,PNNL
+Roesler,Erika,SNL
+Singh,Balwinder,PNNL
+Tang,Qi,LLNL
+Taylor,Mark,SNL
+Wan,Hui,PNNL
+Wang,Hailong,PNNL
+Xie,Shaocheng,LLNL
+Yoon,Jin-Ho,PNNL
+Zhang,Yuying,LLNL
+Zhang,Kai,PNNL
