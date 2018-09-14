@@ -62,8 +62,8 @@ Note that the resulted nudging file name should not be longer than 80 characters
 .. under construction 
 .. 
  
-Switching on/off individual parameterizations.
----------------------------------------
+Switching on/off individual parameterizations
+----------------------------------------------
 
 There is a set of switches that can be used to turn on/off certain processes: :: 
 
@@ -77,6 +77,8 @@ There is a set of switches that can be used to turn on/off certain processes: ::
    l_st_mac        = .true. !! marcophysics 
    l_st_mic        = .true. !! microphysics 
    l_rad           = .true. !! radiation 
+
+See comments in `nudging.F90 <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/physpkg.F90>`_. 
 
 
 Switching on aerosol forcing diagnostics

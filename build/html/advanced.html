@@ -94,7 +94,7 @@ source code <a class="reference external" href="https://github.com/E3SM-Project/
 <p>Note that the resulted nudging file name should not be longer than 80 characters.</p>
 </div>
 <div class="section" id="switching-on-off-individual-parameterizations">
-<h2>Switching on/off individual parameterizations.<a class="headerlink" href="#switching-on-off-individual-parameterizations" title="Permalink to this headline">¶</a></h2>
+<h2>Switching on/off individual parameterizations<a class="headerlink" href="#switching-on-off-individual-parameterizations" title="Permalink to this headline">¶</a></h2>
 <p>There is a set of switches that can be used to turn on/off certain processes:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>l_tracer_aero   = .true. !! aerosol related processes
 l_vdiff         = .true. !! vertical diffusion
@@ -108,6 +108,7 @@ l_st_mic        = .true. !! microphysics
 l_rad           = .true. !! radiation
 </pre></div>
 </div>
+<p>See comments in <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/physpkg.F90">nudging.F90</a>.</p>
 </div>
 <div class="section" id="switching-on-aerosol-forcing-diagnostics">
 <h2>Switching on aerosol forcing diagnostics<a class="headerlink" href="#switching-on-aerosol-forcing-diagnostics" title="Permalink to this headline">¶</a></h2>
@@ -227,7 +228,7 @@ Note that some information on that page is obsolete.</p>
   <ul>
 <li><a class="reference internal" href="#">Advanced configurations of EAM/E3SM</a><ul>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on nudging</a></li>
-<li><a class="reference internal" href="#switching-on-off-individual-parameterizations">Switching on/off individual parameterizations.</a></li>
+<li><a class="reference internal" href="#switching-on-off-individual-parameterizations">Switching on/off individual parameterizations</a></li>
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>
 <li><a class="reference internal" href="#regionally-refinement-model-rrm-simulations">Regionally-Refinement Model (RRM) simulations</a></li>
