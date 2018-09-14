@@ -62,6 +62,23 @@ Note that the resulted nudging file name should not be longer than 80 characters
 .. under construction 
 .. 
  
+Switching on/off individual parameterizations.
+---------------------------------------
+
+There is a set of switches that can be used to turn on/off certain processes: :: 
+
+   l_tracer_aero   = .true. !! aerosol related processes 
+   l_vdiff         = .true. !! vertical diffusion 
+   l_rayleigh      = .true. !! rayleigh friction 
+   l_gw_drag       = .true. !! gravitity wave drag 
+   l_ac_energy_chk = .true. !! energy conservation check 
+   l_bc_energy_fix = .true. !! energy conservation fix 
+   l_dry_adj       = .true. !! dry adjustment 
+   l_st_mac        = .true. !! marcophysics 
+   l_st_mic        = .true. !! microphysics 
+   l_rad           = .true. !! radiation 
+
+
 Switching on aerosol forcing diagnostics
 ----------------------------------------
 
