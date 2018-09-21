@@ -93,6 +93,19 @@ More detailed information on how to setup a nudged simulation can be found in th
 source code <a class="reference external" href="https://github.com/E3SM-Project/E3SM/blob/master/components/cam/src/physics/cam/nudging.F90">nudging.F90</a>.</p>
 <p>Note that the resulted nudging file name should not be longer than 80 characters.</p>
 </div>
+<div class="section" id="creating-nudging-files-from-a-baseline-simulation">
+<h2>Creating nudging files from a baseline simulation<a class="headerlink" href="#creating-nudging-files-from-a-baseline-simulation" title="Permalink to this headline">¶</a></h2>
+<p>To nudge the model towards a baseline model simulation (e.g. E3SMv1), you will need to
+run the reference model first and output U,V,T,Q,PS 6-hourly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cat &lt;&lt;EOF &gt;&gt; user_nl_cam
+   nhtfrq  = 0,-6
+   mfilt   = 1,1
+   fincl2  = ‘PS’,’U,’V’,’T’,’Q’,
+   avgflag_pertape(2) = &#39;I&#39;
+EOF
+</pre></div>
+</div>
+</div>
 <div class="section" id="switching-on-off-individual-parameterizations">
 <h2>Switching on/off individual parameterizations<a class="headerlink" href="#switching-on-off-individual-parameterizations" title="Permalink to this headline">¶</a></h2>
 <p>There is a set of switches that can be used to turn on/off certain processes:</p>
@@ -228,6 +241,7 @@ Note that some information on that page is obsolete.</p>
   <ul>
 <li><a class="reference internal" href="#">Advanced configurations of EAM/E3SM</a><ul>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on nudging</a></li>
+<li><a class="reference internal" href="#creating-nudging-files-from-a-baseline-simulation">Creating nudging files from a baseline simulation</a></li>
 <li><a class="reference internal" href="#switching-on-off-individual-parameterizations">Switching on/off individual parameterizations</a></li>
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>

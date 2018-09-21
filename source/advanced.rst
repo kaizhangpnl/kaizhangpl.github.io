@@ -56,6 +56,21 @@ source code `nudging.F90 <https://github.com/E3SM-Project/E3SM/blob/master/compo
 Note that the resulted nudging file name should not be longer than 80 characters. 
 
 
+
+Creating nudging files from a baseline simulation 
+------------------------------------------------------------
+ 
+To nudge the model towards a baseline model simulation (e.g. E3SMv1), you will need to 
+run the reference model first and output U,V,T,Q,PS 6-hourly: :: 
+ 
+  cat <<EOF >> user_nl_cam
+     nhtfrq  = 0,-6
+     mfilt   = 1,1
+     fincl2  = ‘PS’,’U,’V’,’T’,’Q’,
+     avgflag_pertape(2) = 'I'
+  EOF
+
+
 .. Switching on Satellite/Aircraft Sampler 
 .. ---------------------------------------
 .. 
