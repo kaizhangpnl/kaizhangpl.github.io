@@ -208,6 +208,22 @@ EOF
 </pre></div>
 </div>
 </div>
+<div class="section" id="output-data-at-a-certain-local-time">
+<h2>Output data at a certain local time<a class="headerlink" href="#output-data-at-a-certain-local-time" title="Permalink to this headline">¶</a></h2>
+<p>The following example shows how to sample data within a local time window (+- 1h near 10:30am):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">nhtfrq</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">24</span>
+   <span class="n">mfilt</span>   <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>
+   <span class="n">lcltod_start</span>       <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">34200</span>
+   <span class="n">lcltod_stop</span>        <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">41400</span>
+   <span class="n">avgflag_pertape</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">=</span> <span class="s1">&#39;L&#39;</span>
+   <span class="n">fincl2</span> <span class="o">=</span> <span class="s1">&#39;CLOUD&#39;</span><span class="p">,</span> <span class="s1">&#39;LWP&#39;</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>The model will sample and average all the data in the two hours and output the data one
+file per day.</p>
+</div>
 <div class="section" id="frequently-used-namelist-options">
 <h2>Frequently-used namelist options<a class="headerlink" href="#frequently-used-namelist-options" title="Permalink to this headline">¶</a></h2>
 <p>The following namelist options are frequently used for detailed diagnostics:</p>
@@ -292,6 +308,7 @@ setenv NETCDF_HOME /share/apps/netcdf/4.3.2/intel/15.0.1
 <li><a class="reference internal" href="#switching-on-cosp-simulator">Switching on COSP simulator</a></li>
 <li><a class="reference internal" href="#single-column-model-scm-simulations">Single column model (SCM) simulations</a></li>
 <li><a class="reference internal" href="#output-data-in-specified-regions">Output data in specified regions</a></li>
+<li><a class="reference internal" href="#output-data-at-a-certain-local-time">Output data at a certain local time</a></li>
 <li><a class="reference internal" href="#frequently-used-namelist-options">Frequently-used namelist options</a></li>
 <li><a class="reference internal" href="#other-options">Other options</a></li>
 <li><a class="reference internal" href="#specific-setup-for-constance-pnnl">Specific setup for Constance (PNNL)</a></li>

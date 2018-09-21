@@ -189,6 +189,25 @@ Namelist change: ::
         fincl2lonlat = '210e:330e_15n:65n'  ! CONUS 
      EOF
       
+
+Output data at a certain local time
+------------------------------------
+
+The following example shows how to sample data within a local time window (+- 1h near 10:30am): :: 
+
+     cat <<EOF >> user_nl_cam
+        nhtfrq  = 0,-24
+        mfilt   = 1,1
+        lcltod_start       = 0,34200
+        lcltod_stop        = 0,41400
+        avgflag_pertape(2) = 'L'
+        fincl2 = 'CLOUD', 'LWP' 
+     EOF
+
+The model will sample and average all the data in the two hours and output the data one
+file per day. 
+
+      
 Frequently-used namelist options
 --------------------------------
 
