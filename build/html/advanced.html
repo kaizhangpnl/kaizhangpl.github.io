@@ -106,6 +106,34 @@ EOF
 </pre></div>
 </div>
 </div>
+<div class="section" id="switching-on-satellite-aircraft-sampler">
+<h2>Switching on Satellite/Aircraft Sampler<a class="headerlink" href="#switching-on-satellite-aircraft-sampler" title="Permalink to this headline">¶</a></h2>
+<p>The following example shows how to sample data satellite/aircraft tracks. It will sample
+the column data at each time slice defined in the profile-input file:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cat</span> <span class="o">&lt;&lt;</span><span class="n">EOF</span> <span class="o">&gt;&gt;</span> <span class="n">user_nl_cam</span>
+   <span class="n">sathist_fincl</span> <span class="o">=</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;LWC&#39;</span>
+   <span class="n">sathist_track_infile</span> <span class="o">=</span> <span class="s2">&quot;profile_mpace.nc&#39;</span>
+   <span class="n">sathist_mfilt</span> <span class="o">=</span> <span class="mi">47398</span>
+   <span class="n">sathist_hfilename_spec</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%c</span><span class="s1">.e3sm.sat.%y-%m-</span><span class="si">%d</span><span class="s1">-</span><span class="si">%s</span><span class="s1">.nc&#39;</span>
+<span class="n">EOF</span>
+</pre></div>
+</div>
+<p>The profile-input file should have a data structure shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">time</span><span class="p">(</span><span class="n">profs</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">time</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">&quot;time of day&quot;</span> <span class="p">;</span>
+    <span class="n">time</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;s&quot;</span> <span class="p">;</span>
+<span class="nb">int</span> <span class="n">date</span><span class="p">(</span><span class="n">profs</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">date</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">&quot;date[yyyymmdd]&quot;</span> <span class="p">;</span>
+    <span class="n">date</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;yyyymmdd&quot;</span> <span class="p">;</span>
+<span class="nb">float</span> <span class="n">lat</span><span class="p">(</span><span class="n">profs</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">lat</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">&quot;latitude&quot;</span> <span class="p">;</span>
+    <span class="n">lat</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;degrees&quot;</span> <span class="p">;</span>
+<span class="nb">float</span> <span class="n">lon</span><span class="p">(</span><span class="n">profs</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">lon</span><span class="p">:</span><span class="n">long_name</span> <span class="o">=</span> <span class="s2">&quot;longitude&quot;</span> <span class="p">;</span>
+    <span class="n">lon</span><span class="p">:</span><span class="n">units</span> <span class="o">=</span> <span class="s2">&quot;degrees&quot;</span> <span class="p">;</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="switching-on-off-individual-parameterizations">
 <h2>Switching on/off individual parameterizations<a class="headerlink" href="#switching-on-off-individual-parameterizations" title="Permalink to this headline">¶</a></h2>
 <p>There is a set of switches that can be used to turn on/off certain processes:</p>
@@ -242,6 +270,7 @@ Note that some information on that page is obsolete.</p>
 <li><a class="reference internal" href="#">Advanced configurations of EAM/E3SM</a><ul>
 <li><a class="reference internal" href="#switching-on-nudging">Switching on nudging</a></li>
 <li><a class="reference internal" href="#creating-nudging-files-from-a-baseline-simulation">Creating nudging files from a baseline simulation</a></li>
+<li><a class="reference internal" href="#switching-on-satellite-aircraft-sampler">Switching on Satellite/Aircraft Sampler</a></li>
 <li><a class="reference internal" href="#switching-on-off-individual-parameterizations">Switching on/off individual parameterizations</a></li>
 <li><a class="reference internal" href="#switching-on-aerosol-forcing-diagnostics">Switching on aerosol forcing diagnostics</a></li>
 <li><a class="reference internal" href="#changing-external-forcings">Changing external forcings</a></li>

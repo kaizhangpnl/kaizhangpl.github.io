@@ -71,12 +71,34 @@ run the reference model first and output U,V,T,Q,PS 6-hourly: ::
   EOF
 
 
-.. Switching on Satellite/Aircraft Sampler 
-.. ---------------------------------------
-.. 
-.. under construction 
-.. 
- 
+Switching on Satellite/Aircraft Sampler 
+---------------------------------------
+
+The following example shows how to sample data satellite/aircraft tracks. It will sample 
+the column data at each time slice defined in the profile-input file: :: 
+
+  cat <<EOF >> user_nl_cam
+     sathist_fincl = 'T', 'Q', 'LWC' 
+     sathist_track_infile = "profile_mpace.nc' 
+     sathist_mfilt = 47398 
+     sathist_hfilename_spec = '%c.e3sm.sat.%y-%m-%d-%s.nc'
+  EOF
+
+The profile-input file should have a data structure shown below: :: 
+
+     int time(profs) ;
+         time:long_name = "time of day" ;
+         time:units = "s" ;
+     int date(profs) ;
+         date:long_name = "date[yyyymmdd]" ;
+         date:units = "yyyymmdd" ;
+     float lat(profs) ;
+         lat:long_name = "latitude" ;
+         lat:units = "degrees" ;
+     float lon(profs) ;
+         lon:long_name = "longitude" ;
+         lon:units = "degrees" ; 
+  
 Switching on/off individual parameterizations
 ----------------------------------------------
 
