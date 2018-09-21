@@ -71,7 +71,7 @@ run the reference model first and output U,V,T,Q,PS 6-hourly: ::
   EOF
 
 
-Switching on Satellite/Aircraft Sampler 
+Switching on the satellite/aircraft sampler 
 ---------------------------------------
 
 The following example shows how to sample data satellite/aircraft tracks. It will sample 
