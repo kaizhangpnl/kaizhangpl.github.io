@@ -191,7 +191,8 @@ Namelist change: ::
       
 To post-process the regional output on the unstructured spectral element grid, 
 please follow the guide available  
-`here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/754286611/Regridding+E3SM+Data+with+ncremap>`_.
+`here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/754286611/Regridding+E3SM+Data+with+ncremap>`_ 
+(currently internal).
 
 Output data at a certain local time
 ------------------------------------
