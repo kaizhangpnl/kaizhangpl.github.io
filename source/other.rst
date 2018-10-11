@@ -19,6 +19,9 @@ Input data
 Further information about E3SM internal input data repository can be found 
 `here (internal) <https://acme-climate.atlassian.net/wiki/spaces/WORKFLOW/pages/7998629/ACME+Input+Data+Repository>`_. 
 
+On Edison, the data are available here: :: 
+
+  /global/project/projectdirs/acme/inputdata
 
 Mapping files 
 ---------------
