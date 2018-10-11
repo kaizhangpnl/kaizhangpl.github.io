@@ -29,6 +29,10 @@ Internal resources:
   .. https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/111673554/20161118.beta0.F2000AFCOSP.ne30+ne30.edison
   `F20TR <http://portal.nersc.gov/project/acme/coupled/beta/20161118.beta0.F20TRCOSP.ne30_ne30.edison/1976-1999-vs-obs/>`_  
   
+  
+On Edison, the AMWG OBS data are available here: :: 
+
+  /global/project/projectdirs/acme/inputdata/amwg_data
 
 E3SM diagnostics
 ----------------
