@@ -62,6 +62,10 @@ The name of the available mapping files are listed below: ::
   map_ne4np4_to_fv25x48_bilin.20170401.nc
   map_ne4np4_to_ne30np4_aave.20160601.nc
   map_ne4np4_to_ne30np4_bilin.20160601.nc
+  
+On Edison, the data are available here: :: 
+
+  /global/project/projectdirs/acme/mapping/maps 
 
 Grids 
 ---------------
@@ -119,6 +123,9 @@ The name of the available grid files are listed below: ::
   wpacific_v2.g_latlon_c150622.nc
   wpacific_v2.g_scrip_c150622.nc
 
+On Edison, the data are available here: :: 
+
+  /global/project/projectdirs/acme/mapping/grids 
 
 
 Observational data for analysis
