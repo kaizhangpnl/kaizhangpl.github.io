@@ -189,6 +189,8 @@ Namelist change: ::
         fincl2lonlat = '210e:330e_15n:65n'  ! CONUS 
      EOF
       
+To post-process the regional output on unstructured data, please follow the guide available  
+`here <https://acme-climate.atlassian.net/wiki/spaces/SIM/pages/754286611/Regridding+E3SM+Data+with+ncremap>`_.
 
 Output data at a certain local time
 ------------------------------------
