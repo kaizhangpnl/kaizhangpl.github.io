@@ -219,7 +219,37 @@ Modified from `Zhang et al. (2018) <https://www.geosci-model-dev.net/11/1971/201
    :alt: Time stepping in EAMv1. 
    :align: center
 
+Time stepping 
+--------------------
 
+A hybrid method is used to couple the physics and dynamics. 
+For the fluid dynamics variables (temperature, winds, and surface pressure), 
+physics tendencies are applied as a constant source term for dynamics 
+in each of the dynamical (se_nsplit) sub-steps. 
+For ne30/ne120, the coupling frequency is 900s/225s. 
+For water vapor, liquid- and ice-phase condensate, and all other advected tracers, 
+the hard adjustment is used and the coupling frequency is 30min/15min for ne30/ne120.
+ 
+Radiation is called every hour for both ne30 and ne120. The radiation 
+tendency (calculated hourly) is re-used at each model time step (e.g. 30min for ne30).
+ 
+CLUBB and MG2 are substepped together with 5min time step. 
+There is no internal CLUBB sub-cycle if dt_clubb_mg2 <= 5min. 
+There is no internal MG2 subcycle either (except for sedimentation part, 
+which is dynamically substepped). The CLUBB-MG2 loop is coupled with the 
+host model at each model physics time step (e.g. 30min for ne30). 
+CLUBB/MG2 doesn’t update the state variable directly (physics_update is used). 
+If CLUBB/MG2 internal subcycles exist, the output tendency is the time-averaged tendency.
+ 
+In the atmosphere-only simulation, the surface fields are updated at each 
+atm-physics time step (30min for ne30) through the coupler. The land model 
+uses the same time step.
+ 
+In the coupled model, the coupling frequency is the same for the atmosphere 
+and land model. For the ocean model, the coupling frequency is 30min for ne30 
+and 30min or 1h for ne120 (depending on grid setup - oRRS15to5 versus oRRS18to6) 
+in the current version. 
+ 
    
    
 List of advective tracers 
