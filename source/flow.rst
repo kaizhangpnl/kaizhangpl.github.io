@@ -246,7 +246,7 @@ atm-physics time step (30min for ne30) through the coupler. The land model
 uses the same time step.
  
 In the coupled model, the coupling frequency is the same for the atmosphere 
-and land model. For the ocean model, the coupling frequency is 30min for ne30 
+and land model as in the atm-only simulation. For the ocean model, the coupling frequency is 30min for ne30 
 and 30min or 1h for ne120 (depending on grid setup - oRRS15to5 versus oRRS18to6) 
 in the current version. 
  
