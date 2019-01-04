@@ -25,7 +25,7 @@ The example shown below switches on nudging for horizontal winds ::
   !.......................................................
    Nudge_Model = .True.
    Nudge_Path  = '${INPUT_NUDGING}/ne30/'
-   Nudge_File_Template = 'ACME.cam.h2.%y-%m-%d-%s.nc'
+   Nudge_File_Template = 'ACME.cam.h1.%y-%m-%d-%s.nc'
    Nudge_Times_Per_Day = 4  !! nudging input data frequency 
    Model_Times_Per_Day = 48 !! should not be larger than 48 if dtime = 1800s 
    Nudge_Uprof = 1
