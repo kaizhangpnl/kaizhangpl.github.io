@@ -242,6 +242,18 @@ Configuration files
 
 To find out more, search those items in http://esmci.github.io/cime/index.html 
 
+Update machine configuration files after major upgrad
+--------------------
+
+When the computer system has a major upgrad, the following files often need to be updated:  
+
+- cime/cime_config/acme/machines/config_batch.xml
+- cime/cime_config/acme/machines/config_build.xml
+- cime/cime_config/acme/machines/config_compilers.xml
+- cime/cime_config/acme/machines/config_machines.xml
+- cime/driver_cpl/cime_config/config_component.xml
+
+
 
 Reference 
 ----------
