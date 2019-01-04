@@ -247,11 +247,11 @@ Update machine configuration files after major upgrad
 
 When the computer system has a major upgrad, the following files often need to be updated:  
 
-- cime/cime_config/acme/machines/config_batch.xml
-- cime/cime_config/acme/machines/config_build.xml
-- cime/cime_config/acme/machines/config_compilers.xml
-- cime/cime_config/acme/machines/config_machines.xml
-- cime/driver_cpl/cime_config/config_component.xml
+- `cime/config/e3sm/machines/config_batch.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_batch.xml>`_
+- `cime/config/e3sm/machines/config_compilers.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_compilers.xml>`_
+- `cime/config/e3sm/machines/config_machines.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_machines.xml>`_
+- `cime/cime_config/acme/machines/config_build.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/cime_config/acme/machines/config_build.xml>`_
+- `cime/driver_cpl/cime_config/config_component.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/driver_cpl/cime_config/config_component.xml`_
 
 
 
