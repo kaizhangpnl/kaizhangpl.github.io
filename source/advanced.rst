@@ -242,10 +242,10 @@ Configuration files
 
 To find out more, search those items in http://esmci.github.io/cime/index.html 
 
-Update machine configuration files after major upgrad
+Update machine configuration files after major upgrade
 --------------------
 
-When the computer system has a major upgrad, the following files often need to be updated:  
+When the computer system has a major upgrade, the following files often need to be updated:  
 
 - `cime/config/e3sm/machines/config_batch.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_batch.xml>`_
 - `cime/config/e3sm/machines/config_compilers.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/machines/config_compilers.xml>`_
