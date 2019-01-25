@@ -26,7 +26,7 @@ On Edison, the data are available here: ::
 Mapping files 
 ---------------
 
-E3SM mapping files are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/maps/>`_. 
+E3SM mapping files are available `here <https://web.lcrc.anl.gov/public/e3sm/mapping/maps/>`_. 
 
 The name of the available mapping files are listed below: :: 
 
@@ -73,7 +73,7 @@ On Edison, the data are available here: ::
 Grids 
 ---------------
 
-E3SM grid data are available `here <https://acme-svn2.ornl.gov/acme-repo/acme/mapping/grids/>`_. 
+E3SM grid data are available `here <https://web.lcrc.anl.gov/public/e3sm/mapping/grids/>`_. 
 
 The name of the available grid files are listed below: :: 
 
