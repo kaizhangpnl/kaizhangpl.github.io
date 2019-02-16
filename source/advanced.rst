@@ -189,13 +189,15 @@ to change the seed to the random number generator.
 Creating a new compset
 ----------------------
 
-Following files need to be changed in order to create a new compset: 
+Following files might need to be changed in order to create a new compset: 
 
 - `components/cam/cime_config/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_compsets.xml>`_ 
 - `components/cam/cime_config/config_component.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/config_component.xml>`_ 
 - `cime/src/drivers/mct/cime_config/config_component_e3sm.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/src/drivers/mct/cime_config/config_component_e3sm.xml>`_ 
 - `cime/config/e3sm/allactive/config_compsets.xml <https://github.com/E3SM-Project/E3SM/blob/master/cime/config/e3sm/allactive/config_compsets.xml>`_ 
 - `components/cam/bld/build-namelist <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/build-namelist>`_ 
+- `components/cam/bld/config_files/definition.xml <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/bld/config_files/definition.xml>`_ 
+- `components/cam/cime_config/usermods_dirs/ <https://github.com/E3SM-Project/E3SM/blob/master/components/cam/cime_config/usermods_dirs/>`_ 
 
 The namelist configuration files need to be changed too, e.g. : 
 
